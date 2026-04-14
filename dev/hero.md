@@ -1489,3 +1489,169 @@
 | W | 秘剑-无形鬼影 | — | — | 10级解锁 |
 | E | 忌剑-奥义-万物破灭 | — | — | 15级解锁 |
 | R | 禁术-鬼奥义-妖刀鬼切 | — | — | 20级解锁 |
+
+---
+
+## 魅影十字军
+
+**主属性**：力量（STR）
+**单位ID**：`H08A`（parent: `Hant`）
+**模型**：`war3mapImported\Sharis.mdl`（缩放0.9）
+
+| 属性 | 初始值 | 每级成长 |
+|------|--------|---------|
+| 力量 | 40 | +1.0 |
+| 敏捷 | 40 | — |
+| 智力 | 40 | +1.0 |
+
+攻击间隔：1.4秒 · 攻击范围：120（近程）· 移速：行走300 / 跑步400
+
+技能注册（`hero_ability_add`，war3map.j 365479行）：
+```
+call hero_ability_add('H08A', 'A1MN', "", 'A1MO', "", 0, "", 'A1MP', "", 'A1MQ', "", 'A1MS', "")
+```
+D位技能 `A1MU`（剑术奥义）、`AInv` 来自 `abilList` 初始自带。
+
+---
+
+### 技能数据（触发器实测）
+
+| 槽位 | ID | 技能名 | 冷却 | 费用 | 获得方式 |
+|------|-----|--------|------|------|---------|
+| Q | A1MN | 战炎之怒 | 8秒 | 50蓝 | 3级解锁 |
+| W | A1MO | 不朽之辉 | 15秒 | 50蓝 | 10级解锁 |
+| E | A1MP | 雷霆震怒 | 9秒 | 150蓝 | 15级解锁 |
+| R1 | A1MQ | 一段剑舞：执鞘 | 12秒 | 100蓝 | 20级解锁 |
+| R2 | A1MR | 二段剑舞：掷剑 | 1秒 | 0蓝 | R1命中后激活 |
+| F | A1MS | 救赎·怒剑狂花 | 50秒 | 0蓝 | 35级解锁 |
+| D | A1MU | 剑术奥义 | 15秒 | 50蓝 | 初始自带 |
+
+---
+
+#### Q · 战炎之怒（A1MN）
+
+触发入口：`414227` (`abilityType == 'A1MN'`)
+- 普通施放 → `new_hero_gather_wave(un, x, y)`（`406603`行）
+- 强化施放（Q窗口激活中）→ `nh_combo_cast_q_as_thunder(un, x, y)`（`407602`行，内部调用 `thunder_fury_cast`）
+
+**实际伤害**（`406628`行）：
+```jass
+set damage = thunder_fury_attack_damage(un) * 1.50 + I2R(GetHeroStr(un, true)) * 18.00
+```
+即：**攻击力×1.5 + 力量×18**
+
+附加效果：命中终点范围350码敌人，眩晕并牵拉；3秒内目标速度削弱60%。debuff由 `DebuffSystem_Add(locUnit, 'A1MW', 5.00, 0)` 施加（buff ID: B04Z）。
+
+> ⚠️ 描述与实测差异：Ubertip 写"最大生命值×1.1 + 力量×15"，实测为**攻击力×1.5 + 力量×18**。
+
+---
+
+#### W · 不朽之辉（A1MO）
+
+触发入口：`414233` → `thunder_fury_cast_W(un)`（`407613`行）
+
+```jass
+// 增加减伤层
+SaveReal(减伤js, ..., LoadReal(...) + 0.4)
+// 5秒后移除
+YDWEPolledWaitNull(5)
+SaveReal(减伤js, ..., LoadReal(...) - 0.4)
+```
+
+效果：自身受到伤害减少**40%**，持续**5秒**。
+
+---
+
+#### E · 雷霆震怒（A1MP）
+
+触发入口：`414235` → `thunder_fury_cast(un, x, y)`（`406222`行）
+伤害函数：`thunder_fury_damage(un, my_state)`（`405793`行）
+
+```jass
+// 405798
+set damage = thunder_fury_attack_damage(un) * 4.00 + I2R(GetHeroStr(un, true)) * 70.00
+// 405800 强化状态（state > 0）
+if ( my_state > 0 ) then
+    set damage = damage * 3.50
+endif
+```
+
+- 非强化：**攻击力×4.0 + 力量×70**
+- 强化（R二段后4秒E窗口内）：**×3.5倍**，约攻击力×14.0 + 力量×245
+
+跳跃参数：弧顶高度600，上升0.30秒，下落0.20秒，最小位移300码。
+
+> ⚠️ 描述与实测差异：Ubertip 写"攻击×1.5 + 力量×50，强化+250%"，实测基础值为**攻击×4.0 + 力量×70**；强化系数×3.5（对应描述的250%相符，基础值不符）。
+
+---
+
+#### R一段 · 一段剑舞：执鞘（A1MQ）
+
+触发入口：`414217` → `nh_a0tn_wave(un, x, y)`（`406937`行）+ 开启4秒Q/R窗口
+
+```jass
+// 406969
+set damage = thunder_fury_attack_damage(un) * 2.00 + I2R(GetHeroStr(un, true)) * 35.00
+```
+
+效果：**攻击力×2.0 + 力量×35**混乱伤害；同时刷新Q冷却，开启4秒Q强化窗口与R追加窗口（解锁R二段 A1MR）。
+
+---
+
+#### R二段 · 二段剑舞：掷剑（A1MR）
+
+触发入口：`414223` → `nh_scontro_burst(un)`（`407164`行）+ 开启4秒E窗口
+
+```jass
+// 407113
+local real sh = thunder_fury_attack_damage(un) * 3.25 + I2R(GetHeroStr(un, true)) * 80.00
+```
+
+效果：**攻击力×3.25 + 力量×80**混乱伤害（范围爆发）；触发后开启4秒E强化窗口；每秒恢复**10000**HP，持续6秒。
+
+---
+
+#### F · 救赎·怒剑狂花（A1MS）
+
+触发入口：`414237` → `nh_a0tu_a05m_combo(un, x, y)`
+
+```jass
+// 两段主打伤害（407351 / 407386）
+local real damage = thunder_fury_attack_damage(un) * 6.00 + I2R(GetHeroStr(un, true)) * 60.00
+// 最终一击（407275）
+local real damage = I2R(GetHeroStr(un, true)) * 150.00
+```
+
+- 两段各：**攻击力×6.0 + 力量×60**混乱伤害
+- 最终一击：**力量×150**混乱伤害，眩晕3秒
+
+> ⚠️ 描述与实测差异：Ubertip 写"两刀×5+力量×45，最后一击+力量×125"，实测为**每段×6.0+力量×60，最终力量×150**。
+
+---
+
+#### D · 剑术奥义（A1MU）
+
+触发入口：`414221` → `meiying_attack_dstate_skill(un)`（`405748`行）
+
+Ubertip（未专门验证触发，与描述一致性待复查）：
+- **被动**：普攻18%概率触发狂暴，附加**攻击力×1 + 力量×10**混乱伤害
+- **主动**：下3次攻击附加狂暴强化，持续10秒
+
+---
+
+### 关键行号速查（war3map.j，2.41版本）
+
+| 函数 | 行号 | 说明 |
+|------|------|------|
+| `thunder_fury_attack_damage` | 405787 | 攻击力取值函数 |
+| `thunder_fury_damage` | 405793 | E技能伤害公式 |
+| `meiying_attack_dstate_skill` | 405748 | D技能主动效果 |
+| `new_hero_gather_wave` | 406603 | Q基础施放（冲击波） |
+| `thunder_fury_cast` | 406222 | E/强化Q施放（位移） |
+| `nh_a0tn_wave` | 406937 | R一段（突刺） |
+| `nh_scontro_burst_damage` | 407110 | R二段伤害计算 |
+| `nh_a0tu_a05m_combo` | — | F技能主函数 |
+| `nh_combo_cast_q_as_thunder` | 407602 | Q强化施放 |
+| `thunder_fury_cast_W` | 407613 | W技能（减伤） |
+| `meiying_tz_ms_skill` | 421268 | 团长技能A1MV（非玩家技能） |
+| 技能分发入口 | 414217 | H08A所有技能的dispatch |
