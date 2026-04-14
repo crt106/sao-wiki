@@ -1,0 +1,82 @@
+/* ── 本地字体栈（不依赖 Google Fonts，中文优先） ── */
+:root {
+  --md-text-font: "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei",
+    "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+  --md-code-font: "Cascadia Code", "Fira Code", "JetBrains Mono",
+    "Consolas", "SF Mono", monospace;
+}
+
+body, .md-typeset {
+  font-family: var(--md-text-font);
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+.md-typeset code, .md-typeset pre {
+  font-family: var(--md-code-font);
+}
+
+/* ── 内容区宽度：让表格有更多空间 ── */
+.md-grid {
+  max-width: 1600px;
+}
+
+/* ── 标题间距更呼吸 ── */
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6em;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  margin-top: 1.8em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.3em;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  margin-top: 1.4em;
+}
+
+/* ── 表格：横向滚动 + 统一字体 ── */
+.md-typeset table:not([class]) {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: inherit;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 0.4em 0.8em;
+}
+
+/* ── 斑马纹表格 ── */
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: var(--md-default-bg-color--light);
+}
+
+/* ── 代码块字体：用等宽字体，更易读 ── */
+.md-typeset code {
+  font-size: 0.85em;
+}
+
+/* ── 警告框（admonition）── */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: inherit;
+}
+
+/* ── 折叠面板标题字体统一 ── */
+.md-typeset details summary {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* ── 侧边栏文字略小，避免太拥挤 ── */
+.md-nav__item {
+  font-size: 0.78rem;
+}

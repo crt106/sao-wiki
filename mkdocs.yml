@@ -1,0 +1,95 @@
+site_name: 刀剑物语改图WIKI
+site_description: war3地图刀剑物语改图 游戏 Wiki，包含英雄图鉴、物品图鉴与各类资料。
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+
+  palette:
+    # 跟随系统：自动模式
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: 切换到亮色模式
+    # 亮色
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    # 暗色
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 跟随系统
+
+  font: false  # 禁用 Google Fonts，改用下方 CSS 本地字体栈
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.path
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.tooltips
+    - content.code.copy
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: zh
+  - awesome-pages
+  - blog:
+      blog_dir: changelogs
+      blog_toc: true
+      post_date_format: yyyy-MM-dd
+      archive_name: 归档
+      categories_name: 分类
+      authors: true
+
+markdown_extensions:
+  - tables
+  - admonition
+  - footnotes
+  - def_list
+  - abbr
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+      permalink_title: 复制链接
+      title: 本页目录
