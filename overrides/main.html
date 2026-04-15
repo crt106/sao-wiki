@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+  {{ super() }}
+
+  {# 不蒜子页面访问统计脚本 #}
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <script>
+    /**
+     * MkDocs Material 开启了 navigation.instant（Ajax 无刷新跳转）后，
+     * 不蒜子脚本只会在首次加载时执行一次，后续页面切换不会更新计数。
+     * 通过订阅 Material 暴露的 document$ 可观测对象，在每次页面切换后
+     * 重新注入脚本，强制不蒜子重新读取当前 URL 并更新计数。
+     */
+    document$.subscribe(function () {
+      var old = document.querySelector('script[src*="busuanzi"]');
+      if (old) old.remove();
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
+      document.head.appendChild(s);
+    });
+  </script>
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+  {# 在原有页脚下方追加访问计数条 #}
+  <div style="
+    background: var(--md-footer-bg-color--dark);
+    text-align: center;
+    padding: 0.45rem 1rem;
+    font-size: 0.72rem;
+    color: var(--md-footer-fg-color--light);
+  ">
+    本页访问 <span id="busuanzi_value_page_pv" style="font-weight:600">…</span> 次
+    &nbsp;|&nbsp;
+    全站访问 <span id="busuanzi_value_site_pv" style="font-weight:600">…</span> 次
+  </div>
+{% endblock %}
