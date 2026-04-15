@@ -3,17 +3,38 @@
 {% block scripts %}
   {{ super() }}
 
-  {# Vercount 页面访问统计脚本（不蒜子替代方案，兼容相同 span ID，国内加速节点）#}
+  {# Vercount 页面访问统计（不蒜子替代，兼容相同 span ID，国内加速节点）#}
   <script defer src="https://cn.vercount.one/js"></script>
 
   <script>
     /**
-     * MkDocs Material 开启了 navigation.instant（Ajax 无刷新跳转）后，
-     * 计数脚本只会在首次加载时执行一次，后续页面切换不会更新计数。
-     * 通过订阅 Material 暴露的 document$ 可观测对象，在每次页面切换后
-     * 重新注入脚本，强制 Vercount 重新读取当前 URL 并更新计数。
+     * 通过 JS 将计数条注入到 .md-footer 内部，而非追加到 footer 块之外。
+     * 避免额外 DOM 节点导致 Material 主题侧边栏高度计算错误（sidebar 溢出 footer）。
+     *
+     * 同时处理 navigation.instant 的 Ajax 跳转：每次页面切换后重新注入
+     * Vercount 脚本，使其读取新 URL 并更新计数。
      */
     document$.subscribe(function () {
+      // 将计数条插入 .md-footer 内部（仅首次，避免重复追加）
+      var footer = document.querySelector('.md-footer');
+      if (footer && !footer.querySelector('.vercount-bar')) {
+        var bar = document.createElement('div');
+        bar.className = 'vercount-bar';
+        bar.setAttribute('style', [
+          'text-align:center',
+          'padding:0.45rem 1rem',
+          'font-size:0.72rem',
+          'color:var(--md-footer-fg-color--light)',
+          'background:var(--md-footer-bg-color--dark)'
+        ].join(';'));
+        bar.innerHTML =
+          '本页访问 <span id="busuanzi_value_page_pv" style="font-weight:600">…</span> 次' +
+          ' &nbsp;|&nbsp; ' +
+          '全站访问 <span id="busuanzi_value_site_pv" style="font-weight:600">…</span> 次';
+        footer.appendChild(bar);
+      }
+
+      // 重新注入 Vercount 脚本，触发对当前页 URL 的计数更新
       var old = document.querySelector('script[src*="vercount.one"]');
       if (old) old.remove();
       var s = document.createElement('script');
@@ -22,20 +43,4 @@
       document.head.appendChild(s);
     });
   </script>
-{% endblock %}
-
-{% block footer %}
-  {{ super() }}
-  {# 在原有页脚下方追加访问计数条 #}
-  <div style="
-    background: var(--md-footer-bg-color--dark);
-    text-align: center;
-    padding: 0.45rem 1rem;
-    font-size: 0.72rem;
-    color: var(--md-footer-fg-color--light);
-  ">
-    本页访问 <span id="busuanzi_value_page_pv" style="font-weight:600">…</span> 次
-    &nbsp;|&nbsp;
-    全站访问 <span id="busuanzi_value_site_pv" style="font-weight:600">…</span> 次
-  </div>
 {% endblock %}
