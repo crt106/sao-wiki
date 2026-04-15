@@ -3,8 +3,8 @@
 {% block scripts %}
   {{ super() }}
 
-  {# 不蒜子页面访问统计脚本 #}
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  {# 不蒜子页面访问统计脚本（使用社区镜像，原始域名 ibruce.info 长期不稳定）#}
+  <script async src="https://busuanzi.9420.ltd/js"></script>
 
   <script>
     /**
@@ -18,7 +18,7 @@
       if (old) old.remove();
       var s = document.createElement('script');
       s.async = true;
-      s.src = '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
+      s.src = 'https://busuanzi.9420.ltd/js';
       document.head.appendChild(s);
     });
   </script>
