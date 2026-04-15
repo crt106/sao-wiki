@@ -3,22 +3,22 @@
 {% block scripts %}
   {{ super() }}
 
-  {# 不蒜子页面访问统计脚本（使用社区镜像，原始域名 ibruce.info 长期不稳定）#}
-  <script async src="https://busuanzi.9420.ltd/js"></script>
+  {# Vercount 页面访问统计脚本（不蒜子替代方案，兼容相同 span ID，国内加速节点）#}
+  <script defer src="https://cn.vercount.one/js"></script>
 
   <script>
     /**
      * MkDocs Material 开启了 navigation.instant（Ajax 无刷新跳转）后，
-     * 不蒜子脚本只会在首次加载时执行一次，后续页面切换不会更新计数。
+     * 计数脚本只会在首次加载时执行一次，后续页面切换不会更新计数。
      * 通过订阅 Material 暴露的 document$ 可观测对象，在每次页面切换后
-     * 重新注入脚本，强制不蒜子重新读取当前 URL 并更新计数。
+     * 重新注入脚本，强制 Vercount 重新读取当前 URL 并更新计数。
      */
     document$.subscribe(function () {
-      var old = document.querySelector('script[src*="busuanzi"]');
+      var old = document.querySelector('script[src*="vercount.one"]');
       if (old) old.remove();
       var s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://busuanzi.9420.ltd/js';
+      s.defer = true;
+      s.src = 'https://cn.vercount.one/js';
       document.head.appendChild(s);
     });
   </script>
