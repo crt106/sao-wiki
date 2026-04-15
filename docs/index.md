@@ -11,8 +11,8 @@
 
 - [英雄图鉴](heroes/index.md)
 - [物品图鉴](items/index.md)
-- [楼层信息](楼层信息.md)
-- [其他好玩的](其他好玩的.md)
+- [楼层信息](info/楼层信息.md)
+- [其他好玩的](info/其他好玩的.md)
 - [改图更新日志](changelogs/index.md)
 
 ---

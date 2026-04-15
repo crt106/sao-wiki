@@ -78,5 +78,27 @@ body, .md-typeset {
 
 /* ── 侧边栏文字略小，避免太拥挤 ── */
 .md-nav__item {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
+}
+
+/* ── 侧边栏链接减少内边距，缩短缩进 ── */
+.md-nav__link {
+  padding-top: 0.18em;
+  padding-bottom: 0.18em;
+}
+
+/* ── 二级物品条目（嵌套层）缩进收窄 ── */
+.md-nav--secondary .md-nav__item,
+.md-nav__item .md-nav__item {
+  font-size: 0.70rem;
+}
+
+/* ── 修复页面路径（Breadcrumb）文字与箭头图标垂直无法对齐的问题 ── */
+.md-path {
+  line-height: inherit;
+}
+.md-path__item::after {
+  vertical-align: middle !important;
+  position: relative !important;
+  top: 0.12em !important;
 }
