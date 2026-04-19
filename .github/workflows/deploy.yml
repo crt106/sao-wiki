@@ -29,7 +29,8 @@ jobs:
         run: |
           pip install mkdocs-material \
                       mkdocs-awesome-pages-plugin \
-                      mkdocs-glightbox
+                      mkdocs-glightbox \
+                      jieba
 
       - name: Deploy
         run: mkdocs gh-deploy --force
