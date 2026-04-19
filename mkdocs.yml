@@ -58,6 +58,9 @@ extra_css:
 plugins:
   - search:
       lang: zh
+      # 自定义分词分隔符：在常见标点处切分，避免「体力恢复Lv5(B级)」被当作单个 token
+      # 也在中文与非中文（数字/英文）边界处切分，让中文短语保持连续
+      separator: '[\s\u200b\-,，。；：、（）()【】\[\]「」『』《》<>!！?？/\\|]+|(?<=[\u4e00-\u9fff])(?=[A-Za-z0-9])|(?<=[A-Za-z0-9])(?=[\u4e00-\u9fff])'
   - awesome-pages
   - glightbox
   - blog:
