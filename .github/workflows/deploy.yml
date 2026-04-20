@@ -32,11 +32,8 @@ jobs:
                       mkdocs-glightbox \
                       jieba
 
-      - name: Build site
-        run: mkdocs build
-
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force --no-rebuild
+        run: mkdocs gh-deploy --force
 
       - name: Setup SSH agent
         uses: webfactory/ssh-agent@v0.9.0
