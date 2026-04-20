@@ -1,6 +1,9 @@
 site_name: 刀剑物语改图WIKI
 site_description: war3地图刀剑物语改图 游戏 Wiki，包含英雄图鉴、物品图鉴与各类资料。
 site_url: https://crt106.github.io/sao-wiki/
+repo_url: https://github.com/crt106/sao-wiki
+repo_name: crt106/sao-wiki
+edit_uri: edit/master/docs/
 docs_dir: docs
 site_dir: site
 
@@ -50,6 +53,7 @@ theme:
     - search.share
     - content.tooltips
     - content.code.copy
+    - content.action.edit
     - toc.follow
 
 extra_css:
