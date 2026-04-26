@@ -214,6 +214,84 @@ YDWEUnitHasItemOfTypeBJNull(GetTriggerUnit(), 'IYYY') == true
 
 ---
 
+## 页脚地图版本管理
+
+站点使用 `mkdocs-git-revision-date-localized-plugin` 自动显示最后更新日期，地图版本通过以下机制维护：
+
+## MkDocs 构建性能原则
+
+本站文档数量较多，当前约 1000+ 个 Markdown 页面。`mkdocs-git-revision-date-localized-plugin` 会逐页读取 Git 最后修订时间，`mkdocs-git-authors-plugin` 会逐页统计作者信息；完整构建会明显变慢，这是 Git 元信息的正常成本。
+
+### 本地开发默认快模式
+
+本地编辑、预览和热更新时，优先关闭 Git 元信息插件，并使用 dirty reload：
+
+```powershell
+$env:MKDOCS_ENABLE_GIT_META="false"
+$env:WATCHFILES_FORCE_POLLING="true"
+.\.venv\Scripts\python.exe -m mkdocs serve --dirtyreload -a 127.0.0.1:8000
+```
+
+该模式不生成页脚 Git 修订日期和贡献者信息，但启动与热更新更快，适合日常写文档。
+
+### 发布前完整构建
+
+发布前或 CI 中保持默认完整构建，生成页脚 Git 修订日期和贡献者信息：
+
+```powershell
+Remove-Item Env:\MKDOCS_ENABLE_GIT_META -ErrorAction SilentlyContinue
+.\.venv\Scripts\python.exe -m mkdocs build --strict
+```
+
+`mkdocs.yml` 中 Git 元信息插件通过环境变量控制：
+
+```yaml
+enabled: !ENV [MKDOCS_ENABLE_GIT_META, true]
+```
+
+默认值为 `true`，因此 GitHub Actions 和正式发布会保留完整页面元信息；只有本地显式设置 `MKDOCS_ENABLE_GIT_META=false` 时才关闭。
+
+### 全局默认版本
+
+在 `mkdocs.yml` 的 `extra.map_version` 中设置当前基准版本：
+
+```yaml
+extra:
+  map_version: "2.3 忘川"
+```
+
+所有页面默认继承此值，显示于页脚右侧（地图图钉图标旁）。
+
+### 单文件版本覆盖
+
+若某页面内容对应更新的地图版本，在文件开头添加 YAML front matter：
+
+```yaml
+---
+map_version: "2.41 测试版"
+---
+```
+
+**当前已标注非默认版本的文件**（内容基于 2.41 测试版）：
+
+| 文件 | map_version |
+|------|-------------|
+| `docs/heroes/克萝伊_莉莉丝忒拉.md` | `2.41 测试版` |
+| `docs/heroes/雷电_忘川守_芽衣_刺客.md` | `2.41 测试版` |
+| `docs/heroes/魅影十字军.md` | `2.41 测试版` |
+| `docs/info/楼层信息.md` | `2.41 测试版` |
+
+### 地图版本升级时的操作清单
+
+当 Wiki 整体升级到新版本（如 2.5）时：
+
+1. 修改 `mkdocs.yml` 中的 `extra.map_version` 为新版本字符串
+2. 对**尚未更新内容**的页面，无需操作（会显示旧的全局默认值直到内容更新）
+3. 对**已按新版本更新内容**的页面，添加对应 `map_version` front matter
+4. 若所有页面内容已全部升级完毕，可删除各文件中的 front matter（统一由全局默认值覆盖）
+
+---
+
 ## 贡献说明
 
 - 英雄/物品页面请参考 `docs_template/` 下对应模板

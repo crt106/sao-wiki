@@ -30,6 +30,8 @@ jobs:
           pip install mkdocs-material \
                       mkdocs-awesome-pages-plugin \
                       mkdocs-glightbox \
+                      mkdocs-git-revision-date-localized-plugin \
+                      mkdocs-git-authors-plugin \
                       jieba
 
       - name: Deploy to GitHub Pages

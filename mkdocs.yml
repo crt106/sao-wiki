@@ -65,6 +65,17 @@ plugins:
       separator: '[\s\u200b\-,，。；：、（）()\[\]「」『』《》<>!！?？/\\|]+|(?<=[\u4e00-\u9fff])(?=[A-Za-z0-9])|(?<=[A-Za-z0-9])(?=[\u4e00-\u9fff])'
   - awesome-pages
   - glightbox
+  - git-revision-date-localized:
+      enabled: !ENV [MKDOCS_ENABLE_GIT_META, true]
+      enable_creation_date: false
+      type: date
+      locale: zh
+      fallback_to_build_date: true
+  - git-authors:
+      enabled: !ENV [MKDOCS_ENABLE_GIT_META, true]
+      show_email_address: false
+      enabled_on_serve: false
+      strict: false
   - blog:
       blog_dir: changelogs
       blog_toc: true
@@ -101,6 +112,9 @@ markdown_extensions:
       permalink: true
       permalink_title: 复制链接
       title: 本页目录
+
+extra:
+  map_version: "2.3 忘川"
 
 hooks:
   - hooks/jieba_search.py
