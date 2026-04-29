@@ -172,10 +172,17 @@ YDWEUnitHasItemOfTypeBJNull(GetTriggerUnit(), 'IYYY') == true
 | 位置 | 行号 | 说明 |
 |------|------|------|
 | `hero_ability_init` | **365197** | 英雄技能绑定总表（最常用） |
-| `item_cx_add` 批量 | ~364xxx | 物品自定义被动效果注册 |
-| `item_hc_init` | **365138** | 普通物品合成公式 |
-| `item_xynum_init` | **365154** | 带数量合成（食物系统） |
-| Boss 掉落集中区 | ~420000 | Boss 死亡掉落逻辑 |
+| `item_cx_add` 函数定义 | **364002** | 物品查询添加函数签名 |
+| `item_cx_init` | **364524** | 物品被动技能注册总表（约200条 `item_cx_add` 调用） |
+| `item_hc_init` | **365138** | 普通物品合成公式（`item_hc_add` 调用） |
+| `item_xynum_init` | **365154** | 带数量合成（食物系统，`item_xynum_add` 调用） |
+| `item_ability_xx_init` | **365165** | 吸血/生命恢复类技能注册（`item_ability_xx_add` 调用） |
+| Boss 掉落集中区 | ~420000 | Boss 死亡掉落逻辑（`boss_item_dl` / `CreateItem`） |
+| 扭蛋机触发器 ND_a | **370487** | 扭蛋机A（使用 `ChooseRandomItemExBJ(level)` 按物品等级出货） |
+| 扭蛋机触发器 nd_b | **370530** | 扭蛋机B（同上机制） |
+| 物品升级链触发区 | ~387860 | 提升系列武器升级逻辑（`UnitAddItemTisheng` / `RemoveItem+AddItem`） |
+| 特殊赠送触发区 | ~369500-370700 | 特殊物品赠送（`UnitAddItemByIdSwapped`） |
+| 特殊掉落触发区 | ~423690 | 高阶特殊物品掉落 |
 | 时崎狂三技能注册 | ~395818 | `UnitAddAbility` 方式（非标准链）|
 | 王珏实例掉落 | 420569 | `gg_unit_n02B_0589` 死亡触发 |
 | 王珏类型掉落 | 420851 | 所有 `n02B` 类型触发 |
@@ -206,10 +213,108 @@ YDWEUnitHasItemOfTypeBJNull(GetTriggerUnit(), 'IYYY') == true
 
 ---
 
+### 六-B、物品调研标准流程
+
+> 以下方法论来自武器类物品全量核查（150个）的实战经验，适用于所有物品类别。
+
+#### 总体原则
+
+1. **先建索引，再逐项核查**：不要逐个 grep 物品ID，而是先批量读取关键初始化函数（`item_cx_init`、`item_hc_init`、`item_ability_xx_init`），建立全局索引表，再按索引逐项核查。
+2. **获取途径必须有触发器证据**：仅凭 item.ini 的 `goldcost` 或 `Level` 字段不能确定获取途径，必须在 war3map.j 中找到 `CreateItem`、`UnitAddItemByIdSwapped`、`boss_item_dl`、`AddItemToStock` 或 `ChooseRandomItemExBJ` 等实际创建/发放调用。
+3. **无触发器引用 = 疑似无法获取**：如果一个物品ID在 war3map.j 中完全没有引用（除了 `item_cx_add` 技能注册外），应标记为"触发器无关联逻辑，当前版本无法获取"。
+
+#### 步骤 1：建立物品ID清单
+
+```powershell
+# 从文件名提取物品ID（以武器为例）
+Get-ChildItem "docs\items\武器\*.md" | Where-Object { $_.Name -ne "index.md" } |
+  ForEach-Object { ($_.BaseName -split '_')[0] } | Sort-Object
+```
+
+#### 步骤 2：批量索引关键初始化函数
+
+**2a. 技能效果索引（item_cx_init，约364524行）**
+
+读取 `item_cx_init` 函数（每次 limit≤150），提取所有 `item_cx_add` 调用。参数格式：
+```jass
+call item_cx_add('物品ID', 0, 技能数量, "技能1名", "技能1效果", "技能2名", "技能2效果", ...)
+// 第1参数：物品ID（4字符）或 0（通用技能定义）
+// 第3参数：技能数量（1-4）
+// 后续参数：成对的 技能名+效果描述
+```
+
+> ⚠️ 当第1参数为 `0` 时，该行定义的是通用技能（如"生命恢复Lv1"），不绑定特定物品。当第1参数为物品ID时，该行定义的是该物品的专属被动效果。
+
+**2b. 吸血/生命恢复索引（item_ability_xx_init，约365165行）**
+
+```jass
+call item_ability_xx_add('物品ID', 吸血比例, 特效路径, 绑定点)
+// 吸血比例：0.1=10%, 0.25=25%, 0.35=35%, 0.44=44%
+```
+
+**2c. 合成公式索引（item_hc_init，约365138行）**
+
+```jass
+call item_hc_add('结果ID', 材料数量, '材料1ID', '材料2ID', ...)
+```
+
+**2d. 带数量合成索引（item_xynum_init，约365154行）**
+
+```jass
+call item_xynum_add('结果ID', 材料种类数, '材料1ID', 数量1, '材料2ID', 数量2, ...)
+```
+
+#### 步骤 3：索引获取途径
+
+按以下优先级逐一排查：
+
+| 获取途径 | 搜索方法 | 关键特征 |
+|---------|---------|---------|
+| **扭蛋机** | 查 item.ini 中 `Level=201-205`（扭蛋机A）或 `211-215`（扭蛋机B） | `ChooseRandomItemExBJ(level)` 按等级随机出货 |
+| **Boss掉落** | grep `'物品ID'` 在 420000+ 行区域 | `CreateItem` 或 `boss_item_dl` 调用 |
+| **商店售卖** | 查 item.ini 中 `goldcost>0` 且 `Level` 为商店层级 | `AddItemToStockBJ` 或直接商店配置 |
+| **合成产物** | 查 `item_hc_init` / `item_xynum_init` | `item_hc_add` / `item_xynum_add` |
+| **升级链** | grep `'物品ID'` 在 387xxx 行区域 | `RemoveItem` + `UnitAddItemByIdSwapped` 模式 |
+| **特殊赠送** | grep `'物品ID'` 在 369xxx-375xxx 行区域 | `UnitAddItemByIdSwapped` 调用 |
+| **随机掉落池** | grep `RandomDistAddItem.*'物品ID'` | `RandomDistAddItem('物品ID', 权重)` |
+| **地图放置** | grep `CreateItem.*'物品ID'` 在非Boss区域 | 固定坐标的 `CreateItem` |
+
+#### 步骤 4：批量状态检查
+
+用脚本批量检查 md 文件的当前状态，识别需要更新的文件：
+
+```powershell
+# 检查哪些文件的获取途径写"未知"
+foreach ($id in $ids) {
+  $files = Get-ChildItem "docs\items\武器\$id*.md"
+  $content = Get-Content $files[0].FullName -Raw -Encoding UTF8
+  if ($content -match "未知") { Write-Output "$id NEEDS_UPDATE" }
+}
+```
+
+#### 步骤 5：更新 md 文件
+
+- **有 BOM 的文件**（字节头 `EF BB BF`）：使用 `create` 命令重写整个文件（`strReplace` 可能因 BOM 匹配失败）
+- **技能效果**：优先使用 `item_cx_add` 中的描述文字，它是游戏内 `-cxitem` 命令显示的内容
+- **吸血类技能**：同时标注 `item_cx_add` 描述和 `item_ability_xx_init` 的实际比例值
+- **获取途径链接化**：合成材料和升级产物应使用相对路径 markdown 链接
+
+#### 关键经验教训
+
+1. **扭蛋机判定靠 Level 字段，不靠 stockStart**：item.ini 中 `Level=201-205` 的物品在扭蛋机A出货池中。`stockStart=9999999` 只表示不在商店上架，不代表无法获取。
+2. **Level=0 且无触发器引用 ≠ 扭蛋机**：之前有物品被错标为"扭蛋机2★出货"，实际 Level=0 不在任何出货池中。
+3. **item_cx_add 第1参数为 0 vs 物品ID 的区别**：参数为 0 的行定义通用技能字典（如"生命恢复Lv1"对应能力ID `A0XL`）；参数为物品ID的行定义该物品的专属被动效果。
+4. **升级链武器的获取途径**：提升系列武器（如"食刃·提升◆"）的获取途径是"由前一阶升级获得"，不需要独立的掉落/购买来源。
+5. **批量处理优于逐个处理**：先用脚本批量扫描所有文件状态，识别出需要更新的子集，再集中处理，效率远高于逐个打开检查。
+
+---
+
 ### 七、调研进度追踪
 
 - 英雄调研进度详见 `dev/hero_task.md`（含已完成/待完成清单）
-- 物品调研进度详见 `dev/item_wiki_task.md`（A/B/C/D 四类待补全）
+- 物品调研进度详见 `dev/item_wiki_task.md`
+  - 武器类：150/150 全量核查完毕（2026-04-29）
+  - 其他类别（装甲、副武器、头部道具、装备道具、素材、消耗物品、特殊、不归类）：待发起
 - 探索笔记（合成公式、专属武器、Boss掉落）见 `dev/探索笔记.md`
 
 ---
