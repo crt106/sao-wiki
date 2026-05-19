@@ -102,3 +102,9 @@ body, .md-typeset {
   position: relative !important;
   top: 0.12em !important;
 }
+
+/* ── 英雄演出系统 (Hero Showtime) ──
+   公共样式见  stylesheets/heroes/_showtime.css
+   单英雄主题见 stylesheets/heroes/<hero-id>.css
+   引擎实现见   javascripts/hero-showtime.js
+*/

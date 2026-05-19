@@ -58,6 +58,14 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  # ── Hero Showtime ── 演出引擎公共样式 + 各英雄主题
+  - stylesheets/heroes/_showtime.css
+  - stylesheets/heroes/remilia.css
+  - stylesheets/heroes/raiden.css
+
+extra_javascript:
+  - javascripts/hero-showtime.js
+  - javascripts/hero-raiden.js
 
 plugins:
   - search:

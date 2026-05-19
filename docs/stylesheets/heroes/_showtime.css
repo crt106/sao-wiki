@@ -1,0 +1,313 @@
+/* ════════════════════════════════════════════════════════════════════
+   Hero Showtime · 公共样式
+   ─────────────────────────────────────────────────────────────────────
+   触发：body.hero-active + meta[name="hero-id"]
+   层级：
+     .hero-bg       z-index: -3   背景图（状态驱动）
+     .hero-vignette z-index: -2   暗角
+     .hero-warmup   z-index: -1   预热幕布
+     .hero-petals   z-index: 1    持续粒子（如花瓣）
+     .hero-stage    z-index: 9999 一次性入场粒子 + 爆裂
+
+   单英雄差异通过 body[data-hero-id="xxx"] / [data-hero-theme="xxx"]
+   覆盖 CSS 变量与具体颜色（见 heroes/<id>.css）。
+   ════════════════════════════════════════════════════════════════════ */
+
+/* CSS 变量：单英雄主题可通过 body[data-hero-id] 覆盖 */
+body.hero-active {
+  --hero-accent:        #ff4d6d;
+  --hero-accent-deep:   #b3001b;
+  --hero-accent-glow:   rgba(255, 80, 110, 0.85);
+  --hero-content-bg:    rgba(12, 6, 14, 0.55);
+  --hero-content-bg-light: rgba(255, 245, 248, 0.78);
+  --hero-content-ring:  rgba(220, 38, 80, 0.18);
+  --hero-content-shadow:rgba(120, 0, 30, 0.35);
+  --hero-fallback-bg:   radial-gradient(ellipse at center, #2a0410 0%, #15030a 50%, #07020a 100%);
+  --hero-warmup-bg:     radial-gradient(ellipse at center, rgba(20, 5, 12, 0.7) 0%, rgba(8, 2, 6, 0.95) 70%, #05010a 100%);
+  --hero-vignette-bg:   radial-gradient(ellipse at center, transparent 38%, rgba(20, 0, 8, 0.55) 75%, rgba(8, 0, 4, 0.92) 100%),
+                         linear-gradient(180deg, rgba(30, 0, 12, 0.55) 0%, rgba(10, 0, 6, 0.25) 35%, rgba(10, 0, 6, 0) 60%, rgba(10, 0, 6, 0.4) 100%);
+  --hero-vignette-bg-light: radial-gradient(ellipse at center, transparent 45%, rgba(80, 60, 90, 0.18) 80%, rgba(40, 20, 60, 0.45) 100%);
+}
+
+/* 内容容器：保留可读性 */
+body.hero-active .md-main__inner,
+body.hero-active .md-content {
+  position: relative;
+  z-index: 2;
+}
+body.hero-active .md-content__inner {
+  background: var(--hero-content-bg);
+  backdrop-filter: blur(6px) saturate(120%);
+  -webkit-backdrop-filter: blur(6px) saturate(120%);
+  border-radius: 12px;
+  padding: 1.4rem 1.6rem 2rem;
+  box-shadow:
+    0 0 0 1px var(--hero-content-ring),
+    0 12px 40px var(--hero-content-shadow);
+}
+body.hero-active[data-md-color-scheme="default"] .md-content__inner {
+  background: var(--hero-content-bg-light);
+}
+body.hero-active .md-typeset h1,
+body.hero-active .md-typeset h2 {
+  color: var(--md-typeset-color);
+  text-shadow: 0 0 18px var(--hero-accent-glow);
+}
+
+/* ── 两侧侧边栏：背景图过于复杂，需要拉回可读性 ──
+   给左侧导航 (.md-sidebar--primary) 与右侧本页目录 (.md-sidebar--secondary)
+   加半透明深色面板 + 文字阴影描边，让标题/链接在血色背景上仍清晰。
+*/
+body.hero-active .md-sidebar {
+  position: relative;
+  z-index: 3;
+}
+body.hero-active .md-sidebar .md-sidebar__scrollwrap {
+  background: rgba(12, 6, 14, 0.55);
+  backdrop-filter: blur(6px) saturate(120%);
+  -webkit-backdrop-filter: blur(6px) saturate(120%);
+  border-radius: 10px;
+  box-shadow:
+    0 0 0 1px var(--hero-content-ring),
+    0 8px 24px var(--hero-content-shadow);
+  padding: 0.4rem 0.2rem;
+}
+body.hero-active[data-md-color-scheme="default"] .md-sidebar .md-sidebar__scrollwrap {
+  background: rgba(255, 245, 248, 0.82);
+}
+body.hero-active .md-nav__title,
+body.hero-active .md-nav__link {
+  color: var(--md-default-fg-color);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+body.hero-active[data-md-color-scheme="default"] .md-nav__title,
+body.hero-active[data-md-color-scheme="default"] .md-nav__link {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+body.hero-active .md-nav__link--active,
+body.hero-active .md-nav__link:hover {
+  color: var(--hero-accent);
+}
+
+/* ── 背景图层 ── */
+.hero-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(1.08);
+  filter: brightness(0.55) saturate(1.1) contrast(1.05);
+}
+.hero-bg--ready {
+  animation:
+    heroBgFadeIn 2.4s ease-out forwards,
+    heroBgBreath 18s ease-in-out 2.4s infinite;
+}
+.hero-bg--fallback {
+  background: var(--hero-fallback-bg);
+  animation: heroBgFadeIn 1.4s ease-out forwards;
+}
+@keyframes heroBgFadeIn {
+  0%   { opacity: 0; transform: scale(1.12); filter: brightness(0.25) saturate(1.4) blur(8px); }
+  60%  { opacity: 0.85; filter: brightness(0.6) saturate(1.2) blur(0); }
+  100% { opacity: 1; transform: scale(1.04); filter: brightness(0.55) saturate(1.1) contrast(1.05); }
+}
+@keyframes heroBgBreath {
+  0%, 100% { transform: scale(1.04); }
+  50%      { transform: scale(1.07); }
+}
+
+/* ── 预热幕布 ── */
+.hero-warmup {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--hero-warmup-bg);
+  opacity: 0;
+  animation: heroWarmupIn 0.35s ease-out forwards;
+}
+.hero-warmup--out { animation: heroWarmupOut 0.55s ease-in forwards; }
+@keyframes heroWarmupIn  { from { opacity: 0; } to { opacity: 1; } }
+@keyframes heroWarmupOut { from { opacity: 1; } to { opacity: 0; } }
+
+/* ── 暗角层 ── */
+.hero-vignette {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: var(--hero-vignette-bg);
+  opacity: 0;
+  animation: heroVigFade 1.8s ease-out 0.2s forwards;
+}
+[data-md-color-scheme="default"] .hero-vignette {
+  background: var(--hero-vignette-bg-light);
+}
+@keyframes heroVigFade { to { opacity: 1; } }
+
+/* ── 演出舞台 ── */
+.hero-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  overflow: hidden;
+  transition: opacity 0.7s ease;
+}
+.hero-stage--fade { opacity: 0; }
+
+/* ── 默认入场粒子（红枪） ──
+   单英雄可通过 body[data-hero-id="xxx"] .hero-spear { background: ... }
+   覆盖颜色，或在 JS 中提供自定义 particleSpawner 替换为别的形状。
+*/
+.hero-spear {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 240px;
+  height: 4px;
+  margin-left: -120px;
+  margin-top: -2px;
+  border-radius: 4px;
+  transform: translate(var(--sx), var(--sy)) rotate(var(--rot)) scaleX(0.6);
+  opacity: 0;
+  background: linear-gradient(90deg,
+    rgba(255, 220, 230, 0) 0%,
+    rgba(255, 220, 230, 0.7) 8%,
+    var(--hero-accent) 25%,
+    var(--hero-accent) 55%,
+    var(--hero-accent-deep) 90%,
+    rgba(0, 0, 0, 0) 100%);
+  box-shadow:
+    0 0 18px var(--hero-accent-glow),
+    0 0 36px var(--hero-accent-glow),
+    0 0 72px var(--hero-accent-glow);
+  animation: heroSpearFly 0.7s cubic-bezier(0.65, 0.02, 0.35, 1) forwards;
+  filter: drop-shadow(0 0 8px var(--hero-accent-glow));
+}
+.hero-spear::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -3px;
+  width: 80px;
+  height: 10px;
+  background: radial-gradient(ellipse at left, #fff 0%, #ffd1dc 25%, var(--hero-accent-glow) 60%, transparent 100%);
+  filter: blur(0.5px);
+}
+@keyframes heroSpearFly {
+  0%   { opacity: 0; transform: translate(var(--sx), var(--sy)) rotate(var(--rot)) scaleX(0.6); }
+  10%  { opacity: 1; }
+  85%  { opacity: 1; transform: translate(0, 0) rotate(var(--rot)) scaleX(1.6); }
+  100% { opacity: 0; transform: translate(0, 0) rotate(var(--rot)) scaleX(2.2); }
+}
+
+/* ── 爆裂闪光 ── */
+.hero-flash {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  margin: -16px 0 0 -16px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0%, #ffd1dc 20%, var(--hero-accent) 45%, var(--hero-accent-deep) 75%, transparent 100%);
+  opacity: 0;
+  transform: scale(0.2);
+  filter: blur(1px);
+}
+.hero-flash--burst { animation: heroFlashBurst 0.65s ease-out forwards; }
+@keyframes heroFlashBurst {
+  0%   { opacity: 0; transform: scale(0.2); filter: blur(2px); }
+  20%  { opacity: 1; transform: scale(8); filter: blur(0); }
+  100% { opacity: 0; transform: scale(60); filter: blur(8px); }
+}
+
+/* ── 冲击波 ── */
+.hero-shock {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border-radius: 50%;
+  border: 2px solid var(--hero-accent-glow);
+  box-shadow: 0 0 30px var(--hero-accent-glow), inset 0 0 30px var(--hero-accent-glow);
+  opacity: 0;
+  transform: scale(0.3);
+}
+.hero-shock--burst { animation: heroShockExpand 0.9s cubic-bezier(0.2, 0.7, 0.3, 1) forwards; }
+@keyframes heroShockExpand {
+  0%   { opacity: 0; transform: scale(0.3); border-width: 4px; }
+  10%  { opacity: 1; }
+  100% { opacity: 0; transform: scale(35); border-width: 0.5px; }
+}
+
+/* ── 屏幕震动 ── */
+body.hero-shake .md-container { animation: heroShake 0.55s cubic-bezier(.36,.07,.19,.97) both; }
+@keyframes heroShake {
+  10%, 90% { transform: translate(-1px, 0); }
+  20%, 80% { transform: translate(2px, -1px); }
+  30%, 50%, 70% { transform: translate(-4px, 1px); }
+  40%, 60% { transform: translate(4px, -1px); }
+}
+
+/* ── 持续粒子层（默认花瓣样式） ── */
+.hero-petals {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0;
+  animation: heroVigFade 2s ease-out 1.4s forwards;
+}
+.hero-petal {
+  position: absolute;
+  top: -6vh;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(ellipse at 30% 30%, #ff8fa3 0%, var(--hero-accent) 45%, var(--hero-accent-deep) 100%);
+  border-radius: 60% 20% 60% 20% / 40% 60% 40% 60%;
+  filter: drop-shadow(0 0 4px var(--hero-accent-glow));
+  transform: scale(var(--scale, 1));
+  animation: heroPetalFall linear infinite;
+  will-change: transform, opacity;
+}
+@keyframes heroPetalFall {
+  0%   { transform: translate(0, -6vh) rotate(0deg) scale(var(--scale, 1)); }
+  100% { transform: translate(var(--drift, 0), 110vh) rotate(720deg) scale(var(--scale, 1)); }
+}
+
+/* ── 内容浮入 ── */
+body.hero-active .md-content__inner > * {
+  animation: heroContentRise 0.8s ease-out backwards;
+}
+body.hero-active .md-content__inner > *:nth-child(1) { animation-delay: 1.5s; }
+body.hero-active .md-content__inner > *:nth-child(2) { animation-delay: 1.6s; }
+body.hero-active .md-content__inner > *:nth-child(3) { animation-delay: 1.7s; }
+body.hero-active .md-content__inner > *:nth-child(4) { animation-delay: 1.8s; }
+body.hero-active .md-content__inner > *:nth-child(n+5) { animation-delay: 1.9s; }
+@keyframes heroContentRise {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── 无障碍降级 ── */
+@media (prefers-reduced-motion: reduce) {
+  .hero-spear, .hero-flash, .hero-shock, .hero-petal,
+  .hero-bg, .hero-bg--ready, .hero-bg--fallback,
+  .hero-vignette, .hero-warmup,
+  body.hero-active .md-content__inner > * {
+    animation: none !important;
+  }
+  .hero-bg, .hero-bg--ready, .hero-bg--fallback { opacity: 1; transform: none; filter: brightness(0.55); }
+  .hero-vignette { opacity: 1; }
+  .hero-warmup { opacity: 0; }
+}

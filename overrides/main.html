@@ -1,5 +1,28 @@
 {% extends "base.html" %}
 
+{# ═══════════════════════════════════════════════════════════════════
+   把 front matter 的 hero_id / hero_banner / hero_theme 作为 meta
+   暴露给 docs/javascripts/hero-showtime.js 读取。
+   - hero_banner 经过 url 过滤器，自动处理 site_url 前缀（兼容 GitHub Pages 子目录部署）
+   - <link rel="preload" as="image"> 让浏览器在 HTML 解析阶段就开始下载，
+     远早于 JS 执行，使图通常能命中缓存瞬时就绪。
+   演出引擎本身的实现 / 单英雄主题样式分别在：
+     - docs/javascripts/hero-showtime.js
+     - docs/stylesheets/heroes/_showtime.css        （公共）
+     - docs/stylesheets/heroes/<hero-id>.css        （单英雄定制）
+   ═══════════════════════════════════════════════════════════════════ #}
+{% block extrahead %}
+  {{ super() }}
+  {% if page and page.meta and page.meta.hero_id %}
+    <meta name="hero-id" content="{{ page.meta.hero_id }}">
+    <meta name="hero-banner" content="{{ (page.meta.hero_banner | default('')) | url }}">
+    <meta name="hero-theme" content="{{ page.meta.hero_theme | default('') }}">
+    {% if page.meta.hero_banner %}
+      <link rel="preload" as="image" href="{{ page.meta.hero_banner | url }}" fetchpriority="high">
+    {% endif %}
+  {% endif %}
+{% endblock %}
+
 {% block scripts %}
   {{ super() }}
 
@@ -15,7 +38,6 @@
      * Vercount 脚本，使其读取新 URL 并更新计数。
      */
     document$.subscribe(function () {
-      // 将计数条插入 .md-footer 内部（仅首次，避免重复追加）
       var footer = document.querySelector('.md-footer');
       if (footer && !footer.querySelector('.vercount-bar')) {
         var bar = document.createElement('div');
@@ -34,7 +56,6 @@
         footer.appendChild(bar);
       }
 
-      // 重新注入 Vercount 脚本，触发对当前页 URL 的计数更新
       var old = document.querySelector('script[src*="vercount.one"]');
       if (old) old.remove();
       var s = document.createElement('script');
