@@ -34,7 +34,7 @@
 
     整理楼层流程、区域入口、怪物与关键机制。
 
-    [:octicons-arrow-right-24: 查看楼层信息](info/楼层信息.md)
+    [:octicons-arrow-right-24: 查看楼层信息](info/楼层/index.md)
 
 -   :material-pot-steam:{ .lg .middle } **料理任务**
 

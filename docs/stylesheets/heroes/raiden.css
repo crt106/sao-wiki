@@ -1,0 +1,138 @@
+/* ════════════════════════════════════════════════════════════════════
+   雷电·忘川守·芽衣 · 主题专属
+   ─────────────────────────────────────────────────────────────────────
+   触发：body[data-hero-id="raiden"] / body[data-hero-theme="abyss-purple"]
+   暗紫色调 + Canvas 刀斩碎屏进场演出
+   ════════════════════════════════════════════════════════════════════ */
+
+body[data-hero-theme="abyss-purple"] {
+  --hero-accent:        #b388ff;
+  --hero-accent-deep:   #4a148c;
+  --hero-accent-glow:   rgba(179, 136, 255, 0.85);
+  --hero-content-bg:    rgba(10, 4, 22, 0.65);
+  --hero-content-bg-light: rgba(245, 240, 255, 0.82);
+  --hero-content-ring:  rgba(149, 117, 205, 0.22);
+  --hero-content-shadow:rgba(74, 20, 140, 0.45);
+  --hero-fallback-bg:   radial-gradient(ellipse at center, #1a0533 0%, #0d0118 50%, #050008 100%);
+  --hero-warmup-bg:     radial-gradient(ellipse at center, rgba(26, 5, 51, 0.75) 0%, rgba(8, 2, 18, 0.96) 70%, #030006 100%);
+  --hero-vignette-bg:   radial-gradient(ellipse at center, transparent 35%, rgba(20, 0, 45, 0.5) 70%, rgba(8, 0, 20, 0.92) 100%),
+                         linear-gradient(180deg, rgba(30, 0, 55, 0.5) 0%, rgba(10, 0, 22, 0.2) 35%, transparent 60%, rgba(10, 0, 22, 0.4) 100%);
+  --hero-vignette-bg-light: radial-gradient(ellipse at center, transparent 45%, rgba(100, 60, 150, 0.18) 80%, rgba(50, 20, 80, 0.4) 100%);
+}
+
+/* ── 标题渐变 ── */
+body.hero-active[data-hero-theme="abyss-purple"] .md-typeset h1 {
+  background: linear-gradient(90deg, #e1bee7 0%, #ce93d8 25%, #b388ff 50%, #7c4dff 75%, #4a148c 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+  animation: raidenTitleShimmer 4s ease-in-out infinite;
+}
+
+@keyframes raidenTitleShimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+body.hero-active[data-hero-theme="abyss-purple"] .md-typeset h2 {
+  text-shadow: 0 0 12px rgba(149, 117, 205, 0.5), 0 0 24px rgba(74, 20, 140, 0.3);
+}
+
+/* ── Canvas 演出层 ── */
+.raiden-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.8s ease-out;
+}
+.raiden-canvas--fade {
+  opacity: 0;
+}
+
+/* ── 碎屏碎片（由 JS 动态生成） ── */
+.raiden-shard {
+  position: fixed;
+  z-index: 10001;
+  pointer-events: none;
+  /* 玻璃质感 */
+  background: linear-gradient(
+    var(--shard-angle, 135deg),
+    rgba(179, 136, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.12) 30%,
+    rgba(124, 77, 255, 0.08) 60%,
+    rgba(74, 20, 140, 0.04) 100%
+  );
+  border: 1px solid rgba(179, 136, 255, 0.35);
+  box-shadow:
+    inset 0 0 20px rgba(179, 136, 255, 0.1),
+    0 0 8px rgba(179, 136, 255, 0.3);
+  backdrop-filter: blur(1px) brightness(1.1);
+  -webkit-backdrop-filter: blur(1px) brightness(1.1);
+  clip-path: polygon(var(--clip));
+  will-change: transform, opacity;
+  animation: raidenShardFly var(--dur) cubic-bezier(0.16, 1, 0.3, 1) var(--delay) forwards;
+}
+
+@keyframes raidenShardFly {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  30% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(0.3);
+  }
+}
+
+/* ── 全屏闪光 ── */
+.raiden-whiteout {
+  position: fixed;
+  inset: 0;
+  z-index: 10002;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 40% 60%,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(206, 147, 216, 0.5) 30%,
+    rgba(74, 20, 140, 0.2) 60%,
+    transparent 85%);
+  opacity: 0;
+  animation: raidenWhiteout 0.7s ease-out forwards;
+}
+
+@keyframes raidenWhiteout {
+  0%   { opacity: 0; transform: scale(0.8); }
+  15%  { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.2); }
+}
+
+/* ── 花瓣：紫色樱花 ── */
+body[data-hero-id="raiden"] .hero-petal {
+  background: radial-gradient(ellipse at 30% 30%,
+    #e1bee7 0%,
+    #ce93d8 30%,
+    #b388ff 60%,
+    #4a148c 100%);
+  filter: drop-shadow(0 0 3px rgba(179, 136, 255, 0.6));
+}
+
+/* ── 隐藏默认粒子 ── */
+body[data-hero-id="raiden"] .hero-spear {
+  display: none;
+}
+
+/* ── 无障碍降级 ── */
+@media (prefers-reduced-motion: reduce) {
+  .raiden-canvas,
+  .raiden-shard,
+  .raiden-whiteout {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+}
