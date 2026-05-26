@@ -1,5 +1,5 @@
 nav:
-  - index.md
+  - "首页": index.md
   - heroes
   - items
   - info
