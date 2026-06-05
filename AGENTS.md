@@ -210,6 +210,7 @@ YDWEUnitHasItemOfTypeBJNull(GetTriggerUnit(), 'IYYY') == true
 3. **实例 vs 类型**：`gg_unit_Nsjs_0707` 是地图上特定实例，其**类型 ID** 是 `Nsjs`。两者用途不同。
 4. **同名技能复用**：不同英雄可能共享同一 ability ID（如「疯狂幻想」），需交叉比对确认。
 5. **触发器有多个入口**：同一技能的即时效果和 timer 延迟效果在不同函数里（如 `tina_R` 和 `tina_R_time`）。
+6. **临时排查脚本清理原则**：在调研和数据查验过程中生成的临时测试、排查代码（如单次排查用的 Python 或 PowerShell 脚本），在验证完毕后必须立即删除，严禁在项目中长期保留。仅保留具有长期复用价值的维护工具（统一存放于 `scripts/` 目录下）。
 
 ---
 

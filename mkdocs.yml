@@ -62,10 +62,12 @@ extra_css:
   - stylesheets/heroes/_showtime.css
   - stylesheets/heroes/remilia.css
   - stylesheets/heroes/raiden.css
+  - stylesheets/heroes/amis.css
 
 extra_javascript:
   - javascripts/hero-showtime.js
   - javascripts/hero-raiden.js
+  - javascripts/hero-amis.js
 
 plugins:
   - search:

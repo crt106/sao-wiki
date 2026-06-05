@@ -17,6 +17,10 @@
     <meta name="hero-id" content="{{ page.meta.hero_id }}">
     <meta name="hero-banner" content="{{ (page.meta.hero_banner | default('')) | url }}">
     <meta name="hero-theme" content="{{ page.meta.hero_theme | default('') }}">
+    {% if page.meta.hero_intro %}
+      <meta name="hero-intro" content="{{ page.meta.hero_intro | url }}">
+      <link rel="preload" as="image" href="{{ page.meta.hero_intro | url }}" fetchpriority="high">
+    {% endif %}
     {% if page.meta.hero_banner %}
       <link rel="preload" as="image" href="{{ page.meta.hero_banner | url }}" fetchpriority="high">
     {% endif %}
