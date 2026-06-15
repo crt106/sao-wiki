@@ -1,13 +1,17 @@
 /* ════════════════════════════════════════════════════════════════════
-   雷电·忘川守·芽衣 · 主题专属
+   雷电·忘川守·芽衣（黄泉） · 主题专属
    ─────────────────────────────────────────────────────────────────────
    触发：body[data-hero-id="raiden"] / body[data-hero-theme="abyss-purple"]
-   暗紫色调 + Canvas 刀斩碎屏进场演出
+   暗紫主题 +「黄泉一刀」进场演出：
+   居合斩劈碎真实 UI → 裂隙赤雷 → 碎片爆散 → 黑洞吞噬 → banner 揭示
+   演出编排在 docs/javascripts/hero-raiden.js
    ════════════════════════════════════════════════════════════════════ */
 
 body[data-hero-theme="abyss-purple"] {
   --hero-accent:        #b388ff;
+  --hero-accent-2:      #ff2a4d;   /* 黄泉赤红雷光 */
   --hero-accent-deep:   #4a148c;
+  --hero-title-grad:    linear-gradient(180deg, #f5eeff 0%, #e1bee7 28%, #b388ff 60%, #4a148c 100%);
   --hero-accent-glow:   rgba(179, 136, 255, 0.85);
   --hero-content-bg:    rgba(10, 4, 22, 0.65);
   --hero-content-bg-light: rgba(245, 240, 255, 0.82);
@@ -40,76 +44,244 @@ body.hero-active[data-hero-theme="abyss-purple"] .md-typeset h2 {
   text-shadow: 0 0 12px rgba(149, 117, 205, 0.5), 0 0 24px rgba(74, 20, 140, 0.3);
 }
 
-/* ── Canvas 演出层 ── */
-.raiden-canvas {
-  position: fixed;
-  inset: 0;
-  z-index: 10000;
-  pointer-events: none;
-  opacity: 1;
-  transition: opacity 0.8s ease-out;
-}
-.raiden-canvas--fade {
-  opacity: 0;
+/* ════════════════════════════════════════════════════════════════════
+   「黄泉一刀」演出图层（全部位于 .hero-stage 内，z 值为舞台内层级）
+   1 blackout/void  4 hole  5 halves  6 canvas  7 shards/implosion
+   ════════════════════════════════════════════════════════════════════ */
+
+/* UI 接管：劈碎后隐藏 body 下除演出图层外的一切（含动态挂载的节点）。
+   用 opacity 而非 visibility：Material 会对激活的导航子分组显式设置
+   visibility: visible，子元素可穿透父级 hidden；opacity 按乘积继承无法穿透 */
+body.yomi-takeover > :not(.hero-bg):not(.hero-vignette):not(.hero-petals):not(.hero-stage):not(.hero-letterbox):not(.hero-titlecard):not(.hero-warmup):not(script):not(style):not(link) {
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
-/* ── 碎屏碎片（由 JS 动态生成） ── */
-.raiden-shard {
-  position: fixed;
-  z-index: 10001;
+/* 居合预备：画面渐暗 */
+.yomi-dim {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: radial-gradient(circle at 50% 46%, rgba(40, 0, 14, 0.42) 0%, rgba(5, 0, 10, 0.58) 100%);
+  opacity: 0;
+  transition: opacity 0.38s ease;
+}
+.yomi-dim--in { opacity: 1; }
+.yomi-dim--off { opacity: 0; transition: opacity 0.45s ease; }
+
+/* 虚空垫底：纯黑 */
+.yomi-blackout {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: #040108;
+  transition: opacity 0.5s ease;
+}
+.yomi-blackout--off { opacity: 0; }
+
+/* 虚空纹理：黄泉的红紫色深渊，可被黑洞吸入扭曲 */
+.yomi-void {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse at 50% 46%, rgba(120, 6, 36, 0.5) 0%, transparent 42%),
+    conic-gradient(from 220deg at 50% 46%,
+      rgba(74, 20, 140, 0.32) 0deg,
+      rgba(20, 0, 30, 0.1) 90deg,
+      rgba(255, 42, 77, 0.2) 170deg,
+      rgba(20, 0, 30, 0.12) 260deg,
+      rgba(74, 20, 140, 0.32) 360deg),
+    #07020e;
+  transform-origin: 50% 46%;
+  transition: transform 0.85s cubic-bezier(0.55, 0, 1, 0.55), opacity 0.85s ease-in;
+}
+.yomi-void--suck {
+  transform: scale(0.04) rotate(56deg);
+  opacity: 0.15;
+}
+
+/* 被劈开的两半真实 UI（DOM 克隆 + clip-path） */
+.yomi-half {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  overflow: hidden;
+  background: var(--md-default-bg-color);
+  will-change: transform, opacity;
+  transition: transform 0.95s cubic-bezier(0.32, 0, 0.67, 1);
+}
+.yomi-half__inner {
+  position: absolute;
+  inset: 0;
+}
+/* 切口发光描边：沿裂隙的赤红余温 */
+.yomi-half::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   pointer-events: none;
-  /* 玻璃质感 */
+  box-shadow: inset 0 0 60px rgba(255, 42, 77, 0.16);
+}
+.yomi-half--drift-top    { transform: translate(-26px, -38px) rotate(-1.2deg); }
+.yomi-half--drift-bottom { transform: translate(26px, 38px) rotate(1.2deg); }
+
+/* ── 蛛网状真实 UI 碎块（clip-path 多边形 + 整页克隆，由 JS 生成几何） ──
+   预构建时隐藏且动画暂停；--go 后从漂移末态姿态放射飞散 */
+.yomi-frag {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  overflow: hidden;
+  background: var(--md-default-bg-color);
+  visibility: hidden;
+  will-change: transform, opacity;
+  animation: yomiFragFly var(--fdur, 0.8s) cubic-bezier(0.32, 0.04, 0.68, 0.45) var(--fdel, 0s) both paused;
+}
+.yomi-frag--go {
+  visibility: visible;
+  animation-play-state: running;
+}
+.yomi-frag--sm {
+  filter: drop-shadow(0 0 9px rgba(255, 42, 77, 0.5));
+}
+.yomi-frag__inner {
+  position: absolute;
+  inset: 0;
+}
+@keyframes yomiFragFly {
+  0% {
+    transform: translate(var(--f0x), var(--f0y)) rotate(var(--f0r));
+    opacity: 1;
+  }
+  55% { opacity: 0.92; }
+  100% {
+    transform: translate(var(--f1x), var(--f1y)) rotate(var(--f1r));
+    opacity: 0;
+  }
+}
+
+/* WebGL 黑洞层（引力透镜 shader；位于虚空之上、UI 两半之下） */
+.yomi-gl {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.yomi-gl--on { opacity: 1; }
+.yomi-gl--off { opacity: 0; transition: opacity 0.5s ease; }
+
+/* Canvas（刀光/雷光/火花/吸入流） */
+.yomi-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+}
+
+/* UI 残片 / 玻璃碎片 */
+.yomi-shard {
+  position: absolute;
+  z-index: 7;
+  pointer-events: none;
   background: linear-gradient(
     var(--shard-angle, 135deg),
-    rgba(179, 136, 255, 0.06) 0%,
-    rgba(255, 255, 255, 0.12) 30%,
-    rgba(124, 77, 255, 0.08) 60%,
-    rgba(74, 20, 140, 0.04) 100%
-  );
-  border: 1px solid rgba(179, 136, 255, 0.35);
+    rgba(255, 42, 77, 0.10) 0%,
+    rgba(255, 255, 255, 0.16) 28%,
+    rgba(179, 136, 255, 0.12) 58%,
+    rgba(74, 20, 140, 0.06) 100%);
+  border: 1px solid rgba(255, 100, 130, 0.4);
   box-shadow:
-    inset 0 0 20px rgba(179, 136, 255, 0.1),
-    0 0 8px rgba(179, 136, 255, 0.3);
-  backdrop-filter: blur(1px) brightness(1.1);
-  -webkit-backdrop-filter: blur(1px) brightness(1.1);
+    inset 0 0 18px rgba(179, 136, 255, 0.12),
+    0 0 10px rgba(255, 42, 77, 0.35);
   clip-path: polygon(var(--clip));
   will-change: transform, opacity;
-  animation: raidenShardFly var(--dur) cubic-bezier(0.16, 1, 0.3, 1) var(--delay) forwards;
+  animation: yomiShardFly var(--dur) cubic-bezier(0.16, 1, 0.3, 1) var(--delay) forwards;
 }
-
-@keyframes raidenShardFly {
+@keyframes yomiShardFly {
   0% {
     opacity: 1;
     transform: translate(0, 0) rotate(0deg) scale(1);
   }
-  30% {
-    opacity: 0.9;
-  }
+  35% { opacity: 0.95; }
   100% {
     opacity: 0;
-    transform: translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(0.3);
+    transform: translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(0.25);
   }
 }
 
-/* ── 全屏闪光 ── */
-.raiden-whiteout {
-  position: fixed;
-  inset: 0;
-  z-index: 10002;
-  pointer-events: none;
-  background: radial-gradient(ellipse at 40% 60%,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(206, 147, 216, 0.5) 30%,
-    rgba(74, 20, 140, 0.2) 60%,
-    transparent 85%);
-  opacity: 0;
-  animation: raidenWhiteout 0.7s ease-out forwards;
+/* 黑洞 */
+.yomi-hole {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 46vmin;
+  height: 46vmin;
+  z-index: 4;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.55s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+.yomi-hole--in { transform: translate(-50%, -50%) scale(1); }
+.yomi-hole--collapse {
+  transform: translate(-50%, -50%) scale(0.01);
+  transition: transform 0.22s cubic-bezier(0.6, 0, 1, 0.4);
+}
+.yomi-hole__core {
+  position: absolute;
+  inset: 18%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #000 0%, #000 58%, #190010 76%, transparent 100%);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.95);
+}
+.yomi-hole__disk {
+  position: absolute;
+  inset: -14%;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg,
+    transparent 0deg 24deg,
+    rgba(255, 42, 77, 0.85) 58deg,
+    rgba(124, 77, 255, 0.5) 92deg,
+    transparent 132deg,
+    rgba(255, 42, 77, 0.5) 198deg,
+    transparent 238deg,
+    rgba(179, 136, 255, 0.65) 300deg,
+    transparent 336deg);
+  -webkit-mask-image: radial-gradient(circle, transparent 33%, #000 42%, #000 60%, transparent 70%);
+  mask-image: radial-gradient(circle, transparent 33%, #000 42%, #000 60%, transparent 70%);
+  filter: blur(5px);
+  animation: yomiDiskSpin 0.8s linear infinite;
+}
+@keyframes yomiDiskSpin { to { transform: rotate(360deg); } }
+.yomi-hole__glow {
+  position: absolute;
+  inset: -34%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 42, 77, 0.30) 30%, rgba(74, 20, 140, 0.22) 55%, transparent 75%);
+  animation: yomiGlowPulse 0.9s ease-in-out infinite alternate;
+}
+@keyframes yomiGlowPulse {
+  from { transform: scale(0.92); opacity: 0.75; }
+  to   { transform: scale(1.06); opacity: 1; }
 }
 
-@keyframes raidenWhiteout {
-  0%   { opacity: 0; transform: scale(0.8); }
-  15%  { opacity: 1; transform: scale(1); }
-  100% { opacity: 0; transform: scale(1.2); }
+/* 坍缩内爆闪光 */
+.yomi-implosion {
+  position: absolute;
+  inset: 0;
+  z-index: 7;
+  background: radial-gradient(circle at 50% 46%,
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(255, 160, 180, 0.75) 22%,
+    rgba(255, 42, 77, 0.4) 45%,
+    rgba(74, 20, 140, 0.18) 65%,
+    transparent 82%);
+  opacity: 0;
+  animation: yomiImplosion 0.6s ease-out forwards;
+}
+@keyframes yomiImplosion {
+  0%   { opacity: 0; transform: scale(0.3); }
+  22%  { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.45); }
 }
 
 /* ── 花瓣：紫色樱花 ── */
@@ -122,17 +294,12 @@ body[data-hero-id="raiden"] .hero-petal {
   filter: drop-shadow(0 0 3px rgba(179, 136, 255, 0.6));
 }
 
-/* ── 隐藏默认粒子 ── */
-body[data-hero-id="raiden"] .hero-spear {
-  display: none;
-}
-
 /* ── 无障碍降级 ── */
 @media (prefers-reduced-motion: reduce) {
-  .raiden-canvas,
-  .raiden-shard,
-  .raiden-whiteout {
+  .yomi-dim, .yomi-blackout, .yomi-void, .yomi-half, .yomi-frag, .yomi-canvas,
+  .yomi-gl, .yomi-shard, .yomi-hole, .yomi-implosion {
     animation: none !important;
+    transition: none !important;
     opacity: 0 !important;
   }
 }

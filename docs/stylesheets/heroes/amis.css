@@ -7,7 +7,9 @@
 
 body[data-hero-theme="pink-mecha"] {
   --hero-accent:        #ff7ac8;
+  --hero-accent-2:      #24d1dc;
   --hero-accent-deep:   #b91f7a;
+  --hero-title-grad:    linear-gradient(180deg, #fff 0%, #ffd6ec 32%, #ff7ac8 62%, #24d1dc 100%);
   --hero-accent-glow:   rgba(255, 122, 200, 0.86);
   --hero-content-bg:    rgba(14, 9, 22, 0.62);
   --hero-content-bg-light: rgba(255, 243, 250, 0.84);

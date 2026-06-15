@@ -8,7 +8,9 @@
 body[data-hero-theme="scarlet"] {
   /* 覆盖公共 CSS 变量：血色调更饱满 */
   --hero-accent:        #ff1744;
+  --hero-accent-2:      #ff8fa3;
   --hero-accent-deep:   #800f2f;
+  --hero-title-grad:    linear-gradient(180deg, #fff 0%, #ffccd5 30%, #ff1744 64%, #800f2f 100%);
   --hero-accent-glow:   rgba(255, 50, 90, 0.85);
   --hero-content-ring:  rgba(220, 38, 80, 0.25);
   --hero-content-shadow:rgba(120, 0, 30, 0.4);

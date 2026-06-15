@@ -21,6 +21,7 @@
   window.HeroShowtime.register('amis', {
     particleCount: 1,
     particleStaggerMs: 0,
+    titleDelayMs: 2600, // 抽卡 CG GIF 渐隐时再出标题卡
 
     particleSpawner: function (stage) {
       var introUrl = getIntroUrl();
