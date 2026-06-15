@@ -99,10 +99,12 @@ async function sha256(value) {
 }
 
 async function voterHash(request, env) {
-  const ip =
-    request.headers.get("cf-connecting-ip") ||
-    request.headers.get("x-forwarded-for") ||
-    "unknown";
+  const proxySecret = request.headers.get("x-sao-wiki-proxy-secret") || "";
+  const forwardedFor = request.headers.get("x-forwarded-for") || "";
+  const trustedProxy = env.PROXY_SECRET && proxySecret === env.PROXY_SECRET;
+  const ip = trustedProxy && forwardedFor
+    ? forwardedFor.split(",")[0].trim()
+    : (request.headers.get("cf-connecting-ip") || "unknown");
   const ua = request.headers.get("user-agent") || "unknown";
   const salt = env.VOTE_SALT || "dev-only-change-me";
   return sha256(`${ip}|${ua}|${salt}`);

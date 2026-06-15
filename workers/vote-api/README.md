@@ -35,6 +35,21 @@ Cloudflare Worker + D1 后端，用于 `docs/vote/index.md` 的英雄加强投�
    wrangler secret put VOTE_SALT
    ```
 
+   如果投票页通过自建服务器反代访问 Worker，再设置一个反代密钥：
+
+   ```powershell
+   wrangler secret put PROXY_SECRET
+   ```
+
+   Nginx 反代到 Worker 时同步发送：
+
+   ```nginx
+   proxy_set_header X-Forwarded-For $remote_addr;
+   proxy_set_header X-Sao-Wiki-Proxy-Secret "同一个 PROXY_SECRET";
+   ```
+
+   Worker 只有在密钥匹配时才信任 `X-Forwarded-For`，否则使用 Cloudflare 提供的 `cf-connecting-ip`。这样 GitHub Pages 直连 Worker 和自建服务器反代两种场景都能正确按访客去重。
+
 6. 部署 Worker：
 
    ```powershell
