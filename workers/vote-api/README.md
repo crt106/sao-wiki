@@ -47,6 +47,17 @@ Cloudflare Worker + D1 后端，用于 `docs/vote/index.md` 的英雄加强投�
    <div id="hero-vote-app" data-poll-id="balance-2026-06" data-api-base="https://sao-wiki-vote-api.xxx.workers.dev"></div>
    ```
 
+## 自建站点注意事项
+
+投票页的 CSS/JS 都是站内本地静态资源，不依赖第三方 CDN。外部依赖只有 `data-api-base` 指向的投票 API。
+
+如果 Wiki 部署在自建服务器或大陆网络环境：
+
+1. `*.workers.dev` 可能不可达或很慢，建议把本 Worker 改部署到自有域名，或把同等接口部署到自建服务器。
+2. 若继续使用 Cloudflare Worker，需要在 `src/index.js` 的 `ALLOWED_ORIGINS` 中加入自建站点 origin，例如 `https://wiki.example.com`。
+3. 若投票 API 与 Wiki 同域，可把 `data-api-base` 改成同源前缀，例如 `/vote-api`，再由 Nginx 反代到真实 API。
+4. 前端会先渲染英雄卡片，再异步拉取票数；API 不可用时页面仍可打开，只是会显示结果加载失败。
+
 ## 接口
 
 - `GET /api/votes?poll=balance-2026-06`

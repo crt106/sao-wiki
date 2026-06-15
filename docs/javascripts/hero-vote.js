@@ -33,6 +33,41 @@
     return base.replace(/\/$/, "") + path;
   }
 
+  function apiBases(app) {
+    return [app.getAttribute("data-api-base"), app.getAttribute("data-api-fallback")]
+      .filter(function (base, index, list) {
+        return base && base.trim() && list.indexOf(base) === index;
+      });
+  }
+
+  function fetchJson(url, options, timeoutMs) {
+    var controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+    var timer = controller ? window.setTimeout(function () { controller.abort(); }, timeoutMs || 5000) : null;
+    var requestOptions = Object.assign({}, options || {});
+    if (controller) requestOptions.signal = controller.signal;
+    return fetch(url, requestOptions).finally(function () {
+      if (timer) window.clearTimeout(timer);
+    });
+  }
+
+  function fetchApi(state, path, options, timeoutMs) {
+    var bases = state.apiBases.slice();
+    function next(lastError) {
+      var base = bases.shift();
+      if (!base) return Promise.reject(lastError || new Error("投票服务不可用"));
+      return fetchJson(apiUrl(base, path), options, timeoutMs).then(function (res) {
+        if (!res.ok && bases.length > 0 && (res.status === 404 || res.status >= 500)) {
+          return next(new Error("投票服务不可用"));
+        }
+        return res;
+      }).catch(function (err) {
+        if (bases.length > 0) return next(err);
+        throw err;
+      });
+    }
+    return next();
+  }
+
   function readLocalVotes(pollId) {
     try {
       return JSON.parse(localStorage.getItem(STORAGE_PREFIX + pollId) || "[]");
@@ -106,12 +141,13 @@
       app: app,
       pollId: app.getAttribute("data-poll-id") || DEFAULT_POLL,
       apiBase: app.getAttribute("data-api-base") || "",
+      apiBases: apiBases(app),
       heroes: heroes,
       query: "",
       sort: "rank",
       loading: false,
       error: "",
-      localOnly: !(app.getAttribute("data-api-base") || "").trim()
+      localOnly: apiBases(app).length === 0
     };
   }
 
@@ -286,11 +322,11 @@
     hero.voted = true;
     lockVote(state.pollId, slug);
     button.disabled = true;
-    fetch(apiUrl(state.apiBase, "/api/votes"), {
+    fetchApi(state, "/api/votes", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ poll: state.pollId, hero: slug })
-    })
+    }, 6000)
       .then(function (res) {
         return res.json().then(function (payload) {
           if (!res.ok && payload.error !== "vote_limit_reached") throw new Error("投票提交失败");
@@ -336,11 +372,11 @@
       hero.voted = localVotes.indexOf(hero.slug) >= 0 || lockedVotes.indexOf(hero.slug) >= 0;
       if (state.localOnly && hero.voted && hero.votes === 0) hero.votes = 1;
     });
+    render(state.app, state);
     if (state.localOnly) {
-      render(state.app, state);
       return;
     }
-    fetch(apiUrl(state.apiBase, "/api/votes?poll=" + encodeURIComponent(state.pollId)))
+    fetchApi(state, "/api/votes?poll=" + encodeURIComponent(state.pollId), {}, 4500)
       .then(function (res) {
         if (!res.ok) throw new Error("结果加载失败");
         return res.json();
