@@ -1,6 +1,7 @@
 nav:
   - "首页": index.md
   - heroes
+  - vote
   - items
   - info
   - changelogs

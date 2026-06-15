@@ -1,0 +1,10 @@
+name = "sao-wiki-vote-api"
+main = "src/index.js"
+compatibility_date = "2026-06-01"
+workers_dev = true
+preview_urls = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sao-wiki-votes"
+database_id = "替换为 wrangler d1 create 输出的 database_id"

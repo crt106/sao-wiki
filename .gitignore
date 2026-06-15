@@ -33,3 +33,6 @@ DEPLOY.md
 
 
 log/
+
+# Cloudflare 本地部署配置
+workers/**/wrangler.toml
