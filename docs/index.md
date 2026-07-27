@@ -1,22 +1,22 @@
 # 刀剑物语改图 Wiki
 
-欢迎来到**刀剑物语改图**非官方资料站。本 Wiki 以地图文件解析为基础，整理英雄、物品、楼层、合成与任务资料。
+欢迎来到**刀剑物语改图**非官方资料站。本 Wiki 面向普通玩家，整理英雄、物品、楼层、合成与任务资料。
 
 !!! info "资料基准"
-    本站内容基于地图文件（`war3map.j` / `unit.ini` / `ability.ini` / `item.ini`）实际解析整理，并优先以触发器逻辑作为最终依据。
+    本站当前以 **2.5（狂猎）**为主要资料基准。游戏内说明与实际表现不一致时，以当前版本中可确认的实际效果为准。
 
 !!! note "说在前面"
     刀剑物语是一张有着 10 年以上历史的 War3 地图，从原图到改图已经积累了相当多的历史内容。随着地图更新，游戏内文本和实际效果存在差异的情况并不少见，本站点会尽量标注，但肯定仍有疏漏。改图和 Wiki 维护都是公益劳动，欢迎一起维护，祝你玩得开心。
 
 ## 快速入口
 
-<div class="grid cards" markdown>
+<div "grid cards" markdown>
 
 -   :material-account-group:{ .lg .middle } **英雄图鉴**
 
     ---
 
-    查看英雄技能、触发器实装、专属装备与版本备注。
+    查看英雄技能、实际效果、专属装备与版本备注。
 
     [:octicons-arrow-right-24: 进入英雄图鉴](heroes/index.md)
 
@@ -64,19 +64,19 @@
 
 ## 资料特点
 
-<div class="grid cards" markdown>
+<div "grid cards" markdown>
 
--   :material-file-search:{ .lg .middle } **脚本优先**
+-   :material-file-search:{ .lg .middle } **实际效果优先**
 
     ---
 
-    技能、掉落、合成与任务逻辑优先参考 `war3map.j` 触发器。
+    技能、掉落、合成与任务资料优先采用当前版本的实际结果。
 
 -   :material-database-search:{ .lg .middle } **数据对照**
 
     ---
 
-    物品、单位、技能说明会结合 INI 表字段和脚本实现交叉验证。
+    物品、单位与技能说明会结合游戏内信息和实际结果交叉核对。
 
 -   :material-map-marker-path:{ .lg .middle } **版本标注**
 
@@ -93,4 +93,3 @@
 | 正式版地图作者 | CD |
 | 改图作者 | 泠 |
 | Wiki 维护 | crt106 |
-
