@@ -154,3 +154,4 @@
 | [I0PI](I0PI_普通酒水.md) | [普通酒水](I0PI_普通酒水.md) |
 | [I0PW](I0PW_void.md) | [void](I0PW_void.md) |
 | [I0QD](I0QD_熔火结晶.md) | [熔火结晶](I0QD_熔火结晶.md) |
+| [I2J2](I2J2_大块的金币.md) | [大块的金币](I2J2_大块的金币.md) |

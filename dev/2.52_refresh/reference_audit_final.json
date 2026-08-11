@@ -1,0 +1,7413 @@
+{
+  "summary": {
+    "entity_count": 1023,
+    "item_count": 964,
+    "hero_count": 59,
+    "alias_count": 2438,
+    "markdown_count": 1069,
+    "match_count": 434,
+    "unique_count": 432,
+    "ambiguous_count": 2,
+    "unique_item_count": 308,
+    "unique_hero_count": 124,
+    "min_name_length": 2
+  },
+  "matches": [
+    {
+      "file": "docs/changelogs/posts/2.3.md",
+      "line": 58,
+      "column": 30,
+      "alias": "冰雪世界",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q0",
+          "name": "冰雪世界",
+          "path": "items/特殊/I0Q0_冰雪世界.md"
+        }
+      ],
+      "text": "- 副本传送（位置不变）：伊诺遗迹、灵梦、大小姐、冰雪世界、楼兰前半段、楼兰后半段、水晶深处、通天塔、伊利丹"
+    },
+    {
+      "file": "docs/changelogs/posts/2.3.md",
+      "line": 58,
+      "column": 52,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "- 副本传送（位置不变）：伊诺遗迹、灵梦、大小姐、冰雪世界、楼兰前半段、楼兰后半段、水晶深处、通天塔、伊利丹"
+    },
+    {
+      "file": "docs/changelogs/posts/2.3.md",
+      "line": 64,
+      "column": 5,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 清雨任务 NPC 与 10 层任务 NPC 移至野猪野狼刷怪点左侧靠墙处"
+    },
+    {
+      "file": "docs/changelogs/posts/2.3.md",
+      "line": 64,
+      "column": 18,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 清雨任务 NPC 与 10 层任务 NPC 移至野猪野狼刷怪点左侧靠墙处"
+    },
+    {
+      "file": "docs/changelogs/posts/2.4.3.md",
+      "line": 43,
+      "column": 7,
+      "alias": "楼兰前院",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q1",
+          "name": "楼兰前院",
+          "path": "items/特殊/I0Q1_楼兰前院.md"
+        }
+      ],
+      "text": "- 修复部分楼兰前院 Boss 技能在战斗结束或单位失效后仍可能继续运行的问题"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.1.md",
+      "line": 28,
+      "column": 54,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "- [65 层](../../info/楼层/61-70层.md#floor-65): 修复\"王的力量\"在能量抽取完成后可能被其他指令覆盖、迟迟不释放的问题"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.1.md",
+      "line": 92,
+      "column": 23,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "自由模式下,AI 队友现在会自主执行两条长线任务，帮全队做脏活："
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.1.md",
+      "line": 94,
+      "column": 5,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- **动能城任务线**：队伍推过 21 层且 AI 等级达标后，AI 会自己买[酒之玉石](../../items/特殊/I0CB_酒之玉石.md)、去织田酒馆接委托、清剿微笑棺木营地、拿到动能城钥匙并开启动能城——全队受益"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.1.md",
+      "line": 94,
+      "column": 8,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **动能城任务线**：队伍推过 21 层且 AI 等级达标后，AI 会自己买[酒之玉石](../../items/特殊/I0CB_酒之玉石.md)、去织田酒馆接委托、清剿微笑棺木营地、拿到动能城钥匙并开启动能城——全队受益"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.1.md",
+      "line": 94,
+      "column": 97,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- **动能城任务线**：队伍推过 21 层且 AI 等级达标后，AI 会自己买[酒之玉石](../../items/特殊/I0CB_酒之玉石.md)、去织田酒馆接委托、清剿微笑棺木营地、拿到动能城钥匙并开启动能城——全队受益"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.1.md",
+      "line": 94,
+      "column": 105,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- **动能城任务线**：队伍推过 21 层且 AI 等级达标后，AI 会自己买[酒之玉石](../../items/特殊/I0CB_酒之玉石.md)、去织田酒馆接委托、清剿微笑棺木营地、拿到动能城钥匙并开启动能城——全队受益"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.1.md",
+      "line": 95,
+      "column": 7,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **料理任务线**：队伍推过 30 层（且动能城已了结）后，AI 会自动完成全部七份料理配方并领取**[随身佳肴](../../items/不归类/I0MC_随身佳肴.md)**；配方需要的火花之石会自己去 25 层刷怪获取"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.1.md",
+      "line": 95,
+      "column": 24,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- **料理任务线**：队伍推过 30 层（且动能城已了结）后，AI 会自动完成全部七份料理配方并领取**[随身佳肴](../../items/不归类/I0MC_随身佳肴.md)**；配方需要的火花之石会自己去 25 层刷怪获取"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.1.md",
+      "line": 96,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务线一次只跑一条，真人已接的委托不会去抢；用 `-ai mode` 给 AI 切档会立即中断任务且本局不再执行"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.1.md",
+      "line": 96,
+      "column": 50,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务线一次只跑一条，真人已接的委托不会去抢；用 `-ai mode` 给 AI 切档会立即中断任务且本局不再执行"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.2.md",
+      "line": 28,
+      "column": 5,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "- **通天塔**：进入时改为 3 秒平滑镜头移动，降低传送、商店刷新与 HUD 重排同时发生时的瞬时闪退风险。"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.md",
+      "line": 58,
+      "column": 5,
+      "alias": "炮姐",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "御坂美琴",
+          "name": "御坂美琴",
+          "path": "heroes/御坂美琴.md"
+        }
+      ],
+      "text": "- **炮姐（[御坂美琴](../../heroes/御坂美琴.md)）**：技能组整体重做——恢复正常平砍；W 电磁炮命中伤害倍率 x5→x10 并补充击中特效；Q 电磁球移速削弱至原来的三分之二，运行更加流畅；被动电磁路径存活时间 3 秒→10 秒，并修复路径点持续发出雷鸣音效的问题；E 视觉重做为可见的旋转法阵；修复大招必现崩溃问题"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.md",
+      "line": 86,
+      "column": 229,
+      "alias": "初音",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "未来初音",
+          "name": "未来初音",
+          "path": "heroes/未来初音.md"
+        }
+      ],
+      "text": "- **[未来初音](../../heroes/未来初音.md)**：Q 大葱敲击 x3→x28，W 歌之扩散敌方伤害 x3→x11.5（非敌方治疗仍为 x3），E 救赎之声 x15→x56，R 钟声回响五段 x10 / 20 / 30 / 40 / 50→x42 / 63 / 84 / 105 / 126；[连心手环](../../items/装备道具/I01T_连心手环.md)在 2.5 才正式让 Q 萌音增量由 +50 提高到 +100，并限制为初音使用"
+    },
+    {
+      "file": "docs/changelogs/posts/2.5.md",
+      "line": 123,
+      "column": 11,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "- **71 层深渊魔女**：修复多个大招误伤宠物 / 召唤物等非英雄单位的问题；修复魔能炮可能让单次攻击吃双倍伤害的问题；修复\"血渊黑洞·灾难\"与队伍反伤效果共同出现时的崩溃风险；魔力球生成频率降低到0.8s"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 9,
+      "column": 3,
+      "alias": "封弊者 · 桐谷和人（桐人）",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "封弊者_桐谷和人_桐人",
+          "name": "封弊者 · 桐谷和人（桐人）",
+          "path": "heroes/封弊者_桐谷和人_桐人.md"
+        }
+      ],
+      "text": "| 封弊者 · 桐谷和人（桐人） | [封弊者 · 桐谷和人（桐人）](封弊者_桐谷和人_桐人.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 10,
+      "column": 3,
+      "alias": "闪光 · 亚丝娜",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "闪光_亚丝娜",
+          "name": "闪光 · 亚丝娜",
+          "path": "heroes/闪光_亚丝娜.md"
+        }
+      ],
+      "text": "| 闪光 · 亚丝娜 | [闪光 · 亚丝娜](闪光_亚丝娜.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 11,
+      "column": 3,
+      "alias": "驯兽师 · 西莉卡",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "驯兽师_西莉卡",
+          "name": "驯兽师 · 西莉卡",
+          "path": "heroes/驯兽师_西莉卡.md"
+        }
+      ],
+      "text": "| 驯兽师 · 西莉卡 | [驯兽师 · 西莉卡](驯兽师_西莉卡.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 12,
+      "column": 3,
+      "alias": "斯托蕾亚 · 魔方",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "斯托蕾亚_魔方",
+          "name": "斯托蕾亚 · 魔方",
+          "path": "heroes/斯托蕾亚_魔方.md"
+        }
+      ],
+      "text": "| 斯托蕾亚 · 魔方 | [斯托蕾亚 · 魔方](斯托蕾亚_魔方.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 13,
+      "column": 3,
+      "alias": "冬 · 夜刀神十香",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬_夜刀神十香",
+          "name": "冬 · 夜刀神十香",
+          "path": "heroes/冬_夜刀神十香.md"
+        }
+      ],
+      "text": "| 冬 · 夜刀神十香 | [冬 · 夜刀神十香](冬_夜刀神十香.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 14,
+      "column": 3,
+      "alias": "加速世界 · 黑雪姬",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "加速世界_黑雪姬",
+          "name": "加速世界 · 黑雪姬",
+          "path": "heroes/加速世界_黑雪姬.md"
+        }
+      ],
+      "text": "| 加速世界 · 黑雪姬 | [加速世界 · 黑雪姬](加速世界_黑雪姬.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 15,
+      "column": 3,
+      "alias": "绝剑 · 优纪",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "绝剑_优纪",
+          "name": "绝剑 · 优纪",
+          "path": "heroes/绝剑_优纪.md"
+        }
+      ],
+      "text": "| 绝剑 · 优纪 | [绝剑 · 优纪](绝剑_优纪.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 16,
+      "column": 3,
+      "alias": "筒隐月子",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "筒隐月子",
+          "name": "筒隐月子",
+          "path": "heroes/筒隐月子.md"
+        }
+      ],
+      "text": "| 筒隐月子 | [筒隐月子](筒隐月子.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 17,
+      "column": 3,
+      "alias": "杀生丸",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "杀生丸",
+          "name": "杀生丸",
+          "path": "heroes/杀生丸.md"
+        }
+      ],
+      "text": "| 杀生丸 | [杀生丸](杀生丸.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 18,
+      "column": 3,
+      "alias": "天堂",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "天堂",
+          "name": "天堂",
+          "path": "heroes/天堂.md"
+        }
+      ],
+      "text": "| 天堂 | [天堂](天堂.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 19,
+      "column": 3,
+      "alias": "爱丽丝",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "爱丽丝",
+          "name": "爱丽丝",
+          "path": "heroes/爱丽丝.md"
+        }
+      ],
+      "text": "| 爱丽丝 | [爱丽丝](爱丽丝.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 20,
+      "column": 3,
+      "alias": "穹 · 冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "穹_冬弥",
+          "name": "穹 · 冬弥",
+          "path": "heroes/穹_冬弥.md"
+        }
+      ],
+      "text": "| 穹 · 冬弥 | [穹 · 冬弥](穹_冬弥.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 21,
+      "column": 3,
+      "alias": "冬弥（泳装形态）",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "| 冬弥（泳装形态） | [冬弥（泳装形态）](冬弥_泳装形态.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 22,
+      "column": 3,
+      "alias": "结衣",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "结衣",
+          "name": "结衣",
+          "path": "heroes/结衣.md"
+        }
+      ],
+      "text": "| 结衣 | [结衣](结衣.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 23,
+      "column": 3,
+      "alias": "芙兰朵露·斯卡雷特",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "芙兰朵露_斯卡雷特",
+          "name": "芙兰朵露·斯卡雷特",
+          "path": "heroes/芙兰朵露_斯卡雷特.md"
+        }
+      ],
+      "text": "| 芙兰朵露·斯卡雷特 | [芙兰朵露·斯卡雷特](芙兰朵露_斯卡雷特.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 24,
+      "column": 3,
+      "alias": "兄控万岁 · 莉法",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "兄控万岁_莉法",
+          "name": "兄控万岁 · 莉法",
+          "path": "heroes/兄控万岁_莉法.md"
+        }
+      ],
+      "text": "| 兄控万岁 · 莉法 | [兄控万岁 · 莉法](兄控万岁_莉法.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 25,
+      "column": 3,
+      "alias": "娃娃 · Saber",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "娃娃_Saber",
+          "name": "娃娃 · Saber",
+          "path": "heroes/娃娃_Saber.md"
+        }
+      ],
+      "text": "| 娃娃 · Saber | [娃娃 · Saber](娃娃_Saber.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 26,
+      "column": 3,
+      "alias": "优库里伍德",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "优库里伍德",
+          "name": "优库里伍德",
+          "path": "heroes/优库里伍德.md"
+        }
+      ],
+      "text": "| 优库里伍德 | [优库里伍德](优库里伍德.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 27,
+      "column": 3,
+      "alias": "灼眼的夏娜",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "灼眼的夏娜",
+          "name": "灼眼的夏娜",
+          "path": "heroes/灼眼的夏娜.md"
+        }
+      ],
+      "text": "| 灼眼的夏娜 | [灼眼的夏娜](灼眼的夏娜.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 28,
+      "column": 5,
+      "alias": "琪露诺",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "⑨_琪露诺",
+          "name": "⑨ · 琪露诺",
+          "path": "heroes/⑨_琪露诺.md"
+        }
+      ],
+      "text": "| ⑨ 琪露诺 | [⑨ 琪露诺](⑨_琪露诺.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 29,
+      "column": 3,
+      "alias": "魔法战争 · 相羽六",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔法战争_相羽六",
+          "name": "魔法战争 · 相羽六",
+          "path": "heroes/魔法战争_相羽六.md"
+        }
+      ],
+      "text": "| 魔法战争 · 相羽六 | [魔法战争 · 相羽六](魔法战争_相羽六.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 30,
+      "column": 3,
+      "alias": "时崎狂三",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "时崎狂三",
+          "name": "时崎狂三",
+          "path": "heroes/时崎狂三.md"
+        }
+      ],
+      "text": "| 时崎狂三 | [时崎狂三](时崎狂三.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 31,
+      "column": 3,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "| 黄泉 | [黄泉](黄泉.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 32,
+      "column": 3,
+      "alias": "未来初音",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "未来初音",
+          "name": "未来初音",
+          "path": "heroes/未来初音.md"
+        }
+      ],
+      "text": "| 未来初音 | [未来初音](未来初音.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 33,
+      "column": 3,
+      "alias": "琪尔玛利亚（M·R）",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "琪尔玛利亚_M_R",
+          "name": "琪尔玛利亚（M·R）",
+          "path": "heroes/琪尔玛利亚_M_R.md"
+        }
+      ],
+      "text": "| 琪尔玛利亚（M·R） | [琪尔玛利亚（M·R）](琪尔玛利亚_M_R.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 34,
+      "column": 3,
+      "alias": "五河琴里",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "五河琴里",
+          "name": "五河琴里",
+          "path": "heroes/五河琴里.md"
+        }
+      ],
+      "text": "| 五河琴里 | [五河琴里](五河琴里.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 35,
+      "column": 3,
+      "alias": "黑猫酱（五更琉璃）",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黑猫酱_五更琉璃",
+          "name": "黑猫酱（五更琉璃）",
+          "path": "heroes/黑猫酱_五更琉璃.md"
+        }
+      ],
+      "text": "| 黑猫酱（五更琉璃） | [黑猫酱（五更琉璃）](黑猫酱_五更琉璃.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 36,
+      "column": 3,
+      "alias": "蕾米莉亚·斯卡雷特",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "蕾米莉亚_斯卡雷特",
+          "name": "蕾米莉亚·斯卡雷特",
+          "path": "heroes/蕾米莉亚_斯卡雷特.md"
+        }
+      ],
+      "text": "| 蕾米莉亚·斯卡雷特 | [蕾米莉亚·斯卡雷特](蕾米莉亚_斯卡雷特.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 37,
+      "column": 3,
+      "alias": "御坂美琴",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "御坂美琴",
+          "name": "御坂美琴",
+          "path": "heroes/御坂美琴.md"
+        }
+      ],
+      "text": "| 御坂美琴 | [御坂美琴](御坂美琴.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 38,
+      "column": 3,
+      "alias": "暗杀者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "暗杀者",
+          "name": "草壁操",
+          "path": "heroes/暗杀者.md"
+        }
+      ],
+      "text": "| 暗杀者 | [暗杀者](暗杀者.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 39,
+      "column": 3,
+      "alias": "葛林瑟鲁妲",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "葛林瑟鲁妲",
+          "name": "葛林瑟鲁妲",
+          "path": "heroes/葛林瑟鲁妲.md"
+        }
+      ],
+      "text": "| 葛林瑟鲁妲 | [葛林瑟鲁妲](葛林瑟鲁妲.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 40,
+      "column": 3,
+      "alias": "一皇",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "一皇",
+          "name": "一皇",
+          "path": "heroes/一皇.md"
+        }
+      ],
+      "text": "| 一皇 | [一皇](一皇.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 41,
+      "column": 3,
+      "alias": "白雪公主（White Trailer）",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "白雪公主_White_Trailer",
+          "name": "白雪公主（White Trailer）",
+          "path": "heroes/白雪公主_White_Trailer.md"
+        }
+      ],
+      "text": "| 白雪公主（White Trailer） | [白雪公主（White Trailer）](白雪公主_White_Trailer.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 42,
+      "column": 3,
+      "alias": "朱雀院椿",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "朱雀院椿",
+          "name": "朱雀院椿",
+          "path": "heroes/朱雀院椿.md"
+        }
+      ],
+      "text": "| 朱雀院椿 | [朱雀院椿](朱雀院椿.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 43,
+      "column": 3,
+      "alias": "水月",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "水月",
+          "name": "水月",
+          "path": "heroes/水月.md"
+        }
+      ],
+      "text": "| 水月 | [水月](水月.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 44,
+      "column": 3,
+      "alias": "穿越时空的少女 · 椎名真白",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "穿越时空的少女_椎名真白",
+          "name": "穿越时空的少女 · 椎名真白",
+          "path": "heroes/穿越时空的少女_椎名真白.md"
+        }
+      ],
+      "text": "| 穿越时空的少女 · 椎名真白 | [穿越时空的少女 · 椎名真白](穿越时空的少女_椎名真白.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 45,
+      "column": 3,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "| 魔女 | [魔女](魔女.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 46,
+      "column": 3,
+      "alias": "缇娜",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "缇娜",
+          "name": "缇娜",
+          "path": "heroes/缇娜.md"
+        }
+      ],
+      "text": "| 缇娜 | [缇娜](缇娜.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 47,
+      "column": 3,
+      "alias": "喵可莉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "喵可莉",
+          "name": "喵可莉",
+          "path": "heroes/喵可莉.md"
+        }
+      ],
+      "text": "| 喵可莉 | [喵可莉](喵可莉.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 48,
+      "column": 3,
+      "alias": "莉伊",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "莉伊",
+          "name": "莉伊",
+          "path": "heroes/莉伊.md"
+        }
+      ],
+      "text": "| 莉伊 | [莉伊](莉伊.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 49,
+      "column": 3,
+      "alias": "红叶",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "红叶",
+          "name": "红叶",
+          "path": "heroes/红叶.md"
+        }
+      ],
+      "text": "| 红叶 | [红叶](红叶.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 50,
+      "column": 3,
+      "alias": "哦尼酱（一）",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "哦尼酱_一",
+          "name": "哦尼酱（一）",
+          "path": "heroes/哦尼酱_一.md"
+        }
+      ],
+      "text": "| 哦尼酱（一） | [哦尼酱（一）](哦尼酱_一.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 51,
+      "column": 3,
+      "alias": "哦尼酱（二）",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "哦尼酱_二",
+          "name": "哦尼酱（二）",
+          "path": "heroes/哦尼酱_二.md"
+        }
+      ],
+      "text": "| 哦尼酱（二） | [哦尼酱（二）](哦尼酱_二.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 52,
+      "column": 3,
+      "alias": "克萝伊·莉莉丝忒拉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "克萝伊_莉莉丝忒拉",
+          "name": "克萝伊·莉莉丝忒拉",
+          "path": "heroes/克萝伊_莉莉丝忒拉.md"
+        }
+      ],
+      "text": "| 克萝伊·莉莉丝忒拉 | [克萝伊·莉莉丝忒拉](克萝伊_莉莉丝忒拉.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 53,
+      "column": 3,
+      "alias": "特莉波卡",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "特莉波卡",
+          "name": "特莉波卡",
+          "path": "heroes/特莉波卡.md"
+        }
+      ],
+      "text": "| 特莉波卡 | [特莉波卡](特莉波卡.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 54,
+      "column": 3,
+      "alias": "孤独轮回观测者 · 祸灵梦",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "孤独轮回观测者_祸灵梦",
+          "name": "孤独轮回观测者 · 祸灵梦",
+          "path": "heroes/孤独轮回观测者_祸灵梦.md"
+        }
+      ],
+      "text": "| 孤独轮回观测者 · 祸灵梦 | [孤独轮回观测者 · 祸灵梦](孤独轮回观测者_祸灵梦.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 55,
+      "column": 3,
+      "alias": "梦梦（贝莉雅·戴比路克）",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "梦梦_贝莉雅_戴比路克",
+          "name": "梦梦（贝莉雅·戴比路克）",
+          "path": "heroes/梦梦_贝莉雅_戴比路克.md"
+        }
+      ],
+      "text": "| 梦梦（贝莉雅·戴比路克） | [梦梦（贝莉雅·戴比路克）](梦梦_贝莉雅_戴比路克.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 56,
+      "column": 3,
+      "alias": "喵露朵露薇",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "喵露朵露薇",
+          "name": "喵露朵露薇",
+          "path": "heroes/喵露朵露薇.md"
+        }
+      ],
+      "text": "| 喵露朵露薇 | [喵露朵露薇](喵露朵露薇.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 57,
+      "column": 3,
+      "alias": "星川凌云",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "星川凌云",
+          "name": "星川凌云",
+          "path": "heroes/星川凌云.md"
+        }
+      ],
+      "text": "| 星川凌云 | [星川凌云](星川凌云.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 58,
+      "column": 3,
+      "alias": "暗黑红美玲",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "暗黑红美玲",
+          "name": "暗黑红美玲",
+          "path": "heroes/暗黑红美玲.md"
+        }
+      ],
+      "text": "| 暗黑红美玲 | [暗黑红美玲](暗黑红美玲.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 59,
+      "column": 3,
+      "alias": "谏山黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "谏山黄泉",
+          "name": "谏山黄泉",
+          "path": "heroes/谏山黄泉.md"
+        }
+      ],
+      "text": "| 谏山黄泉 | [谏山黄泉](谏山黄泉.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 60,
+      "column": 3,
+      "alias": "雷电·忘川守·芽衣",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "雷电_忘川守_芽衣_刺客",
+          "name": "雷电·忘川守·芽衣（黄泉）",
+          "path": "heroes/雷电_忘川守_芽衣_刺客.md"
+        }
+      ],
+      "text": "| 雷电·忘川守·芽衣（刺客） | [雷电·忘川守·芽衣（刺客）](雷电_忘川守_芽衣_刺客.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 61,
+      "column": 3,
+      "alias": "公会：命运之夜（CD）",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "公会命运之夜_CD",
+          "name": "公会：命运之夜（CD）",
+          "path": "heroes/公会命运之夜_CD.md"
+        }
+      ],
+      "text": "| 公会：命运之夜（CD） | [公会：命运之夜（CD）](公会命运之夜_CD.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 62,
+      "column": 12,
+      "alias": "克莱因",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "克莱因",
+          "name": "克莱因",
+          "path": "heroes/克莱因.md"
+        }
+      ],
+      "text": "| 风林火山会长 · 克莱因 | [风林火山会长 · 克莱因](克莱因.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 63,
+      "column": 8,
+      "alias": "艾基尔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "艾基尔",
+          "name": "艾基尔",
+          "path": "heroes/艾基尔.md"
+        }
+      ],
+      "text": "| 清晨 · 艾基尔 | [清晨 · 艾基尔](艾基尔.md) |"
+    },
+    {
+      "file": "docs/heroes/index.md",
+      "line": 64,
+      "column": 3,
+      "alias": "数字君",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "数字君",
+          "name": "数字君",
+          "path": "heroes/数字君.md"
+        }
+      ],
+      "text": "| 数字君（458356800） | [数字君（458356800）](数字君.md) |"
+    },
+    {
+      "file": "docs/heroes/五河琴里.md",
+      "line": 203,
+      "column": 3,
+      "alias": "琴里的发饰",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I093",
+          "name": "琴里的发饰",
+          "path": "items/不归类/I093_琴里的发饰（专属道具，不归类）.md"
+        }
+      ],
+      "text": "**琴里的发饰**（`I093`，[详情页](../items/不归类/I093_琴里的发饰（专属道具，不归类）.md)）"
+    },
+    {
+      "file": "docs/heroes/优库里伍德.md",
+      "line": 7,
+      "column": 41,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "**主属性**：智力 · **英雄 ID**：`Orex` · **单位名**：冬弥"
+    },
+    {
+      "file": "docs/heroes/冬弥_泳装形态.md",
+      "line": 7,
+      "column": 41,
+      "alias": "优库里伍德",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "优库里伍德",
+          "name": "优库里伍德",
+          "path": "heroes/优库里伍德.md"
+        }
+      ],
+      "text": "**主属性**：敏捷 · **英雄 ID**：`Oshd` · **单位名**：优库里伍德"
+    },
+    {
+      "file": "docs/heroes/天堂.md",
+      "line": 136,
+      "column": 13,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 指定天堂参与部分旧式任务和雇佣兵判断，但这些入口不改变本页技能公式。"
+    },
+    {
+      "file": "docs/heroes/娃娃_Saber.md",
+      "line": 10,
+      "column": 28,
+      "alias": "圣剑",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0FS",
+          "name": "圣剑",
+          "path": "items/武器/I0FS_圣剑（传说）.md"
+        }
+      ],
+      "text": "2.5 同时调整了战争骑士、Q、E、R 与专属圣剑宝具的倍率，并修复 Q 和 E 的部分异常。旧 Wiki 把主属性写成敏捷，还把旧说明和已失效效果当成当前效果；本页已按两版实际表现修正。"
+    },
+    {
+      "file": "docs/heroes/娃娃_Saber.md",
+      "line": 22,
+      "column": 9,
+      "alias": "圣剑",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0FS",
+          "name": "圣剑",
+          "path": "items/武器/I0FS_圣剑（传说）.md"
+        }
+      ],
+      "text": "| 专属圣剑宝具 | `全属性之和 × 6` | `×100 → ×6` |"
+    },
+    {
+      "file": "docs/heroes/娃娃_Saber.md",
+      "line": 37,
+      "column": 9,
+      "alias": "圣剑",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0FS",
+          "name": "圣剑",
+          "path": "items/武器/I0FS_圣剑（传说）.md"
+        }
+      ],
+      "text": "| 专属圣剑宝具 | `全属性之和 × 100` |"
+    },
+    {
+      "file": "docs/heroes/封弊者_桐谷和人_桐人.md",
+      "line": 171,
+      "column": 96,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- [黑剑·阐释者（真）（I0PS）](../items/不归类/I0PS_黑剑·阐释者-真.md)：不增加双剑等级；持有时提供统一伤害×2.24并强化 R。2.5 还把它作为 74 层桐人任务分支的资格装备。"
+    },
+    {
+      "file": "docs/heroes/御坂美琴.md",
+      "line": 140,
+      "column": 23,
+      "alias": "超电磁炮",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0EL",
+          "name": "|cffdc143超电磁炮",
+          "path": "items/头部道具/I0EL_超电磁炮.md"
+        }
+      ],
+      "text": "| 旧 F | 无 | 120级直线超电磁炮 |"
+    },
+    {
+      "file": "docs/heroes/未来初音.md",
+      "line": 147,
+      "column": 141,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- [玲和连的礼物（I0AR）](../items/特殊/I0AR_玲和连的礼物.md)由商人（单位 ID：`h043`）零价出售。初音（英雄 ID：`Edem`）在**恰好 30 级**时首次拾取，可以获得[连心手环](../items/装备道具/I01T_连心手环.md)；该任务奖励每局只能领取一次。"
+    },
+    {
+      "file": "docs/heroes/爱丽丝.md",
+      "line": 72,
+      "column": 24,
+      "alias": "巨剑",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0A2",
+          "name": "巨剑",
+          "path": "items/武器/I0A2_巨剑（普通）.md"
+        }
+      ],
+      "text": "以自身为中心召唤 **10 把巨剑**环绕旋转，持续 **约 10 秒**，剑阵半径约 **260 码**，**约 8 秒**顺时针旋转一圈（每 0.03 秒推进 1.35°，当前版本 `360×0.03/8 = 1.35`）。"
+    },
+    {
+      "file": "docs/heroes/穹_冬弥.md",
+      "line": 9,
+      "column": 9,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "2.5 没有替换冬弥的实际技能，只修改了 E／R 的游戏说明。旧 Wiki 却仍把已经失效的旧剑阵写成当前效果，并误写了技能等级、W 的减速、R 的触发率、F 的护盾和白裙联动；本页按 2.5 与 2.41 的实际效果重新核定。"
+    },
+    {
+      "file": "docs/heroes/穹_冬弥.md",
+      "line": 43,
+      "column": 3,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "任意冬弥（英雄 ID：`Obla`）施放技能后，下一笔符合普通伤害类型的伤害会追加："
+    },
+    {
+      "file": "docs/heroes/穹_冬弥.md",
+      "line": 49,
+      "column": 1,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "冬弥施放 Q／W／E／R 后，下一次攻击还会额外结算一次同公式伤害。因此 Q／W／E／R 后的下一次攻击会让**同一公式结算两次**；F 后只结算一次。多名冬弥交叉施法时的攻击顺序仍待实际确认。"
+    },
+    {
+      "file": "docs/heroes/穹_冬弥.md",
+      "line": 49,
+      "column": 79,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "冬弥施放 Q／W／E／R 后，下一次攻击还会额外结算一次同公式伤害。因此 Q／W／E／R 后的下一次攻击会让**同一公式结算两次**；F 后只结算一次。多名冬弥交叉施法时的攻击顺序仍待实际确认。"
+    },
+    {
+      "file": "docs/heroes/穹_冬弥.md",
+      "line": 59,
+      "column": 5,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "冬弥先记录起手位置，暂停并瞬移到目标点；约0.3秒后，对落点400范围内存活的敌方非建筑单位各造成一笔伤害，随后返回起手位置并解除暂停。"
+    },
+    {
+      "file": "docs/heroes/穹_冬弥.md",
+      "line": 100,
+      "column": 8,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "| 无冬弥的白裙 | 力量×4 |"
+    },
+    {
+      "file": "docs/heroes/穹_冬弥.md",
+      "line": 101,
+      "column": 9,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "| 持有冬弥的白裙 | （力量＋敏捷）×4 |"
+    },
+    {
+      "file": "docs/heroes/穹_冬弥.md",
+      "line": 119,
+      "column": 50,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "五笔伤害均为混乱攻击／毁灭伤害，并在普通攻击开始时立即触发，即使该次攻击没有命中也会生效。冬弥会被暂停并关闭碰撞，但不会无敌，也不会回到起手位置；标记目标时，第一段后即可恢复行动，后四段仍会继续。"
+    },
+    {
+      "file": "docs/heroes/穹_冬弥.md",
+      "line": 127,
+      "column": 20,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "激活后进入7秒状态。状态期间，冬弥每造成一笔伤害，系统都会取该笔伤害的50%："
+    },
+    {
+      "file": "docs/heroes/穹_冬弥.md",
+      "line": 154,
+      "column": 73,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "[★★★★★ 冬弥的白裙（I0FE）](../items/装甲/I0FE_★★★★★_冬弥的白裙.md)不是硬性专属，其他单位也能持有基础效果；冬弥拾取时才额外获得专属属性与锁血恢复。"
+    },
+    {
+      "file": "docs/heroes/缇娜.md",
+      "line": 100,
+      "column": 66,
+      "alias": "暗杀者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "暗杀者",
+          "name": "草壁操",
+          "path": "heroes/暗杀者.md"
+        }
+      ],
+      "text": "2.41 没有双形态，使用一套旧版五技能。它与英雄[“暗杀者”草壁操](暗杀者.md)（`Orkn`）无关；旧 Wiki 所写“与暗杀者共用同一英雄类型和技能”是错误关联。"
+    },
+    {
+      "file": "docs/heroes/蕾米莉亚_斯卡雷特.md",
+      "line": 164,
+      "column": 108,
+      "alias": "I0L6",
+      "match_type": "rawcode",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0L6",
+          "name": "命运魔枪·刚格尔尼",
+          "path": "items/武器/I0L6_命运魔枪·刚格尔尼.md"
+        }
+      ],
+      "text": "`A10S` 本来就是 120 级技能。[命运魔枪·刚格尔尼（I0L6）](../items/武器/I0L6_命运魔枪·刚格尔尼.md)还能让符合条件的持有者提前获得它，但每局只能成功一次。因此“只能装备 I0L6 解锁 F”并不成立。"
+    },
+    {
+      "file": "docs/heroes/谏山黄泉.md",
+      "line": 49,
+      "column": 3,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "- 黄泉对已经带 `B04Y` 的目标造成伤害时，当前伤害乘1.2。"
+    },
+    {
+      "file": "docs/heroes/谏山黄泉.md",
+      "line": 63,
+      "column": 48,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "施法时把当前位置到目标点分成20段检查可通行性，遇阻时把终点回退到最后一段可通行位置。黄泉暂停，持续效果每0.05秒推进一次视觉透明参数；第7次周期达到结束条件，约0.35秒后："
+    },
+    {
+      "file": "docs/heroes/谏山黄泉.md",
+      "line": 66,
+      "column": 17,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "- 伤害中心位于目标点沿黄泉当前朝向再前移100的位置；"
+    },
+    {
+      "file": "docs/heroes/谏山黄泉.md",
+      "line": 77,
+      "column": 5,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "黄泉朝指定方向快速突进，对沿途350范围内的敌人造成伤害；同一敌人在一次施法中只会命中一次："
+    },
+    {
+      "file": "docs/heroes/谏山黄泉.md",
+      "line": 91,
+      "column": 5,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "黄泉在侧方展开炮击，每0.1秒攻击前方150～1500码、宽约230码的直线区域；同一敌人在每轮炮击中只受到一次伤害："
+    },
+    {
+      "file": "docs/heroes/谏山黄泉.md",
+      "line": 97,
+      "column": 7,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "- 黄泉本体不暂停，也不无敌。"
+    },
+    {
+      "file": "docs/heroes/谏山黄泉.md",
+      "line": 105,
+      "column": 5,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "黄泉移动到目标靠近原施法位置的一侧100距离，暂停并无敌。目标**不会被定身**；16连击会跟随目标的实时位置，并在其100范围内随机换位。"
+    },
+    {
+      "file": "docs/heroes/谏山黄泉.md",
+      "line": 111,
+      "column": 15,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "- 再过约0.3秒，黄泉朝目标方向执行终结突进。"
+    },
+    {
+      "file": "docs/heroes/谏山黄泉.md",
+      "line": 115,
+      "column": 22,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "连击与终结均为混乱攻击／毁灭伤害。黄泉从起手至终结移动结束保持无敌，但在16击结束至终结重新暂停之间存在动作切换；技能最终不会返回原位。"
+    },
+    {
+      "file": "docs/heroes/谏山黄泉.md",
+      "line": 124,
+      "column": 11,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "- 状态期间黄泉每造成一笔伤害，先按当前伤害值回复8%生命；"
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 39,
+      "column": 13,
+      "alias": "红叶",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "红叶",
+          "name": "红叶",
+          "path": "heroes/红叶.md"
+        }
+      ],
+      "text": "| 20级 | E · 红叶时雨·万倾一空 `A1LP` |"
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 77,
+      "column": 5,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "黄泉暂停自身并朝指定敌人高速移动。每0.02秒最多推进220码，最终落在“施法者朝目标方向的近侧110码”，不是按目标朝向瞬移到其身后。"
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 95,
+      "column": 5,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "黄泉暂停自身并以每0.02秒220码的步长冲向目标点。成功抵达后获得2点残梦，并连续发动3次范围斩击："
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 99,
+      "column": 16,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "| 每刀范围 | 当前黄泉周围500 |"
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 105,
+      "column": 27,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "每刀都是混乱攻击／通用伤害。第二、第三刀前，黄泉会沿施法方向各尝试前移40码；每个命中敌人也会在每刀后沿同方向尝试移动40码，因此三刀的实际圆心会逐步前移。移动会检查地形，失败时只取消该次位移，不取消伤害。"
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 115,
+      "column": 8,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "1. 黄泉先移动到记录的中心点，再依次移动到中心外320码的4个落点；"
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 117,
+      "column": 8,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "3. 黄泉返回起手位置后，4个分身依次回拉；每个分身再从各自落点结算一次相同伤害；"
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 122,
+      "column": 7,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "- 黄泉全程被暂停，但没有无敌，也没有关闭碰撞；"
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 124,
+      "column": 7,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "- 黄泉途中死亡时会清理分身并解除暂停，但不会结算终结，残梦也会保留；"
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 134,
+      "column": 27,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "施法点必须可行走且不在巡逻禁区。技能启动时，黄泉暂停自身，并记录当时施法点500范围内的全部存活敌人："
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 138,
+      "column": 7,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "- 黄泉没有无敌，也没有关闭碰撞。"
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 140,
+      "column": 5,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "黄泉按预设轨迹完成7刀。视觉位置不断变化，但每刀伤害圆心始终是最初施法点，范围均为500："
+    },
+    {
+      "file": "docs/heroes/雷电_忘川守_芽衣_刺客.md",
+      "line": 145,
+      "column": 11,
+      "alias": "黄泉",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "黄泉",
+          "name": "黄泉",
+          "path": "heroes/黄泉.md"
+        }
+      ],
+      "text": "- 第7刀后黄泉回到起手位置，再对施法点500范围造成 `平均攻击力×3.00×累计倍率` 的混乱攻击／毁灭伤害，并清除当前范围内敌人的集真赤。"
+    },
+    {
+      "file": "docs/heroes/黑猫酱_五更琉璃.md",
+      "line": 32,
+      "column": 18,
+      "alias": "魔主之手",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HT",
+          "name": "魔主之手",
+          "path": "items/装备道具/I0HT_魔主之手.md"
+        }
+      ],
+      "text": "| 3 | Q | `A0R6`「魔主之手」 |"
+    },
+    {
+      "file": "docs/index.md",
+      "line": 3,
+      "column": 50,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "欢迎来到**刀剑物语改图**非官方资料站。本 Wiki 面向普通玩家，整理英雄、物品、楼层、合成与任务资料。"
+    },
+    {
+      "file": "docs/index.md",
+      "line": 39,
+      "column": 45,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "-   :material-pot-steam:{ .lg .middle } **料理任务**"
+    },
+    {
+      "file": "docs/index.md",
+      "line": 43,
+      "column": 11,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "查看料理配方任务、截图位置与最终奖励[随身佳肴](items/不归类/I0MC_随身佳肴.md)。"
+    },
+    {
+      "file": "docs/index.md",
+      "line": 79,
+      "column": 14,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "技能、掉落、合成与任务资料优先采用当前版本的实际结果。"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 40,
+      "column": 26,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "| 自由 | 空闲时自主发育，可刷怪、换装备和执行任务线 |"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 44,
+      "column": 47,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "除静止外，AI 进入高危 Boss 区域时可能暂时收紧为紧跟。切换任意档位都会中断正在执行的动能城或料理长任务线，并让该 AI 在本局不再重新接取这两条任务。"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 44,
+      "column": 54,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "除静止外，AI 进入高危 Boss 区域时可能暂时收紧为紧跟。切换任意档位都会中断正在执行的动能城或料理长任务线，并让该 AI 在本局不再重新接取这两条任务。"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 44,
+      "column": 77,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "除静止外，AI 进入高危 Boss 区域时可能暂时收紧为紧跟。切换任意档位都会中断正在执行的动能城或料理长任务线，并让该 AI 在本局不再重新接取这两条任务。"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 62,
+      "column": 22,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- 自由档空闲期可执行前期整备、刷狼换装、动能城任务线与料理任务线。动能城在队伍推进超过 21 层后尝试，料理线在超过 30 层且动能城流程已了结后尝试。"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 62,
+      "column": 25,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 自由档空闲期可执行前期整备、刷狼换装、动能城任务线与料理任务线。动能城在队伍推进超过 21 层后尝试，料理线在超过 30 层且动能城流程已了结后尝试。"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 62,
+      "column": 31,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 自由档空闲期可执行前期整备、刷狼换装、动能城任务线与料理任务线。动能城在队伍推进超过 21 层后尝试，料理线在超过 30 层且动能城流程已了结后尝试。"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 62,
+      "column": 35,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- 自由档空闲期可执行前期整备、刷狼换装、动能城任务线与料理任务线。动能城在队伍推进超过 21 层后尝试，料理线在超过 30 层且动能城流程已了结后尝试。"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 62,
+      "column": 66,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- 自由档空闲期可执行前期整备、刷狼换装、动能城任务线与料理任务线。动能城在队伍推进超过 21 层后尝试，料理线在超过 30 层且动能城流程已了结后尝试。"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 63,
+      "column": 4,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 长任务线一次只由一名 AI 执行；真人已经接取的任务不会被 AI 抢走。"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 63,
+      "column": 27,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 长任务线一次只由一名 AI 执行；真人已经接取的任务不会被 AI 抢走。"
+    },
+    {
+      "file": "docs/info/AI队友.md",
+      "line": 66,
+      "column": 65,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "新手局保持“战术”；需要 AI 贴身过危险区域时切“紧跟”；希望它自行补装备和做支线时再切“自由”。如果 AI 正在跑长任务线，不要随意切档。"
+    },
+    {
+      "file": "docs/info/可合成物品.md",
+      "line": 148,
+      "column": 15,
+      "alias": "花之冠",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I06L",
+          "name": "花之冠",
+          "path": "items/头部道具/I06L_花之冠.md"
+        }
+      ],
+      "text": "以下 9 步用于火花之刃、火花之冠和火花吊坠三条提升链。"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 8,
+      "column": 13,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "> 本页已按 2.5 的任务结果与料理配方重新核对。任务解锁条件和实际料理材料不能混为一谈。"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 8,
+      "column": 27,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "> 本页已按 2.5 的任务结果与料理配方重新核对。任务解锁条件和实际料理材料不能混为一谈。"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 12,
+      "column": 7,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "1. 在料理任务 NPC 处点击 [`I0MB` 任务:美食料理](../items/特殊/I0MB_任务_美食料理.md) 接取总任务。"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 12,
+      "column": 67,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "1. 在料理任务 NPC 处点击 [`I0MB` 任务:美食料理](../items/特殊/I0MB_任务_美食料理.md) 接取总任务。"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 13,
+      "column": 12,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "2. 完成下方7份配方任务。每完成一份，任务进度+1；全部完成后即可领奖。"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 13,
+      "column": 21,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "2. 完成下方7份配方任务。每完成一份，任务进度+1；全部完成后即可领奖。"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 14,
+      "column": 61,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "3. 再次点击 `I0MB`，获得 [`I0MC` 随身佳肴](../items/不归类/I0MC_随身佳肴.md)，总任务状态改为已领奖，不能重复领取。"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 22,
+      "column": 17,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "| 顺序 | 解锁料理 | 当前任务交付条件 |"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 25,
+      "column": 58,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "| 2 | [`I0PB` 食物:精巧蛋糕](../items/消耗物品/I0PB_食物_精巧蛋糕.md) | 总任务已接取后，至少各购买一次 [`I0MI` 奶油](../items/素材/I0MI_奶油.md)、[`I0MK` 鸡蛋](../items/素材/I0MK_鸡蛋.md)、[`I0MJ` 草莓](../items/素材/I0MJ_草莓.md)、[`I0MS` 调料包](../items/素材/I0MS_调料包.md) |"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 27,
+      "column": 124,
+      "alias": "蘑菇",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0MR",
+          "name": "蘑菇",
+          "path": "items/素材/I0MR_蘑菇.md"
+        }
+      ],
+      "text": "| 4 | [`I0P7` 食物:小鸡炖蘑菇](../items/消耗物品/I0P7_食物_小鸡炖蘑菇.md) | 接取 [`I0N2` 蘑菇精任务](../items/特殊/I0N2_任务_我需要点蘑菇精.md)后在第 8 层累计击杀 10 只蘑菇，击杀刷出的 `n03E` 蘑菇怪，取得并交付 [`I0N1` 蘑菇精](../items/素材/I0N1_特殊物品_蘑菇精.md) |"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 27,
+      "column": 140,
+      "alias": "蘑菇",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0MR",
+          "name": "蘑菇",
+          "path": "items/素材/I0MR_蘑菇.md"
+        }
+      ],
+      "text": "| 4 | [`I0P7` 食物:小鸡炖蘑菇](../items/消耗物品/I0P7_食物_小鸡炖蘑菇.md) | 接取 [`I0N2` 蘑菇精任务](../items/特殊/I0N2_任务_我需要点蘑菇精.md)后在第 8 层累计击杀 10 只蘑菇，击杀刷出的 `n03E` 蘑菇怪，取得并交付 [`I0N1` 蘑菇精](../items/素材/I0N1_特殊物品_蘑菇精.md) |"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 32,
+      "column": 18,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "!!! danger \"第 7 份任务不是交[普通酒水](../items/素材/I0PI_普通酒水.md)\""
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 33,
+      "column": 5,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "任务完成分支明确检查 `I07I`，不是 `I0PI` [普通酒水](../items/素材/I0PI_普通酒水.md)。`I0PI` 只出现在药酒的**实际合成公式**中；旧页把二者混成同一个物品是错误的。"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 37,
+      "column": 1,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "任务完成只保存“配方已解锁”状态；真正做料理仍按下表消耗材料。"
+    },
+    {
+      "file": "docs/info/料理任务.md",
+      "line": 63,
+      "column": 81,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "附近小鸡死亡会掉[鸡肉](../items/素材/I0MH_鸡肉.md)，并在 10 秒后重新生成；这部分是第 4 份料理的合成食材来源，不是第 1 份任务交付物。"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 28,
+      "column": 7,
+      "alias": "墓地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0EB",
+          "name": "墓地",
+          "path": "items/特殊/I0EB_墓地（传送迷宫54层）.md"
+        }
+      ],
+      "text": "| 9 | 墓地 | 九层Lv11:(The Cemetery Guardian) | 26,000 | 650 | — | [传送迷宫9层（`I01Q`）](../../items/特殊/I01Q_传送迷宫9层.md) |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 65,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 15% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 69,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 100% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 70,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 100% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 71,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 34% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 111,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 击杀后固定获得 1 件 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 113,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 34% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 150,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 17% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 152,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 击杀后固定获得 1 件 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 154,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 50% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 347,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 34% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 385,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 击杀后固定获得 1 件 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 442,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 34% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/1-10层.md",
+      "line": 444,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 34% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/11-20层.md",
+      "line": 61,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 击杀后获得 |"
+    },
+    {
+      "file": "docs/info/楼层/11-20层.md",
+      "line": 223,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 击杀后获得 |"
+    },
+    {
+      "file": "docs/info/楼层/11-20层.md",
+      "line": 299,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 33% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/21-30层.md",
+      "line": 185,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 独立 33% 概率获得 |"
+    },
+    {
+      "file": "docs/info/楼层/21-30层.md",
+      "line": 303,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 击杀后获得 |"
+    },
+    {
+      "file": "docs/info/楼层/21-30层.md",
+      "line": 304,
+      "column": 3,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| 能量之书（`tkno`） | 击杀后获得 |"
+    },
+    {
+      "file": "docs/info/楼层/31-40层.md",
+      "line": 166,
+      "column": 28,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "- **半血后三招随机**：可能展开持续领域、释放直线能量波，或以五星撕裂连续追斩并为自己回血。"
+    },
+    {
+      "file": "docs/info/楼层/31-40层.md",
+      "line": 291,
+      "column": 10,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "- **无尽地狱与能量爆裂**：近身持续掉血，并周期对多人造成范围爆发和眩晕。"
+    },
+    {
+      "file": "docs/info/楼层/31-40层.md",
+      "line": 300,
+      "column": 16,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| `A0HY` | 40层/能量爆裂 | 15 | 0 | 0 | 0.1 |"
+    },
+    {
+      "file": "docs/info/楼层/41-50层.md",
+      "line": 23,
+      "column": 23,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "| 44 | 隐月森林 | ★★Lv90:(冰晶之地的领主)★★ | 5,000,000 | 25,000 | 200 | [传送迷宫44层（`I0CQ`）](../../items/特殊/I0CQ_传送迷宫44层.md) |"
+    },
+    {
+      "file": "docs/info/楼层/41-50层.md",
+      "line": 143,
+      "column": 23,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "> **当前 Boss**：★★Lv90:(冰晶之地的领主)★★"
+    },
+    {
+      "file": "docs/info/楼层/41-50层.md",
+      "line": 154,
+      "column": 11,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "| ★★Lv90:(冰晶之地的领主)★★（`n024`） | 67 | 5,000,000 | 10,000 | 200 | 25,000 | 1 | 300 | 522 | 1,200 |"
+    },
+    {
+      "file": "docs/info/楼层/41-50层.md",
+      "line": 192,
+      "column": 20,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "- **前置单位**：★★Lv90:(冰晶之地的领主)★★（`n024`）。"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 22,
+      "column": 8,
+      "alias": "暗杀者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "暗杀者",
+          "name": "草壁操",
+          "path": "heroes/暗杀者.md"
+        }
+      ],
+      "text": "| 53 | 暗杀者之地 | ★★Lv70:暗杀者★★ | 5,000,000 | 20,000 | 173 | [传送迷宫53层（`I0E9`）](../../items/特殊/I0E9_传送迷宫53层.md) |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 22,
+      "column": 23,
+      "alias": "暗杀者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "暗杀者",
+          "name": "草壁操",
+          "path": "heroes/暗杀者.md"
+        }
+      ],
+      "text": "| 53 | 暗杀者之地 | ★★Lv70:暗杀者★★ | 5,000,000 | 20,000 | 173 | [传送迷宫53层（`I0E9`）](../../items/特殊/I0E9_传送迷宫53层.md) |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 23,
+      "column": 8,
+      "alias": "墓地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0EB",
+          "name": "墓地",
+          "path": "items/特殊/I0EB_墓地（传送迷宫54层）.md"
+        }
+      ],
+      "text": "| 54 | 墓地宿主 | ★★★Lv60:(墓地的宿主)★★★；Lv55:（悲哀魔人）；Lv55:（死亡执行者） | 2,000,000 | 3,000 | 300 | [墓地（`I0EB`）](../../items/特殊/I0EB_墓地（传送迷宫54层）.md) |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 23,
+      "column": 24,
+      "alias": "墓地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0EB",
+          "name": "墓地",
+          "path": "items/特殊/I0EB_墓地（传送迷宫54层）.md"
+        }
+      ],
+      "text": "| 54 | 墓地宿主 | ★★★Lv60:(墓地的宿主)★★★；Lv55:（悲哀魔人）；Lv55:（死亡执行者） | 2,000,000 | 3,000 | 300 | [墓地（`I0EB`）](../../items/特殊/I0EB_墓地（传送迷宫54层）.md) |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 24,
+      "column": 8,
+      "alias": "琼玉宫殿",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0CT",
+          "name": "琼玉宫殿",
+          "path": "items/特殊/I0CT_琼玉宫殿（传送迷宫55层）.md"
+        }
+      ],
+      "text": "| 55 | 琼玉宫殿 | ★★★★★Lv80:(后奏曲 · 女帝)★★★★★ | 10,000,000 | 8,600 | 300 | [琼玉宫殿（`I0CT`）](../../items/特殊/I0CT_琼玉宫殿（传送迷宫55层）.md) |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 25,
+      "column": 8,
+      "alias": "废墟之城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I09Z",
+          "name": "废墟之城",
+          "path": "items/特殊/I09Z_废墟之城（传送迷宫56层）.md"
+        }
+      ],
+      "text": "| 56 | 废墟之城 | ★★★Lv:70(虫群)★★★ | 8,400,000 | 10,000 | 160 | [废墟之城（`I09Z`）](../../items/特殊/I09Z_废墟之城（传送迷宫56层）.md) |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 26,
+      "column": 8,
+      "alias": "遗迹之森",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0GM",
+          "name": "遗迹之森",
+          "path": "items/特殊/I0GM_遗迹之森.md"
+        }
+      ],
+      "text": "| 57 | 遗迹之森 | ★★★★Lv:80(元素人)★★★★ | 8,400,000 | 10,000 | 160 | [遗迹之森（`I0GM`）](../../items/特殊/I0GM_遗迹之森.md) |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 27,
+      "column": 8,
+      "alias": "诡域大草原",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0GN",
+          "name": "诡域大草原",
+          "path": "items/特殊/I0GN_诡域大草原.md"
+        }
+      ],
+      "text": "| 58 | 诡域大草原 | ★★★★Lv:80(史莱姆高级)★★★★ | 10,000,000 | 1 | 160 | [诡域大草原（`I0GN`）](../../items/特殊/I0GN_诡域大草原.md) |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 28,
+      "column": 8,
+      "alias": "幽静小镇",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0GO",
+          "name": "幽静小镇",
+          "path": "items/特殊/I0GO_幽静小镇.md"
+        }
+      ],
+      "text": "| 59 | 幽静小镇 | ★★★★Lv:80(怪异法师)★★★★ | 12,000,000 | 1 | 160 | [幽静小镇（`I0GO`）](../../items/特殊/I0GO_幽静小镇.md) |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 29,
+      "column": 8,
+      "alias": "凋零之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0GP",
+          "name": "凋零之地",
+          "path": "items/特殊/I0GP_凋零之地.md"
+        }
+      ],
+      "text": "| 60 | 凋零之地 | ★★★★★Lv:100(八重樱)★★★★★ | 9,000,000 | 6,700 | 200 | [凋零之地（`I0GP`）](../../items/特殊/I0GP_凋零之地.md) |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 110,
+      "column": 22,
+      "alias": "暗杀者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "暗杀者",
+          "name": "草壁操",
+          "path": "heroes/暗杀者.md"
+        }
+      ],
+      "text": "> **当前 Boss**：★★Lv70:暗杀者★★"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 121,
+      "column": 10,
+      "alias": "暗杀者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "暗杀者",
+          "name": "草壁操",
+          "path": "heroes/暗杀者.md"
+        }
+      ],
+      "text": "| ★★Lv70:暗杀者★★（`n03R`） | 70 | 5,000,000 | 1,500 | 173 | 20,000 | 0.35 | — | 450 | 1,200 |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 145,
+      "column": 24,
+      "alias": "墓地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0EB",
+          "name": "墓地",
+          "path": "items/特殊/I0EB_墓地（传送迷宫54层）.md"
+        }
+      ],
+      "text": "> **当前 Boss**：★★★Lv60:(墓地的宿主)★★★；Lv55:（悲哀魔人）；Lv55:（死亡执行者）"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 150,
+      "column": 19,
+      "alias": "暗杀者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "暗杀者",
+          "name": "草壁操",
+          "path": "heroes/暗杀者.md"
+        }
+      ],
+      "text": "- **前置单位**：★★Lv70:暗杀者★★（`n03R`）。"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 157,
+      "column": 12,
+      "alias": "墓地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0EB",
+          "name": "墓地",
+          "path": "items/特殊/I0EB_墓地（传送迷宫54层）.md"
+        }
+      ],
+      "text": "| ★★★Lv60:(墓地的宿主)★★★（`n013`） | 60 | 13,000,000 | 260,000 | 50 | 5,000 | — | — | — | — |"
+    },
+    {
+      "file": "docs/info/楼层/51-60层.md",
+      "line": 192,
+      "column": 21,
+      "alias": "墓地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0EB",
+          "name": "墓地",
+          "path": "items/特殊/I0EB_墓地（传送迷宫54层）.md"
+        }
+      ],
+      "text": "- **前置单位**：★★★Lv60:(墓地的宿主)★★★（`n013`）。"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 20,
+      "column": 8,
+      "alias": "苏醒之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HS",
+          "name": "<苏醒之地>",
+          "path": "items/特殊/I0HS_苏醒之地.md"
+        }
+      ],
+      "text": "| 61 | 苏醒之地 | ★★★★Lv:80(吸血蝠王)★★★★ | 8,700,000 | — | 150 | [<苏醒之地>（`I0HS`）](../../items/特殊/I0HS_苏醒之地.md) |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 21,
+      "column": 8,
+      "alias": "霜冻平原",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0OW",
+          "name": "<霜冻平原>",
+          "path": "items/特殊/I0OW_霜冻平原.md"
+        }
+      ],
+      "text": "| 62 | 霜冻平原 | ★★★★Lv:85(冰晶炎凤)★★★★ | 8,700,000 | — | 150 | [<霜冻平原>（`I0OW`）](../../items/特殊/I0OW_霜冻平原.md) |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 23,
+      "column": 8,
+      "alias": "画中世界",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0OY",
+          "name": "<画中世界>",
+          "path": "items/特殊/I0OY_画中世界.md"
+        }
+      ],
+      "text": "| 64 | 画中世界 | ★★★★Lv70:(姽婳诡画师)★★★★ | 8,700,000 | 15,000 | 180 | [<画中世界>（`I0OY`）](../../items/特殊/I0OY_画中世界.md) |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 23,
+      "column": 25,
+      "alias": "姽婳",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0PM",
+          "name": "姽婳",
+          "path": "items/装备道具/I0PM_姽婳.md"
+        }
+      ],
+      "text": "| 64 | 画中世界 | ★★★★Lv70:(姽婳诡画师)★★★★ | 8,700,000 | 15,000 | 180 | [<画中世界>（`I0OY`）](../../items/特殊/I0OY_画中世界.md) |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 24,
+      "column": 8,
+      "alias": "王的故乡",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0OZ",
+          "name": "<王的故乡>",
+          "path": "items/特殊/I0OZ_王的故乡.md"
+        }
+      ],
+      "text": "| 65 | 王的故乡 | ★★★★★Lv100:(终幕-樱满集)★★★★★ | 8,000,000 | 15,000 | 350 | [<王的故乡>（`I0OZ`）](../../items/特殊/I0OZ_王的故乡.md) |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 25,
+      "column": 8,
+      "alias": "辉煌之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0ID",
+          "name": "<辉煌之地>",
+          "path": "items/特殊/I0ID_辉煌之地.md"
+        }
+      ],
+      "text": "| 66 | 辉煌之地 | ★★★★Lv:85(踏风驹)★★★★ | 9,000,000 | — | 200 | [<辉煌之地>（`I0ID`）](../../items/特殊/I0ID_辉煌之地.md) |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 26,
+      "column": 8,
+      "alias": "诗画之乡",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0IE",
+          "name": "<诗画之乡>",
+          "path": "items/特殊/I0IE_诗画之乡.md"
+        }
+      ],
+      "text": "| 67 | 诗画之乡 | ★★★★ Lv85:食铁兽 ★★★★ | 9,000,000 | 20,000 | 200 | [<诗画之乡>（`I0IE`）](../../items/特殊/I0IE_诗画之乡.md) |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 27,
+      "column": 8,
+      "alias": "不安之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0IG",
+          "name": "不安之地",
+          "path": "items/特殊/I0IG_不安之地.md"
+        }
+      ],
+      "text": "| 68 | 不安之地 | ★★★★ Lv85:百鬼 ★★★★ | 9,000,000 | — | 200 | [不安之地（`I0IG`）](../../items/特殊/I0IG_不安之地.md) |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 28,
+      "column": 25,
+      "alias": "独裁者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0OA",
+          "name": "独裁者",
+          "path": "items/头部道具/I0OA_独裁者.md"
+        }
+      ],
+      "text": "| 69 | 净化之地 | ★★★★ Lv85:独裁者 ★★★★ | 9,000,000 | 20,000 | 200 | [净化の地（`I0II`）](../../items/特殊/I0II_净化の地.md) |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 29,
+      "column": 31,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "| 70 | 灵魂归宿地 | ★★★★★ Lv100:(血色魔女) ★★★★★ | 10,000,000 | 20,000 | 230 | [<灵魂の归宿地>（`I0IH`）](../../items/特殊/I0IH_灵魂の归宿地.md) |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 61,
+      "column": 18,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "| `A1IH` | 61层/负面能量 | 33 | — | 1,500 | — |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 145,
+      "column": 25,
+      "alias": "姽婳",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0PM",
+          "name": "姽婳",
+          "path": "items/装备道具/I0PM_姽婳.md"
+        }
+      ],
+      "text": "> **当前 Boss**：★★★★Lv70:(姽婳诡画师)★★★★"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 156,
+      "column": 13,
+      "alias": "姽婳",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0PM",
+          "name": "姽婳",
+          "path": "items/装备道具/I0PM_姽婳.md"
+        }
+      ],
+      "text": "| ★★★★Lv70:(姽婳诡画师)★★★★（`n053`） | 70 | 8,700,000 | 12,000 | 180 | 15,000 | 1 | 300 | 522 | 1,500 |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 204,
+      "column": 22,
+      "alias": "姽婳",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0PM",
+          "name": "姽婳",
+          "path": "items/装备道具/I0PM_姽婳.md"
+        }
+      ],
+      "text": "- **前置单位**：★★★★Lv70:(姽婳诡画师)★★★★（`n053`）。"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 347,
+      "column": 25,
+      "alias": "独裁者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0OA",
+          "name": "独裁者",
+          "path": "items/头部道具/I0OA_独裁者.md"
+        }
+      ],
+      "text": "> **当前 Boss**：★★★★ Lv85:独裁者 ★★★★"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 358,
+      "column": 13,
+      "alias": "独裁者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0OA",
+          "name": "独裁者",
+          "path": "items/头部道具/I0OA_独裁者.md"
+        }
+      ],
+      "text": "| ★★★★ Lv85:独裁者 ★★★★（`n058`） | — | 9,000,000 | 12,000 | 200 | 20,000 | 0.6 | 350 | 522 | 1,200 |"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 362,
+      "column": 5,
+      "alias": "月镰",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0OO",
+          "name": "月镰",
+          "path": "items/武器/I0OO_月镰.md"
+        }
+      ],
+      "text": "- **月镰**：镰刀沿直线飞出后再折返，两段路径都会造成高额伤害。"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 385,
+      "column": 30,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "> **当前 Boss**：★★★★★ Lv100:(血色魔女) ★★★★★"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 390,
+      "column": 22,
+      "alias": "独裁者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0OA",
+          "name": "独裁者",
+          "path": "items/头部道具/I0OA_独裁者.md"
+        }
+      ],
+      "text": "- **前置单位**：★★★★ Lv85:独裁者 ★★★★（`n058`）。"
+    },
+    {
+      "file": "docs/info/楼层/61-70层.md",
+      "line": 396,
+      "column": 18,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "| ★★★★★ Lv100:(血色魔女) ★★★★★（`n059`） | 100 | 10,000,000 | 6,666 | 230 | 20,000 | 1 | 900 | 522 | 3,000 |"
+    },
+    {
+      "file": "docs/info/楼层/71-72层.md",
+      "line": 20,
+      "column": 8,
+      "alias": "深渊回廊",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q6",
+          "name": "<深渊回廊>",
+          "path": "items/特殊/I0Q6_深渊回廊.md"
+        }
+      ],
+      "text": "| 71 | 深渊回廊 | ★★★★★ Lv90:(深渊魔女) ★★★★★ | 8,000,000 | 20,000 | 230 | [<深渊回廊>（`I0Q6`）](../../items/特殊/I0Q6_深渊回廊.md) |"
+    },
+    {
+      "file": "docs/info/楼层/71-72层.md",
+      "line": 20,
+      "column": 29,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "| 71 | 深渊回廊 | ★★★★★ Lv90:(深渊魔女) ★★★★★ | 8,000,000 | 20,000 | 230 | [<深渊回廊>（`I0Q6`）](../../items/特殊/I0Q6_深渊回廊.md) |"
+    },
+    {
+      "file": "docs/info/楼层/71-72层.md",
+      "line": 21,
+      "column": 8,
+      "alias": "圣灵堂",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0R3",
+          "name": "<圣灵堂>",
+          "path": "items/特殊/I0R3_圣灵堂.md"
+        }
+      ],
+      "text": "| 72 | 圣灵堂 | Lv100:(The killer of Massacre) | 9,600,000 | 15,000 | 300 | [<圣灵堂>（`I0R3`）](../../items/特殊/I0R3_圣灵堂.md) |"
+    },
+    {
+      "file": "docs/info/楼层/71-72层.md",
+      "line": 25,
+      "column": 29,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "> **当前 Boss**：★★★★★ Lv90:(深渊魔女) ★★★★★"
+    },
+    {
+      "file": "docs/info/楼层/71-72层.md",
+      "line": 30,
+      "column": 27,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "- **前置单位**：★★★★★ Lv100:(血色魔女) ★★★★★（`n059`）。"
+    },
+    {
+      "file": "docs/info/楼层/71-72层.md",
+      "line": 36,
+      "column": 17,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "| ★★★★★ Lv90:(深渊魔女) ★★★★★（`n05H`） | 90 | 8,000,000 | 6,666 | 230 | 20,000 | 1 | 900 | 522 | 3,000 |"
+    },
+    {
+      "file": "docs/info/楼层/71-72层.md",
+      "line": 53,
+      "column": 16,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "| `A1M1` | 71层/魔女炮 | 200 | — | 1,250 | — |"
+    },
+    {
+      "file": "docs/info/楼层/71-72层.md",
+      "line": 69,
+      "column": 26,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "- **前置单位**：★★★★★ Lv90:(深渊魔女) ★★★★★（`n05H`）。"
+    },
+    {
+      "file": "docs/info/楼层/73-75层.md",
+      "line": 15,
+      "column": 8,
+      "alias": "哥布林巢窟",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0R4",
+          "name": "<哥布林巢窟>",
+          "path": "items/特殊/I0R4_哥布林巢窟.md"
+        }
+      ],
+      "text": "| 73 | 哥布林巢窟 / 没节操的哥布林王（`n05N`） | 9,000,000 | 200 | 30,000 | 1.2 秒 | 400 | 击杀 72 层堕落帝王（`nwzr`） |"
+    },
+    {
+      "file": "docs/info/楼层/73-75层.md",
+      "line": 16,
+      "column": 8,
+      "alias": "青眼恶魔领地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0R5",
+          "name": "<青眼恶魔领地>",
+          "path": "items/特殊/I0R5_青眼恶魔领地.md"
+        }
+      ],
+      "text": "| 74 | 青眼恶魔领地 / 青眼恶魔（`nB74`） | 13,000,000 | 240 | 40,000 | 1.8 秒 | 320 | 击杀 73 层哥布林王（`n05N`） |"
+    },
+    {
+      "file": "docs/info/楼层/73-75层.md",
+      "line": 17,
+      "column": 8,
+      "alias": "骸骨猎杀者房间",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0R7",
+          "name": "<骸骨猎杀者房间>",
+          "path": "items/特殊/I0R7_骸骨猎杀者房间.md"
+        }
+      ],
+      "text": "| 75 | 骸骨猎杀者房间 / 骸骨猎杀者（`nB75`） | 15,000,000 | 240 | 35,000 | 1.8 秒 | 320 | 击杀 74 层青眼恶魔（`nB74`） |"
+    },
+    {
+      "file": "docs/info/楼层/73-75层.md",
+      "line": 115,
+      "column": 41,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "NPC [桐人](../../heroes/封弊者_桐谷和人_桐人.md)出售的任务交互物品[“前进的资格”](../../items/特殊/I0R6_74层前进的资格.md)不是进入 75 层的门票。满足以下任一条件后，它会永久开启青眼恶魔易伤："
+    },
+    {
+      "file": "docs/info/楼层/73-75层.md",
+      "line": 120,
+      "column": 1,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "任务易伤生效后，青眼恶魔承受伤害变为 **2 倍**，并会保存到地图存档。若易伤与血吼同时存在，最终承受原伤害的 20%。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 19,
+      "column": 22,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **传送道具**：通过商店、副本道具或任务道具进入。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 33,
+      "column": 28,
+      "alias": "博丽神社",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0PY",
+          "name": "博丽神社",
+          "path": "items/特殊/I0PY_博丽神社.md"
+        }
+      ],
+      "text": "| 奇怪的女巫 | 击败 21 层 Boss 后，使用博丽神社传送道具 | 博丽灵梦 | [跳转查看](#reimu) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 34,
+      "column": 61,
+      "alias": "纯狐之境",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I2J3",
+          "name": "纯狐之境",
+          "path": "items/特殊/I2J3_纯狐之境.md"
+        }
+      ],
+      "text": "| [纯狐之境](../../../items/特殊/I2J3_纯狐之境.md) | 击败博丽灵梦后，在副本传送商店购买纯狐之境（`I2J3`） | 纯狐（`nJ00`） | [查看详表](纯狐.md) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 36,
+      "column": 38,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "| 水晶深处 | 击败 44 层 Boss 后，使用水晶深处传送道具 | 冰晶之地的领主 | [跳转查看](#crystal-depth) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 37,
+      "column": 3,
+      "alias": "黑暗深处",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0OF",
+          "name": "黑暗深处",
+          "path": "items/特殊/I0OF_黑暗深处.md"
+        }
+      ],
+      "text": "| 黑暗深处 | 使用黑暗深处传送道具，英雄等级需达到 100 | NPC「虚无」 | [跳转查看](#dark-depth) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 37,
+      "column": 12,
+      "alias": "黑暗深处",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0OF",
+          "name": "黑暗深处",
+          "path": "items/特殊/I0OF_黑暗深处.md"
+        }
+      ],
+      "text": "| 黑暗深处 | 使用黑暗深处传送道具，英雄等级需达到 100 | NPC「虚无」 | [跳转查看](#dark-depth) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 38,
+      "column": 3,
+      "alias": "红魔城宫殿",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NO",
+          "name": "红魔城宫殿",
+          "path": "items/特殊/I0NO_红魔城宫殿.md"
+        }
+      ],
+      "text": "| 红魔城宫殿 | 击败灵梦后，使用红魔城传送道具 | 雷米利亚(三皇) | [跳转查看](#scarlet-castle) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 39,
+      "column": 3,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "| 动能城 | 取得王坠星钥匙后，使用动能城传送道具 | 机器1号、2号、蜘蛛女王 | [跳转查看](#kinetic-city) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 39,
+      "column": 20,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "| 动能城 | 取得王坠星钥匙后，使用动能城传送道具 | 机器1号、2号、蜘蛛女王 | [跳转查看](#kinetic-city) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 40,
+      "column": 3,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "| 冰晶之地 | 使用冰晶之地传送道具 | 冰晶之地的领主、Fenice（不死鸟） | [跳转查看](#ice-land) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 40,
+      "column": 12,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "| 冰晶之地 | 使用冰晶之地传送道具 | 冰晶之地的领主、Fenice（不死鸟） | [跳转查看](#ice-land) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 40,
+      "column": 23,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "| 冰晶之地 | 使用冰晶之地传送道具 | 冰晶之地的领主、Fenice（不死鸟） | [跳转查看](#ice-land) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 41,
+      "column": 3,
+      "alias": "深绿之林",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NR",
+          "name": "深绿之林",
+          "path": "items/特殊/I0NR_深绿之林.md"
+        }
+      ],
+      "text": "| 深绿之林 | 使用深绿之林传送道具 | 强壮的树人 | [跳转查看](#deep-green-forest) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 41,
+      "column": 12,
+      "alias": "深绿之林",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NR",
+          "name": "深绿之林",
+          "path": "items/特殊/I0NR_深绿之林.md"
+        }
+      ],
+      "text": "| 深绿之林 | 使用深绿之林传送道具 | 强壮的树人 | [跳转查看](#deep-green-forest) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 43,
+      "column": 3,
+      "alias": "伊偌遗迹",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NV",
+          "name": "伊偌遗迹",
+          "path": "items/特殊/I0NV_伊偌遗迹.md"
+        }
+      ],
+      "text": "| 伊偌遗迹 | 使用伊偌遗迹传送道具 | [亚丝娜](../../../heroes/闪光_亚丝娜.md)、王坠星、法多等 | [查看详表](大型副本详表/伊偌-亚兰遗迹副本.md) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 43,
+      "column": 12,
+      "alias": "伊偌遗迹",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NV",
+          "name": "伊偌遗迹",
+          "path": "items/特殊/I0NV_伊偌遗迹.md"
+        }
+      ],
+      "text": "| 伊偌遗迹 | 使用伊偌遗迹传送道具 | [亚丝娜](../../../heroes/闪光_亚丝娜.md)、王坠星、法多等 | [查看详表](大型副本详表/伊偌-亚兰遗迹副本.md) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 44,
+      "column": 3,
+      "alias": "冰雪世界",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q0",
+          "name": "冰雪世界",
+          "path": "items/特殊/I0Q0_冰雪世界.md"
+        }
+      ],
+      "text": "| 冰雪世界 | 使用冰雪世界传送道具 | 魔法大师 | [跳转查看](#ice-world) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 44,
+      "column": 12,
+      "alias": "冰雪世界",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q0",
+          "name": "冰雪世界",
+          "path": "items/特殊/I0Q0_冰雪世界.md"
+        }
+      ],
+      "text": "| 冰雪世界 | 使用冰雪世界传送道具 | 魔法大师 | [跳转查看](#ice-world) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 45,
+      "column": 3,
+      "alias": "楼兰前院",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q1",
+          "name": "楼兰前院",
+          "path": "items/特殊/I0Q1_楼兰前院.md"
+        }
+      ],
+      "text": "| 楼兰前院 | 使用楼兰传送道具进入前院 | 梦岚离、沁、栖、婳 | [查看详表](大型副本详表/楼兰副本.md) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 46,
+      "column": 3,
+      "alias": "楼兰后院",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q2",
+          "name": "楼兰后院",
+          "path": "items/特殊/I0Q2_楼兰后院.md"
+        }
+      ],
+      "text": "| 楼兰后院 | 从楼兰前院继续进入后院 | 王珏、琳、月神、朱雀、[Saber](../../../heroes/娃娃_Saber.md) | [查看详表](大型副本详表/楼兰副本.md) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 46,
+      "column": 11,
+      "alias": "楼兰前院",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q1",
+          "name": "楼兰前院",
+          "path": "items/特殊/I0Q1_楼兰前院.md"
+        }
+      ],
+      "text": "| 楼兰后院 | 从楼兰前院继续进入后院 | 王珏、琳、月神、朱雀、[Saber](../../../heroes/娃娃_Saber.md) | [查看详表](大型副本详表/楼兰副本.md) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 47,
+      "column": 3,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "| 通天塔 | 购票使用[通天塔阶梯](../../../items/特殊/I0OI_通天塔阶梯.md)进入 | 多层 Boss 连战 | [查看详表](大型副本详表/通天塔.md) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 61,
+      "column": 3,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "| 通天塔 | 7 | [查看详表](大型副本详表/通天塔.md) |"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/index.md",
+      "line": 390,
+      "column": 73,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "* **商贩机制**：NPC「虚无」处出售 [通天塔阶梯](../../../items/特殊/I0OI_通天塔阶梯.md)，这是进入无限挑战「通天塔」唯一的门票道具。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/大型副本详表/伊偌-亚兰遗迹副本.md",
+      "line": 11,
+      "column": 63,
+      "alias": "伊偌遗迹",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NV",
+          "name": "伊偌遗迹",
+          "path": "items/特殊/I0NV_伊偌遗迹.md"
+        }
+      ],
+      "text": "血盟-[亚丝娜](../../../../heroes/闪光_亚丝娜.md) `n05E` 位于血盟骑士团区域，不是伊偌遗迹第 5 名 Boss；拜火者·古末加 `nspb` 也不属于伊偌区域。旧页把这些单位及其他区域宝箱的[智慧之书](../../../../items/消耗物品/I0OM_智慧之书.md)、[智慧之冠](../../../../items/头部道具/I0ON_智慧之冠.md)混到本副本，现已拆除。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/大型副本详表/楼兰副本.md",
+      "line": 15,
+      "column": 5,
+      "alias": "楼兰前院",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q1",
+          "name": "楼兰前院",
+          "path": "items/特殊/I0Q1_楼兰前院.md"
+        }
+      ],
+      "text": "- **楼兰前院第一波**：梦岚离 / 琳 / 王珏同时存在。三者全部击杀后，等待约 60 秒刷新第二波。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/大型副本详表/楼兰副本.md",
+      "line": 16,
+      "column": 5,
+      "alias": "楼兰前院",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q1",
+          "name": "楼兰前院",
+          "path": "items/特殊/I0Q1_楼兰前院.md"
+        }
+      ],
+      "text": "- **楼兰前院第二波**：沁 / 栖 / 婳同时刷新，分别掉落三把仙剑。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/大型副本详表/楼兰副本.md",
+      "line": 17,
+      "column": 5,
+      "alias": "楼兰后院",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q2",
+          "name": "楼兰后院",
+          "path": "items/特殊/I0Q2_楼兰后院.md"
+        }
+      ],
+      "text": "- **楼兰后院第一波**：月神 / 朱雀同时存在。二者全部击杀后，等待约 60 秒刷新白 [Saber](../../../../heroes/娃娃_Saber.md)。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/大型副本详表/楼兰副本.md",
+      "line": 18,
+      "column": 5,
+      "alias": "楼兰后院",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q2",
+          "name": "楼兰后院",
+          "path": "items/特殊/I0Q2_楼兰后院.md"
+        }
+      ],
+      "text": "- **楼兰后院终战**：白 [Saber](../../../../heroes/娃娃_Saber.md) 首次被打到致死会进入变身流程，约 5 秒后满血转入黑化形态；真正的最终掉落来自黑化形态。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/大型副本详表/楼兰副本.md",
+      "line": 26,
+      "column": 11,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "击败三者后，系统提示任务将在60秒后刷新，并生成沁、栖、婳。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/大型副本详表/通天塔.md",
+      "line": 8,
+      "column": 3,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "> 通天塔是由「NPC:虚无」开启的逐层挑战。每击败一层 Boss，NPC 会重新出现，下一次交互即可挑战下一层。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/大型副本详表/通天塔.md",
+      "line": 16,
+      "column": 17,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "2. 购买成功后英雄会直接传送到通天塔入口；当前代码没有额外的楼层击杀或等级门槛。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/大型副本详表/通天塔.md",
+      "line": 20,
+      "column": 22,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "从副本传送商店购买 `I0NN`「通天塔」后，镜头会用 3 秒平滑移动到落点；其他同类商店传送仍会立即切换镜头。这项调整只影响镜头表现，不改变价格或 Boss 推进。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/大型副本详表/通天塔.md",
+      "line": 24,
+      "column": 16,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "- **交互 NPC**：找到通天塔内的「NPC:虚无」，使用其提供的[通天塔阶梯](../../../../items/特殊/I0OI_通天塔阶梯.md)开启挑战。"
+    },
+    {
+      "file": "docs/info/楼层/隐藏与副本Boss/大型副本详表/通天塔.md",
+      "line": 86,
+      "column": 35,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "- **空间移动**：承伤累计达到约 300,000 后触发位移，在通天塔区域随机换位，并留下附加效果爆炸；爆炸对 400 范围造成 50,000 混乱伤害。"
+    },
+    {
+      "file": "docs/info/界面与HUD.md",
+      "line": 43,
+      "column": 21,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- <kbd>F9</kbd>：打开原生任务面板。"
+    },
+    {
+      "file": "docs/items/index.md",
+      "line": 22,
+      "column": 28,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "| [特殊](特殊/index.md) | 传送卷轴、任务道具、NPC交互道具等 |"
+    },
+    {
+      "file": "docs/items/不归类/I03I_毁灭钻石.md",
+      "line": 10,
+      "column": 54,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "旧页把使用效果留作待核验，并把消费用途误写成“与 NPC 交换获取”。当前实际效果、五类掉落方式、任务消费和觉醒合成都已能从当前版本确定。"
+    },
+    {
+      "file": "docs/items/不归类/I03I_毁灭钻石.md",
+      "line": 20,
+      "column": 36,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "每件物品可使用 3 次；任何持有者都可以使用传送效果，不受英雄、玩家或任务进度限制。"
+    },
+    {
+      "file": "docs/items/不归类/I03I_毁灭钻石.md",
+      "line": 27,
+      "column": 8,
+      "alias": "墓地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0EB",
+          "name": "墓地",
+          "path": "items/特殊/I0EB_墓地（传送迷宫54层）.md"
+        }
+      ],
+      "text": "- 击败任意“墓地的宿主”（单位 ID：`n013`）时必定掉落 2 件。"
+    },
+    {
+      "file": "docs/items/不归类/I0FT_善恶之镰（不归类，传说）.md",
+      "line": 31,
+      "column": 11,
+      "alias": "墓地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0EB",
+          "name": "墓地",
+          "path": "items/特殊/I0EB_墓地（传送迷宫54层）.md"
+        }
+      ],
+      "text": "1. 击败 54 层墓地的宿主（单位 ID：`n013`），掉落 1 件 I0FT 和 2 件[毁灭钻石](I03I_毁灭钻石.md)；"
+    },
+    {
+      "file": "docs/items/不归类/I0MC_随身佳肴.md",
+      "line": 35,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "美食任务以玩家状态值记录进度。购买任务物品 `I0MB` 时："
+    },
+    {
+      "file": "docs/items/不归类/I0MC_随身佳肴.md",
+      "line": 35,
+      "column": 18,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "美食任务以玩家状态值记录进度。购买任务物品 `I0MB` 时："
+    },
+    {
+      "file": "docs/items/不归类/I0MC_随身佳肴.md",
+      "line": 37,
+      "column": 10,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 状态 0：接取任务；"
+    },
+    {
+      "file": "docs/items/不归类/I0MC_随身佳肴.md",
+      "line": 42,
+      "column": 9,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "因此本物品是美食任务的一次性最终奖励，不是普通商店库存或随机掉落。"
+    },
+    {
+      "file": "docs/items/不归类/I0PD_闪烁之光.md",
+      "line": 10,
+      "column": 105,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "物品属性和获取方式在2.5与2.41相同，变化发生在[亚丝娜](../../heroes/闪光_亚丝娜.md)的技能实际效果。旧页把两条互相矛盾的拾取提示概括成统一“系数+3”，又把物品说明中的“隐藏任务获得”当成来源；真实来源是王珏 `n02B` 无随机必掉，74层隐藏任务只是该物品的后续用途。"
+    },
+    {
+      "file": "docs/items/不归类/I0PD_闪烁之光.md",
+      "line": 10,
+      "column": 141,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "物品属性和获取方式在2.5与2.41相同，变化发生在[亚丝娜](../../heroes/闪光_亚丝娜.md)的技能实际效果。旧页把两条互相矛盾的拾取提示概括成统一“系数+3”，又把物品说明中的“隐藏任务获得”当成来源；真实来源是王珏 `n02B` 无随机必掉，74层隐藏任务只是该物品的后续用途。"
+    },
+    {
+      "file": "docs/items/不归类/I0PD_闪烁之光.md",
+      "line": 72,
+      "column": 36,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "该物品为必定掉落。当前版本没有其他正常获取方式；物品说明中的“通过隐藏任务获得”不准确，物品等级 82 也不代表来自 82 层。"
+    },
+    {
+      "file": "docs/items/不归类/I0PD_闪烁之光.md",
+      "line": 76,
+      "column": 5,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "在74层任务商店购买[前进的资格（I0R6）](../特殊/I0R6_74层前进的资格.md)时："
+    },
+    {
+      "file": "docs/items/不归类/I0PD_闪烁之光.md",
+      "line": 80,
+      "column": 18,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 满足条件后，青眼恶魔会永久进入任务易伤状态；"
+    },
+    {
+      "file": "docs/items/不归类/I0PD_闪烁之光.md",
+      "line": 83,
+      "column": 23,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "这是一条**物品用途**，不是闪烁之光的获取任务。2.41没有74层及该入口。"
+    },
+    {
+      "file": "docs/items/不归类/I0PG_你觉得你能追的上我.md",
+      "line": 33,
+      "column": 19,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前版本没有商店、掉落、合成、扭蛋、任务或随机奖励等正常获取方式。"
+    },
+    {
+      "file": "docs/items/不归类/I0PQ_究极十字星盾.md",
+      "line": 23,
+      "column": 24,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前版本没有商店、怪物或宝箱掉落、合成、扭蛋、任务或随机奖励等正常获取方式。"
+    },
+    {
+      "file": "docs/items/不归类/I0PS_黑剑·阐释者-真.md",
+      "line": 15,
+      "column": 80,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "物品本身、合成公式、[桐人](../../heroes/封弊者_桐谷和人_桐人.md)专属持有条件和战斗强化与 2.41 相同。2.5 新增 74 层任务联动：[桐人](../../heroes/封弊者_桐谷和人_桐人.md)持有 `I0PS` 时购买任务道具 `I0R6`，可让青眼恶魔永久进入任务易伤状态。"
+    },
+    {
+      "file": "docs/items/不归类/I0PS_黑剑·阐释者-真.md",
+      "line": 15,
+      "column": 131,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "物品本身、合成公式、[桐人](../../heroes/封弊者_桐谷和人_桐人.md)专属持有条件和战斗强化与 2.41 相同。2.5 新增 74 层任务联动：[桐人](../../heroes/封弊者_桐谷和人_桐人.md)持有 `I0PS` 时购买任务道具 `I0R6`，可让青眼恶魔永久进入任务易伤状态。"
+    },
+    {
+      "file": "docs/items/不归类/I0PS_黑剑·阐释者-真.md",
+      "line": 15,
+      "column": 153,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "物品本身、合成公式、[桐人](../../heroes/封弊者_桐谷和人_桐人.md)专属持有条件和战斗强化与 2.41 相同。2.5 新增 74 层任务联动：[桐人](../../heroes/封弊者_桐谷和人_桐人.md)持有 `I0PS` 时购买任务道具 `I0R6`，可让青眼恶魔永久进入任务易伤状态。"
+    },
+    {
+      "file": "docs/items/不归类/I0PS_黑剑·阐释者-真.md",
+      "line": 19,
+      "column": 57,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "属性、合成、专属持有条件、统一伤害额外 12%及 R 强化均与 2.5 相同；该版本没有 74 层与对应任务入口。"
+    },
+    {
+      "file": "docs/items/不归类/I0PS_黑剑·阐释者-真.md",
+      "line": 76,
+      "column": 7,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "在 74 层任务商店购买[前进的资格（I0R6）](../特殊/I0R6_74层前进的资格.md)时："
+    },
+    {
+      "file": "docs/items/不归类/I0PS_黑剑·阐释者-真.md",
+      "line": 80,
+      "column": 16,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 满足后，青眼恶魔会永久进入任务易伤状态；"
+    },
+    {
+      "file": "docs/items/不归类/I0PS_黑剑·阐释者-真.md",
+      "line": 83,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "同一任务也有[亚丝娜](../../heroes/闪光_亚丝娜.md)与其专属武器的另一条入口。楼层上下文见[73—75层](../../info/楼层/73-75层.md)。"
+    },
+    {
+      "file": "docs/items/不归类/I0Q3_行于流逝的岸.md",
+      "line": 28,
+      "column": 15,
+      "alias": "红叶",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "红叶",
+          "name": "红叶",
+          "path": "heroes/红叶.md"
+        }
+      ],
+      "text": "司命持有本物品时，“红叶时雨·万倾一空”和“残梦尽染·一刀缭断”的每笔伤害均乘1.24："
+    },
+    {
+      "file": "docs/items/不归类/I0Q3_行于流逝的岸.md",
+      "line": 46,
+      "column": 51,
+      "alias": "王女之冠",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q9",
+          "name": "王女之冠",
+          "path": "items/头部道具/I0Q9_王女之冠.md"
+        }
+      ],
+      "text": "若同时持有[王女之冠](../头部道具/I0Q9_王女之冠.md)，两项保护都可用时优先触发王女之冠，本物品不会被一并消耗；王女之冠冷却而司命就绪时，才由司命触发。两件物品共享触发演出中的竞争锁，不能被嵌套伤害在同一轮内连续触发。"
+    },
+    {
+      "file": "docs/items/不归类/I0Q3_行于流逝的岸.md",
+      "line": 46,
+      "column": 67,
+      "alias": "王女之冠",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0Q9",
+          "name": "王女之冠",
+          "path": "items/头部道具/I0Q9_王女之冠.md"
+        }
+      ],
+      "text": "若同时持有[王女之冠](../头部道具/I0Q9_王女之冠.md)，两项保护都可用时优先触发王女之冠，本物品不会被一并消耗；王女之冠冷却而司命就绪时，才由司命触发。两件物品共享触发演出中的竞争锁，不能被嵌套伤害在同一轮内连续触发。"
+    },
+    {
+      "file": "docs/items/不归类/I2H0_四次元口袋.md",
+      "line": 21,
+      "column": 57,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 若同一英雄在上一只口袋仍等待召回时再次使用口袋，新使用会立即结算上一只的返还，再以新的 15 秒计时覆盖召回任务。"
+    },
+    {
+      "file": "docs/items/副武器/I06I_红破机枪.md",
+      "line": 29,
+      "column": 33,
+      "alias": "狂三",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "时崎狂三",
+          "name": "时崎狂三",
+          "path": "heroes/时崎狂三.md"
+        }
+      ],
+      "text": "- [时崎狂三](../../heroes/时崎狂三.md)的 狂三分身效果 分身在固定狂三单位持有本物品时获得 `A0XU`；狂三高阶分身效果 生成物则要求同时持有 `I0KN` 与 `I06I`。"
+    },
+    {
+      "file": "docs/items/副武器/I06I_红破机枪.md",
+      "line": 29,
+      "column": 45,
+      "alias": "狂三",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "时崎狂三",
+          "name": "时崎狂三",
+          "path": "heroes/时崎狂三.md"
+        }
+      ],
+      "text": "- [时崎狂三](../../heroes/时崎狂三.md)的 狂三分身效果 分身在固定狂三单位持有本物品时获得 `A0XU`；狂三高阶分身效果 生成物则要求同时持有 `I0KN` 与 `I06I`。"
+    },
+    {
+      "file": "docs/items/副武器/I06I_红破机枪.md",
+      "line": 29,
+      "column": 65,
+      "alias": "狂三",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "时崎狂三",
+          "name": "时崎狂三",
+          "path": "heroes/时崎狂三.md"
+        }
+      ],
+      "text": "- [时崎狂三](../../heroes/时崎狂三.md)的 狂三分身效果 分身在固定狂三单位持有本物品时获得 `A0XU`；狂三高阶分身效果 生成物则要求同时持有 `I0KN` 与 `I06I`。"
+    },
+    {
+      "file": "docs/items/副武器/I0DK_堕落天使剑（传说）.md",
+      "line": 44,
+      "column": 12,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "- **获取**：击败冰晶之地领主（单位 ID：`n024`）固定掉落 1 件。"
+    },
+    {
+      "file": "docs/items/副武器/I0LM_未知副武器.md",
+      "line": 29,
+      "column": 27,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前版本没有商店、Boss、宝箱、打造、扭蛋、合成或任务奖励来源，因此正常流程应视为**无法获取**。"
+    },
+    {
+      "file": "docs/items/头部道具/I0DD_暗杀者之面具（良好）.md",
+      "line": 27,
+      "column": 9,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 合成、升级或任务奖励。"
+    },
+    {
+      "file": "docs/items/头部道具/I0N5_火花之冠_提升.md",
+      "line": 34,
+      "column": 17,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 游戏 15 的美食配方 6 任务会同时检查并消耗本物品、[火花之刃·提升](../武器/I0N4_火花之刃_提升.md)和[火花吊坠·提升](../装备道具/I0N7_火花吊坠·提升.md)。这是交付用途，不是本物品的获取来源。"
+    },
+    {
+      "file": "docs/items/武器/I06O_真红白之圣灵剑.md",
+      "line": 39,
+      "column": 11,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **NPC 支线任务奖励**：来源：十层★Lv12(the forest owner)★（`nsc3`）；数量 ×2。"
+    },
+    {
+      "file": "docs/items/武器/I0D9_觉醒（绯梦）.md",
+      "line": 31,
+      "column": 5,
+      "alias": "绯梦",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I09H",
+          "name": "绯梦",
+          "path": "items/武器/I09H_绯梦（传说）.md"
+        }
+      ],
+      "text": "- **绯梦**：攻击时有80触发两段筋力*3伤害"
+    },
+    {
+      "file": "docs/items/武器/I0F2_裂徒（良好）.md",
+      "line": 30,
+      "column": 3,
+      "alias": "暗杀者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "暗杀者",
+          "name": "草壁操",
+          "path": "heroes/暗杀者.md"
+        }
+      ],
+      "text": "- 暗杀者都喜欢用的武器,因为非常轻巧,能力方面也非常强"
+    },
+    {
+      "file": "docs/items/武器/I0FX_裂徒（劣质）.md",
+      "line": 26,
+      "column": 3,
+      "alias": "暗杀者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "暗杀者",
+          "name": "草壁操",
+          "path": "heroes/暗杀者.md"
+        }
+      ],
+      "text": "- 暗杀者都喜欢用的武器,因为非常轻巧,能力方面也非常强"
+    },
+    {
+      "file": "docs/items/武器/I0FY_漆黑魔神杖（优越）.md",
+      "line": 30,
+      "column": 3,
+      "alias": "暗杀者",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "暗杀者",
+          "name": "草壁操",
+          "path": "heroes/暗杀者.md"
+        }
+      ],
+      "text": "- 暗杀者都喜欢用的武器,因为非常轻巧,能力方面也非常强"
+    },
+    {
+      "file": "docs/items/武器/I0IJ_Ruined sword.md",
+      "line": 7,
+      "column": 34,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "**分类**：武器 · **品质**：传说 · **固定来源**：冰晶之地的领主"
+    },
+    {
+      "file": "docs/items/武器/I0IJ_Ruined sword.md",
+      "line": 34,
+      "column": 11,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "击败指定 Boss“冰晶之地的领主”（单位 ID：`n024`）时，必定掉落："
+    },
+    {
+      "file": "docs/items/武器/I0IJ_Ruined sword.md",
+      "line": 40,
+      "column": 12,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "因此 `I0IJ` 是冰晶之地领主的必掉物，不是游戏说明所称的不明确“水晶深处随机爆出”。"
+    },
+    {
+      "file": "docs/items/武器/I0JT_咸鱼回忆剑·提升.md",
+      "line": 28,
+      "column": 16,
+      "alias": "咸鱼",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0KK",
+          "name": "<咸鱼>",
+          "path": "items/素材/I0KK_咸鱼.md"
+        }
+      ],
+      "text": "- 那天人们终于回忆想起自己是咸鱼的时候,一切都来的太迟了,咸鱼终究翻不了身(纪念回忆)"
+    },
+    {
+      "file": "docs/items/武器/I0JT_咸鱼回忆剑·提升.md",
+      "line": 28,
+      "column": 31,
+      "alias": "咸鱼",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0KK",
+          "name": "<咸鱼>",
+          "path": "items/素材/I0KK_咸鱼.md"
+        }
+      ],
+      "text": "- 那天人们终于回忆想起自己是咸鱼的时候,一切都来的太迟了,咸鱼终究翻不了身(纪念回忆)"
+    },
+    {
+      "file": "docs/items/武器/I0JW_咸鱼回忆剑·提升◆◆◆.md",
+      "line": 36,
+      "column": 11,
+      "alias": "咸鱼",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0KK",
+          "name": "<咸鱼>",
+          "path": "items/素材/I0KK_咸鱼.md"
+        }
+      ],
+      "text": "- 回忆未必是好事,咸鱼翻身还是鱼"
+    },
+    {
+      "file": "docs/items/武器/I0KP_★★★★★战魂·优衣丝.md",
+      "line": 30,
+      "column": 66,
+      "alias": "天堂",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "天堂",
+          "name": "天堂",
+          "path": "heroes/天堂.md"
+        }
+      ],
+      "text": "- 不曾感受过生命,也不懂什么叫感情,只是由人类牺牲成千上万的灵魂魔法阵制造出来的战魂,她的强大足以破灭附近的敌国,她的力量牵动与天堂与地狱,打破了一切的寂静"
+    },
+    {
+      "file": "docs/items/武器/I0NX_诛仙四剑.md",
+      "line": 26,
+      "column": 15,
+      "alias": "诛仙剑",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0I4",
+          "name": "诛仙剑",
+          "path": "items/武器/I0I4_诛仙剑.md"
+        }
+      ],
+      "text": "| `A19W` | 物品_诛仙剑阵 |"
+    },
+    {
+      "file": "docs/items/武器/I0NX_诛仙四剑.md",
+      "line": 33,
+      "column": 5,
+      "alias": "诛仙剑",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0I4",
+          "name": "诛仙剑",
+          "path": "items/武器/I0I4_诛仙剑.md"
+        }
+      ],
+      "text": "- **诛仙剑阵**：全属性x1.5每秒伤害，持续3s，CD:30秒"
+    },
+    {
+      "file": "docs/items/武器/I0O1_Bug绯梦.md",
+      "line": 30,
+      "column": 5,
+      "alias": "绯梦",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I09H",
+          "name": "绯梦",
+          "path": "items/武器/I09H_绯梦（传说）.md"
+        }
+      ],
+      "text": "- **绯梦**：攻击时有80触发两段筋力*3伤害"
+    },
+    {
+      "file": "docs/items/武器/I0O2_Excailbur.md",
+      "line": 84,
+      "column": 37,
+      "alias": "圣剑",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0FS",
+          "name": "圣剑",
+          "path": "items/武器/I0FS_圣剑（传说）.md"
+        }
+      ],
+      "text": "同一笔致命伤害若已被更高优先级机制改成0，当前效果仍可能继续走到圣剑分支并消耗这次唯一机会；多免死物品的优先级仍待实际确认。"
+    },
+    {
+      "file": "docs/items/消耗物品/I012_美味的肉.md",
+      "line": 22,
+      "column": 12,
+      "alias": "烤肉排",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0O8",
+          "name": "烤肉排",
+          "path": "items/消耗物品/I0O8_烤肉排.md"
+        }
+      ],
+      "text": "当前美食系统的烤肉排产物是 [`I0PA · 食物：烤肉排`](I0PA_食物_烤肉排.md)，不是本物品。"
+    },
+    {
+      "file": "docs/items/消耗物品/I07I_青森之水.md",
+      "line": 7,
+      "column": 15,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "> **分类**：消耗物品/任务材料　**售价**：1,500 金　**使用次数**：1 次"
+    },
+    {
+      "file": "docs/items/消耗物品/I07I_青森之水.md",
+      "line": 9,
+      "column": 32,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "> **版本结论**：2.5 与 2.41 的游戏数据、商店和任务消耗方式一致；本页采用全中文标题，并以 2.5 重审结论为准，不另设版本 Tab。"
+    },
+    {
+      "file": "docs/items/消耗物品/I07I_青森之水.md",
+      "line": 18,
+      "column": 105,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "这不是“立即恢复 1,500 点魔法”，也不是体力或智力增长。`AI2m` 本身是无主动命令的最大魔法值能力，当前版本中也没有响应 `A0VU` 的施法实际效果。因此当前结论是：本件提供最大魔法值能力，并可被任务实际效果按充能数消耗；旧页的即时恢复描述不能作为执行结论。"
+    },
+    {
+      "file": "docs/items/消耗物品/I0HV_能量.md",
+      "line": 25,
+      "column": 27,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前 2.5 没有商店、怪物或宝箱掉落、合成、扭蛋或任务等正常获取方式。"
+    },
+    {
+      "file": "docs/items/特殊/I01Q_传送迷宫9层.md",
+      "line": 22,
+      "column": 8,
+      "alias": "墓地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0EB",
+          "name": "墓地",
+          "path": "items/特殊/I0EB_墓地（传送迷宫54层）.md"
+        }
+      ],
+      "text": "- 迷宫9层(墓地)"
+    },
+    {
+      "file": "docs/items/特殊/I026_传送迷宫14层.md",
+      "line": 23,
+      "column": 8,
+      "alias": "强盗利刃",
+      "match_type": "name",
+      "status": "ambiguous",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I05F",
+          "name": "强盗利刃",
+          "path": "items/武器/I05F_强盗利刃（优越）.md"
+        },
+        {
+          "kind": "item",
+          "id": "I05G",
+          "name": "强盗利刃",
+          "path": "items/武器/I05G_强盗利刃（稀有）.md"
+        },
+        {
+          "kind": "item",
+          "id": "I05I",
+          "name": "强盗利刃",
+          "path": "items/武器/I05I_强盗利刃（良好）.md"
+        }
+      ],
+      "text": "- 掉落物品：强盗利刃（爆率50%）。当前同名物品有[优越（`I05F`）](../武器/I05F_强盗利刃（优越）.md)、[稀有（`I05G`）](../武器/I05G_强盗利刃（稀有）.md)与[良好（`I05I`）](../武器/I05I_强盗利刃（良好）.md)三种，旧传送说明没有标明具体变体；宝物-血腥之刃、宝物-血腥之石爆率25%。"
+    },
+    {
+      "file": "docs/items/特殊/I02M_任务(单人)击杀魔物.md",
+      "line": 22,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务内容:去绿森之区击杀10只魔物狼"
+    },
+    {
+      "file": "docs/items/特殊/I02M_任务(单人)击杀魔物.md",
+      "line": 23,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务报酬:200金币(会退回押金)"
+    },
+    {
+      "file": "docs/items/特殊/I02M_任务(单人)击杀魔物.md",
+      "line": 26,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务积分:+1"
+    },
+    {
+      "file": "docs/items/特殊/I02M_任务(单人)击杀魔物.md",
+      "line": 31,
+      "column": 29,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **商店**：可在 h03K 一城NPC(思密达):任务发布者 购买。"
+    },
+    {
+      "file": "docs/items/特殊/I02P_任务(多人)作战计划.md",
+      "line": 22,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务内容:击败一层的BOSS"
+    },
+    {
+      "file": "docs/items/特殊/I02P_任务(多人)作战计划.md",
+      "line": 23,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务报酬:5000金币(不需要押金)"
+    },
+    {
+      "file": "docs/items/特殊/I02P_任务(多人)作战计划.md",
+      "line": 26,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务积分:+10"
+    },
+    {
+      "file": "docs/items/特殊/I02P_任务(多人)作战计划.md",
+      "line": 31,
+      "column": 29,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **商店**：可在 h03K 一城NPC(思密达):任务发布者 购买。"
+    },
+    {
+      "file": "docs/items/特殊/I02Q_任务(收集)鱼壳.md",
+      "line": 22,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务内容:带5个鱼壳给我"
+    },
+    {
+      "file": "docs/items/特殊/I02Q_任务(收集)鱼壳.md",
+      "line": 23,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务报酬:5(不需要押金)"
+    },
+    {
+      "file": "docs/items/特殊/I02Q_任务(收集)鱼壳.md",
+      "line": 26,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务积分:+3"
+    },
+    {
+      "file": "docs/items/特殊/I02Q_任务(收集)鱼壳.md",
+      "line": 31,
+      "column": 29,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **商店**：可在 h03K 一城NPC(思密达):任务发布者 购买。"
+    },
+    {
+      "file": "docs/items/特殊/I02T_任务(单人)猎食的空者.md",
+      "line": 22,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务内容:去16层击杀那里的鸟类,帮我清除15只就好"
+    },
+    {
+      "file": "docs/items/特殊/I02T_任务(单人)猎食的空者.md",
+      "line": 23,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务报酬:1000金币(不需要押金)"
+    },
+    {
+      "file": "docs/items/特殊/I02T_任务(单人)猎食的空者.md",
+      "line": 26,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务积分:+3"
+    },
+    {
+      "file": "docs/items/特殊/I02T_任务(单人)猎食的空者.md",
+      "line": 31,
+      "column": 28,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **商店**：可在 h02F 二城NPC(孖蛋):任务发布者 购买。"
+    },
+    {
+      "file": "docs/items/特殊/I02U_任务(单人)击杀僵尸.md",
+      "line": 22,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务内容:去8层击杀10只残暴僵尸"
+    },
+    {
+      "file": "docs/items/特殊/I02U_任务(单人)击杀僵尸.md",
+      "line": 23,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务报酬:400金币(会退回押金)"
+    },
+    {
+      "file": "docs/items/特殊/I02U_任务(单人)击杀僵尸.md",
+      "line": 26,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务积分:+1"
+    },
+    {
+      "file": "docs/items/特殊/I02U_任务(单人)击杀僵尸.md",
+      "line": 31,
+      "column": 29,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **商店**：可在 h03K 一城NPC(思密达):任务发布者 购买。"
+    },
+    {
+      "file": "docs/items/特殊/I02V_任务击败一只鸡.md",
+      "line": 22,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务内容:前往绿之森击败一只鸡"
+    },
+    {
+      "file": "docs/items/特殊/I02V_任务击败一只鸡.md",
+      "line": 23,
+      "column": 3,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 任务报酬:鸡精"
+    },
+    {
+      "file": "docs/items/特殊/I02Y_雇佣兵一只猫.md",
+      "line": 23,
+      "column": 11,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 雇佣交易:鸡精(任务获得)"
+    },
+    {
+      "file": "docs/items/特殊/I035_特殊物品鸡精.md",
+      "line": 26,
+      "column": 11,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **NPC 支线任务奖励**：数量 ×2。"
+    },
+    {
+      "file": "docs/items/特殊/I035_特殊物品鸡精.md",
+      "line": 27,
+      "column": 7,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **武器任务奖励**：可通过对应玩法获得。"
+    },
+    {
+      "file": "docs/items/特殊/I04I_积分转换站.md",
+      "line": 22,
+      "column": 6,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 可以用任务积分来换取一些奇怪的东西"
+    },
+    {
+      "file": "docs/items/特殊/I04I_积分转换站.md",
+      "line": 24,
+      "column": 12,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- (需要10点积分)任务积分的物品)"
+    },
+    {
+      "file": "docs/items/特殊/I04I_积分转换站.md",
+      "line": 28,
+      "column": 29,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **商店**：可在 h03K 一城NPC(思密达):任务发布者 购买。"
+    },
+    {
+      "file": "docs/items/特殊/I06A_任务：用心去倾听那些故事.md",
+      "line": 28,
+      "column": 11,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **NPC 支线任务奖励**：可通过对应玩法获得。"
+    },
+    {
+      "file": "docs/items/特殊/I09R_任务捉迷藏.md",
+      "line": 23,
+      "column": 8,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 提示:开始任务请点击"
+    },
+    {
+      "file": "docs/items/特殊/I0AR_玲和连的礼物.md",
+      "line": 9,
+      "column": 17,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "这是一件由剧情商人出售的自动使用任务道具，本身没有属性或技能。旧页把它笼统写成“任务类道具”，没有说明商店、领取角色、精确等级和每局一次限制。"
+    },
+    {
+      "file": "docs/items/特殊/I0AR_玲和连的礼物.md",
+      "line": 9,
+      "column": 41,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "这是一件由剧情商人出售的自动使用任务道具，本身没有属性或技能。旧页把它笼统写成“任务类道具”，没有说明商店、领取角色、精确等级和每局一次限制。"
+    },
+    {
+      "file": "docs/items/特殊/I0C8_任务调查.md",
+      "line": 23,
+      "column": 8,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 提示:接受任务请点击"
+    },
+    {
+      "file": "docs/items/特殊/I0C9_任务完成调查任务.md",
+      "line": 22,
+      "column": 19,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 已经完成杀死10只狂暴食物者提交任务"
+    },
+    {
+      "file": "docs/items/特殊/I0C9_任务完成调查任务.md",
+      "line": 23,
+      "column": 16,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 警告:当欺骗他人时,会破坏任务!"
+    },
+    {
+      "file": "docs/items/特殊/I0DA_动能城之钥匙.md",
+      "line": 18,
+      "column": 13,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "| `A0YX` | .动能城 |"
+    },
+    {
+      "file": "docs/items/特殊/I0DA_动能城之钥匙.md",
+      "line": 24,
+      "column": 6,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- 能开始动能城的传送地点"
+    },
+    {
+      "file": "docs/items/特殊/I0DE_交易交换装备.md",
+      "line": 22,
+      "column": 6,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "- 我想要能量回转器良好的,你找的话,我会给件不错的装备,怎么样"
+    },
+    {
+      "file": "docs/items/特殊/I0DE_交易交换装备.md",
+      "line": 23,
+      "column": 6,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "- 需求:能量回转器"
+    },
+    {
+      "file": "docs/items/特殊/I0K0_委托_沉陷的动能城.md",
+      "line": 22,
+      "column": 10,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- 委托内容:寻找动能城"
+    },
+    {
+      "file": "docs/items/特殊/I0K2_BUG化·结晶.md",
+      "line": 31,
+      "column": 11,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **NPC 支线任务奖励**：可通过对应玩法获得。"
+    },
+    {
+      "file": "docs/items/特殊/I0KB_呼魂石.md",
+      "line": 18,
+      "column": 12,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "| `A0YT` | 任务道具:呼魂 |"
+    },
+    {
+      "file": "docs/items/特殊/I0KB_呼魂石.md",
+      "line": 28,
+      "column": 11,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **NPC 支线任务奖励**：可通过对应玩法获得。"
+    },
+    {
+      "file": "docs/items/特殊/I0KD_委托_调查.md",
+      "line": 22,
+      "column": 13,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 调查王城的故事（不是任务委托者请勿点击）"
+    },
+    {
+      "file": "docs/items/特殊/I0KE_伊诺城之钥匙.md",
+      "line": 18,
+      "column": 13,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "| `A0YX` | .动能城 |"
+    },
+    {
+      "file": "docs/items/特殊/I0MB_任务_美食料理.md",
+      "line": 22,
+      "column": 10,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 美食料理合成(任务不是以下配方,请寻找NPC)"
+    },
+    {
+      "file": "docs/items/特殊/I0MB_任务_美食料理.md",
+      "line": 23,
+      "column": 5,
+      "alias": "烤肉排",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0O8",
+          "name": "烤肉排",
+          "path": "items/消耗物品/I0O8_烤肉排.md"
+        }
+      ],
+      "text": "- 1:烤肉排:[野狼肉](../素材/I009_野狼的肉.md)x1，[野猪肉](../素材/I0ME_野猪的肉.md)x1，[孜然](../素材/I0MG_孜然粉.md)x1"
+    },
+    {
+      "file": "docs/items/特殊/I0MB_任务_美食料理.md",
+      "line": 25,
+      "column": 5,
+      "alias": "草莓",
+      "match_type": "name",
+      "status": "ambiguous",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0E6",
+          "name": "草莓",
+          "path": "items/素材/I0E6_草莓.md"
+        },
+        {
+          "kind": "item",
+          "id": "I0MJ",
+          "name": "草莓",
+          "path": "items/素材/I0MJ_草莓.md"
+        }
+      ],
+      "text": "- 3:草莓奶昔:[草莓](../素材/I0MJ_草莓.md)x1，[水果](../素材/I0MX_水果.md)x1，[牛奶](../素材/I0MW_牛奶.md)x1"
+    },
+    {
+      "file": "docs/items/特殊/I0MB_任务_美食料理.md",
+      "line": 26,
+      "column": 8,
+      "alias": "蘑菇",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0MR",
+          "name": "蘑菇",
+          "path": "items/素材/I0MR_蘑菇.md"
+        }
+      ],
+      "text": "- 4:小鸡炖蘑菇:[鸡肉](../素材/I0MH_鸡肉.md)x1，[蘑菇](../素材/I0MR_蘑菇.md)x3，[美味调料包](../素材/I0MS_调料包.md)x1"
+    },
+    {
+      "file": "docs/items/特殊/I0MB_任务_美食料理.md",
+      "line": 30,
+      "column": 17,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- (提示:找到所有的配方后完成任务,并非上面合成料理)"
+    },
+    {
+      "file": "docs/items/特殊/I0MD_任务_烤肉排.md",
+      "line": 22,
+      "column": 29,
+      "alias": "烤肉排",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0O8",
+          "name": "烤肉排",
+          "path": "items/消耗物品/I0O8_烤肉排.md"
+        }
+      ],
+      "text": "- 我需要5份狼肉，5份猪肉，你能带给我吗，我要拿它来做烤肉排！！"
+    },
+    {
+      "file": "docs/items/特殊/I0MP_熔炼.md",
+      "line": 27,
+      "column": 5,
+      "alias": "诛仙剑",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0I4",
+          "name": "诛仙剑",
+          "path": "items/武器/I0I4_诛仙剑.md"
+        }
+      ],
+      "text": "- 2.诛仙剑阵:[诛仙剑](../武器/I0I4_诛仙剑.md)，[戮仙剑](../武器/I0NU_戮仙剑.md)，[陷仙剑](../武器/I0NS_陷仙剑.md)，[绝仙剑](../武器/I0NT_绝仙剑.md)"
+    },
+    {
+      "file": "docs/items/特殊/I0MP_熔炼.md",
+      "line": 28,
+      "column": 34,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- 3.[动能腿甲](../装备道具/I0NY_动能腿甲.md):动能城原石，[神圣骑士腿甲](../装备道具/I0H9_神圣骑士腿甲.md)"
+    },
+    {
+      "file": "docs/items/特殊/I0MP_熔炼.md",
+      "line": 30,
+      "column": 8,
+      "alias": "绯梦",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I09H",
+          "name": "绯梦",
+          "path": "items/武器/I09H_绯梦（传说）.md"
+        }
+      ],
+      "text": "- 5.bug绯梦:bug恶魔右手，绯梦（觉醒）"
+    },
+    {
+      "file": "docs/items/特殊/I0MP_熔炼.md",
+      "line": 30,
+      "column": 19,
+      "alias": "绯梦",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I09H",
+          "name": "绯梦",
+          "path": "items/武器/I09H_绯梦（传说）.md"
+        }
+      ],
+      "text": "- 5.bug绯梦:bug恶魔右手，绯梦（觉醒）"
+    },
+    {
+      "file": "docs/items/特殊/I0N2_任务_我需要点蘑菇精.md",
+      "line": 22,
+      "column": 3,
+      "alias": "蘑菇",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0MR",
+          "name": "蘑菇",
+          "path": "items/素材/I0MR_蘑菇.md"
+        }
+      ],
+      "text": "- 蘑菇精好像不够用了,帮我去干点体力活吧,我会给不一样的东西"
+    },
+    {
+      "file": "docs/items/特殊/I0NK_传送至通天塔.md",
+      "line": 22,
+      "column": 3,
+      "alias": "通天塔第1层",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NJ",
+          "name": "通天塔第 1 层",
+          "path": "items/特殊/I0NJ_通天塔第1层.md"
+        }
+      ],
+      "text": "- 通天塔第1层(塔内)"
+    },
+    {
+      "file": "docs/items/特殊/I0NL_熔炼清单.md",
+      "line": 35,
+      "column": 21,
+      "alias": "诛仙剑",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0I4",
+          "name": "诛仙剑",
+          "path": "items/武器/I0I4_诛仙剑.md"
+        }
+      ],
+      "text": "- 清单把 `I0NX` 称为“诛仙剑阵”，实际名称是“[诛仙四剑](../武器/I0NX_诛仙四剑.md)”；"
+    },
+    {
+      "file": "docs/items/特殊/I0NL_熔炼清单.md",
+      "line": 36,
+      "column": 49,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- [动能腿甲](../装备道具/I0NY_动能腿甲.md)提示把 `I09A` 写成“动能城原石”，实际名称是“[动能之原石](../装备道具/I09A_动能之原石（传说）.md)”；"
+    },
+    {
+      "file": "docs/items/特殊/I0OI_通天塔阶梯.md",
+      "line": 16,
+      "column": 39,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "本物品没有背包能力。它是塔内「NPC:虚无」的免费购买交互项；购买时立即调用通天塔 Boss 推进逻辑，按全局进度召唤下一层 Boss。"
+    },
+    {
+      "file": "docs/items/特殊/I0OI_通天塔阶梯.md",
+      "line": 21,
+      "column": 8,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "- 它不是进入通天塔的门票。进入场景使用的是[通天塔](I0NN_通天塔.md)传送项。"
+    },
+    {
+      "file": "docs/items/特殊/I0OI_通天塔阶梯.md",
+      "line": 29,
+      "column": 6,
+      "alias": "通天塔",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NN",
+          "name": "通天塔",
+          "path": "items/特殊/I0NN_通天塔.md"
+        }
+      ],
+      "text": "- 说明：通天塔由多种 Boss 组成，层数越高强度越大；战斗过程中死亡将损失[复活水晶](I09F_复活水晶.md)，掉落物品的品质也会逐层提高。"
+    },
+    {
+      "file": "docs/items/特殊/I0R3_圣灵堂.md",
+      "line": 9,
+      "column": 16,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "- **限制**：71 层深渊魔女（`n05H`）仍存活时拒绝传送。"
+    },
+    {
+      "file": "docs/items/特殊/I0R6_74层前进的资格.md",
+      "line": 6,
+      "column": 14,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "> **类型**：74 层任务交互道具　**购买价**：0 金"
+    },
+    {
+      "file": "docs/items/特殊/I0R6_74层前进的资格.md",
+      "line": 16,
+      "column": 102,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "| [桐人](../../heroes/封弊者_桐谷和人_桐人.md)（`Hamg`） | 持有[黑剑·阐释者](../武器/I0HP_黑剑·阐释者.md)（真）（`I0PS`） | 使青眼恶魔永久进入任务易伤状态 |"
+    },
+    {
+      "file": "docs/items/特殊/I0R6_74层前进的资格.md",
+      "line": 17,
+      "column": 92,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "| [亚丝娜](../../heroes/闪光_亚丝娜.md)（`Hmkg`） | 持有[闪烁之光](../不归类/I0PD_闪烁之光.md)（`I0PD`） | 使青眼恶魔永久进入任务易伤状态 |"
+    },
+    {
+      "file": "docs/items/特殊/I0R6_74层前进的资格.md",
+      "line": 20,
+      "column": 1,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "任务易伤生效后，74 层青眼恶魔受到的伤害变为原来的 **2 倍**，完成状态会保存到地图存档。它不是进入 75 层的前置物品，75 层的真实限制仍是击杀青眼恶魔。"
+    },
+    {
+      "file": "docs/items/特殊/index.md",
+      "line": 3,
+      "column": 17,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "> 特殊功能道具，包括传送卷轴、任务道具、NPC 交互道具、隐藏道具、商店打造交互道具等，通常无法装备或出售。"
+    },
+    {
+      "file": "docs/items/素材/I01M_腐蚀物质.md",
+      "line": 22,
+      "column": 19,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前版本没有确认到合成、打造、强化或任务用途。"
+    },
+    {
+      "file": "docs/items/素材/I024_19层非常好的木头.md",
+      "line": 23,
+      "column": 19,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前版本没有确认到合成、打造、强化或任务用途。游戏说明只称它“能卖个高价钱”，不能据此推断为高层打造材料。"
+    },
+    {
+      "file": "docs/items/素材/I041_鸡蛋.md",
+      "line": 22,
+      "column": 18,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "- 鸡蛋含有许多的蛋白质来补充你的能量"
+    },
+    {
+      "file": "docs/items/素材/I050_13.14层木头.md",
+      "line": 22,
+      "column": 5,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 好像任务会需要"
+    },
+    {
+      "file": "docs/items/素材/I079_奇怪的武器零件.md",
+      "line": 23,
+      "column": 29,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "游戏说明称它可以做武器，但当前版本没有确认到合成、打造或任务用途，因此没有可用配方。"
+    },
+    {
+      "file": "docs/items/素材/I07A_奇怪的皮质.md",
+      "line": 23,
+      "column": 32,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "游戏说明称它可以制作皮类物品，但当前版本没有确认到合成、打造或任务用途，因此没有可用配方。"
+    },
+    {
+      "file": "docs/items/素材/I08G_真的有刀的秋刀鱼.md",
+      "line": 22,
+      "column": 46,
+      "alias": "秋刀鱼",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I08F",
+          "name": "<秋刀鱼>",
+          "path": "items/素材/I08F_秋刀鱼.md"
+        }
+      ],
+      "text": "- 钓到他的人会立刻受伤,身上多处都是非常锋利的刀片,可以拿来做武器或者卖给商人,跟一般的秋刀鱼不一样,非常难吃"
+    },
+    {
+      "file": "docs/items/素材/I0B1_炎热的火球.md",
+      "line": 18,
+      "column": 16,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 当前没有合成、打造、强化或任务实际效果读取 `I0B1`。"
+    },
+    {
+      "file": "docs/items/素材/I0E6_草莓.md",
+      "line": 22,
+      "column": 5,
+      "alias": "遗忘",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0H8",
+          "name": "遗忘",
+          "path": "items/装备道具/I0H8_遗忘.md"
+        }
+      ],
+      "text": "- **遗忘的记忆**：增加自身80筋力，持续5秒"
+    },
+    {
+      "file": "docs/items/素材/I0E6_草莓.md",
+      "line": 23,
+      "column": 10,
+      "alias": "水果",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0MX",
+          "name": "水果",
+          "path": "items/素材/I0MX_水果.md"
+        }
+      ],
+      "text": "- 甜甜的,酸酸的水果"
+    },
+    {
+      "file": "docs/items/素材/I0MH_鸡肉.md",
+      "line": 26,
+      "column": 31,
+      "alias": "蘑菇",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0MR",
+          "name": "蘑菇",
+          "path": "items/素材/I0MR_蘑菇.md"
+        }
+      ],
+      "text": "- **小游戏采集奖励**：来源：n038（`n038`）、蘑菇（`n03D`）。"
+    },
+    {
+      "file": "docs/items/素材/I0N1_特殊物品_蘑菇精.md",
+      "line": 26,
+      "column": 25,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **Boss/事件掉落**：来源：Lv25(任务):蘑菇精（`n03E`）。"
+    },
+    {
+      "file": "docs/items/素材/I0N1_特殊物品_蘑菇精.md",
+      "line": 26,
+      "column": 29,
+      "alias": "蘑菇",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0MR",
+          "name": "蘑菇",
+          "path": "items/素材/I0MR_蘑菇.md"
+        }
+      ],
+      "text": "- **Boss/事件掉落**：来源：Lv25(任务):蘑菇精（`n03E`）。"
+    },
+    {
+      "file": "docs/items/素材/I0QD_熔火结晶.md",
+      "line": 8,
+      "column": 17,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "- 描述：封存着流萤熔火形态残留能量的炽热结晶。"
+    },
+    {
+      "file": "docs/items/装备道具/I049_消逝的遗者项链.md",
+      "line": 38,
+      "column": 9,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **NPC 任务奖励**：可通过对应玩法获得。"
+    },
+    {
+      "file": "docs/items/装备道具/I051_灵魂武器◆◆◆（离异之斧）.md",
+      "line": 23,
+      "column": 19,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前版本没有商店、掉落、合成、升级、任务或随机奖励等正常获取方式。"
+    },
+    {
+      "file": "docs/items/装备道具/I052_灵魂武器◆（离异之斧）.md",
+      "line": 23,
+      "column": 19,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前版本没有商店、掉落、合成、升级、任务或随机奖励等正常获取方式。"
+    },
+    {
+      "file": "docs/items/装备道具/I05A_黄金护腕.md",
+      "line": 24,
+      "column": 16,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前版本没有商店、掉落、合成、任务或随机奖励等正常获取方式。"
+    },
+    {
+      "file": "docs/items/装备道具/I06Q_罪翼之戒.md",
+      "line": 15,
+      "column": 5,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- 没有任务、公会成员召唤、对话或其他实际效果读取 `I06Q`。"
+    },
+    {
+      "file": "docs/items/装备道具/I06Q_罪翼之戒.md",
+      "line": 21,
+      "column": 16,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前版本没有商店、掉落、合成、任务或随机奖励等正常获取方式。"
+    },
+    {
+      "file": "docs/items/装备道具/I06S_老旧的航海帽.md",
+      "line": 23,
+      "column": 16,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前版本没有商店、掉落、合成、任务或随机奖励等正常获取方式。"
+    },
+    {
+      "file": "docs/items/装备道具/I080_灵魂武器◆◆（绘月）.md",
+      "line": 21,
+      "column": 19,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "当前版本没有商店、掉落、合成、升级、任务或随机奖励等正常获取方式。"
+    },
+    {
+      "file": "docs/items/装备道具/I09A_动能之原石（传说）.md",
+      "line": 34,
+      "column": 3,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- 动能城所研发自动生成能力的超级石头"
+    },
+    {
+      "file": "docs/items/装备道具/I09Y_精巧项链（普通）.md",
+      "line": 37,
+      "column": 11,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **NPC 支线任务奖励**：数量 ×4。"
+    },
+    {
+      "file": "docs/items/装备道具/I0GB_黄金の魔腕.md",
+      "line": 30,
+      "column": 25,
+      "alias": "能量",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0HV",
+          "name": "能量",
+          "path": "items/消耗物品/I0HV_能量.md"
+        }
+      ],
+      "text": "- 由魔法师们所打造的道具,拥有不断为装备者提供能量"
+    },
+    {
+      "file": "docs/items/装备道具/I0GD_指引灯笼.md",
+      "line": 33,
+      "column": 9,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **NPC 任务奖励**：可通过对应玩法获得。"
+    },
+    {
+      "file": "docs/items/装备道具/I0GK_爱意暖暖戒.md",
+      "line": 37,
+      "column": 11,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **NPC 支线任务奖励**：可通过对应玩法获得。"
+    },
+    {
+      "file": "docs/items/装备道具/I0KT_初心者戒指.md",
+      "line": 38,
+      "column": 7,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **武器任务奖励**：数量 ×6。"
+    },
+    {
+      "file": "docs/items/装备道具/I0L8_灵魂·艾斯特与蕾斯蒂亚.md",
+      "line": 34,
+      "column": 6,
+      "alias": "遗忘",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0H8",
+          "name": "遗忘",
+          "path": "items/装备道具/I0H8_遗忘.md"
+        }
+      ],
+      "text": "- 被尘世遗忘的黑白剑，被隐藏于SAO的某处"
+    },
+    {
+      "file": "docs/items/装备道具/I0LC_精致叶子腰带.md",
+      "line": 39,
+      "column": 11,
+      "alias": "任务",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I02R",
+          "name": "任务",
+          "path": "items/特殊/I02R_任务（无法获取）.md"
+        }
+      ],
+      "text": "- **NPC 支线任务奖励**：来源：十层★Lv12(the forest owner)★（`nsc3`）。"
+    },
+    {
+      "file": "docs/items/装备道具/I0LR_黑魔女加护.md",
+      "line": 26,
+      "column": 6,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "- 能力:魔女的爱意S级"
+    },
+    {
+      "file": "docs/items/装备道具/I0LR_黑魔女加护.md",
+      "line": 27,
+      "column": 25,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "- 无人听过她的事迹,只记得她曾来过这片大陆,黑魔女-会对她所爱之人施加加护祝福-\\\"希望我不在你身边以后,也能好好活下去呀~\\\"-听闻某个打造物品会出现魔女之真名·"
+    },
+    {
+      "file": "docs/items/装备道具/I0LR_黑魔女加护.md",
+      "line": 27,
+      "column": 78,
+      "alias": "魔女",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "魔女",
+          "name": "魔女",
+          "path": "heroes/魔女.md"
+        }
+      ],
+      "text": "- 无人听过她的事迹,只记得她曾来过这片大陆,黑魔女-会对她所爱之人施加加护祝福-\\\"希望我不在你身边以后,也能好好活下去呀~\\\"-听闻某个打造物品会出现魔女之真名·"
+    },
+    {
+      "file": "docs/items/装备道具/I0NY_动能腿甲.md",
+      "line": 33,
+      "column": 3,
+      "alias": "动能城",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NP",
+          "name": "动能城",
+          "path": "items/特殊/I0NP_动能城.md"
+        }
+      ],
+      "text": "- 动能城所研发自动生成能力的超级石头和骑士腿甲创造合成"
+    },
+    {
+      "file": "docs/items/装备道具/I0OJ_百花环.md",
+      "line": 32,
+      "column": 4,
+      "alias": "鲜花",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0N0",
+          "name": "鲜花",
+          "path": "items/素材/I0N0_鲜花.md"
+        }
+      ],
+      "text": "- 由鲜花围绕的手环,上面附带着浓郁的花香,让人有种心旷神怡的感觉"
+    },
+    {
+      "file": "docs/items/装甲/I09K_灵魂（启示者）.md",
+      "line": 23,
+      "column": 10,
+      "alias": "绯梦",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I09H",
+          "name": "绯梦",
+          "path": "items/武器/I09H_绯梦（传说）.md"
+        }
+      ],
+      "text": "- `I09H` 绯梦 1 件。"
+    },
+    {
+      "file": "docs/items/装甲/I0FE_★★★★★_冬弥的白裙.md",
+      "line": 63,
+      "column": 1,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "冬弥持有白裙、致命保护冷却就绪且一笔来伤足以致命时："
+    },
+    {
+      "file": "docs/items/装甲/I0FE_★★★★★_冬弥的白裙.md",
+      "line": 66,
+      "column": 4,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "2. 冬弥不会被暂停，恢复期间仍可移动和攻击；"
+    },
+    {
+      "file": "docs/items/装甲/I0FE_★★★★★_冬弥的白裙.md",
+      "line": 88,
+      "column": 54,
+      "alias": "冬弥",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "hero",
+          "id": "冬弥_泳装形态",
+          "name": "冬弥（泳装形态）",
+          "path": "heroes/冬弥_泳装形态.md"
+        }
+      ],
+      "text": "白裙的 Q／E 分支、真实73／101把、R无强化、专属属性和致命保护与2.5完全相同。差异只来自冬弥的 E／R **游戏说明文字**："
+    },
+    {
+      "file": "docs/items/装甲/I0GV_雷暴战甲.md",
+      "line": 10,
+      "column": 100,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "2.5 与 2.41 的属性和实际效果相同。旧 Wiki 把镜面反射简化成“反弹给攻击者”，并把掉落 Boss 错写成雷罚龙 `n023`；实际会伤害持有者周围 250 范围内的敌人，来源是冰晶之地领主（单位 ID：`n024`）。"
+    },
+    {
+      "file": "docs/items/装甲/I0GV_雷暴战甲.md",
+      "line": 69,
+      "column": 51,
+      "alias": "冰晶之地",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0NQ",
+          "name": "冰晶之地",
+          "path": "items/特殊/I0NQ_冰晶之地.md"
+        }
+      ],
+      "text": "Lv85 雷罚龙（`n023`）不会掉落雷暴战甲；真实来源是单位 ID 为 `n024` 的冰晶之地领主。"
+    },
+    {
+      "file": "docs/items/装甲/I0I5_灵魂(优梦).md",
+      "line": 9,
+      "column": 20,
+      "alias": "遗忘",
+      "match_type": "name",
+      "status": "unique",
+      "targets": [
+        {
+          "kind": "item",
+          "id": "I0H8",
+          "name": "遗忘",
+          "path": "items/装备道具/I0H8_遗忘.md"
+        }
+      ],
+      "text": "> **2.5 复核结论**：旧页把“遗忘的记忆”写成持续 5 秒，实际只持续 3 秒；所有持有者共用 3 秒触发间隔，多人同时使用时会互相阻塞。"
+    }
+  ]
+}
