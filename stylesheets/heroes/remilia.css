@@ -1,0 +1,52 @@
+/* ════════════════════════════════════════════════════════════════════
+   蕾米莉亚·斯卡雷特 · 主题专属
+   ─────────────────────────────────────────────────────────────────────
+   触发：body[data-hero-id="remilia"] 或 body[data-hero-theme="scarlet"]
+   只放该英雄独有的颜色 / 形状 / 标题渐变；通用结构在 _showtime.css。
+   ════════════════════════════════════════════════════════════════════ */
+
+body[data-hero-theme="scarlet"] {
+  /* 覆盖公共 CSS 变量：血色调更饱满 */
+  --hero-accent:        #ff1744;
+  --hero-accent-2:      #ff8fa3;
+  --hero-accent-deep:   #800f2f;
+  --hero-title-grad:    linear-gradient(180deg, #fff 0%, #ffccd5 30%, #ff1744 64%, #800f2f 100%);
+  --hero-accent-glow:   rgba(255, 50, 90, 0.85);
+  --hero-content-ring:  rgba(220, 38, 80, 0.25);
+  --hero-content-shadow:rgba(120, 0, 30, 0.4);
+  --hero-fallback-bg:   radial-gradient(ellipse at center, #4a0a18 0%, #2a0410 45%, #0a0204 100%);
+  --hero-warmup-bg:     radial-gradient(ellipse at center, rgba(80, 10, 25, 0.6) 0%, rgba(20, 0, 8, 0.92) 70%, #07020a 100%);
+  --hero-vignette-bg:   radial-gradient(ellipse at center, transparent 38%, rgba(40, 0, 12, 0.55) 75%, rgba(15, 0, 5, 0.92) 100%),
+                         linear-gradient(180deg, rgba(60, 0, 20, 0.55) 0%, rgba(20, 0, 10, 0.25) 35%, rgba(20, 0, 10, 0) 60%, rgba(20, 0, 10, 0.4) 100%);
+  --hero-vignette-bg-light: radial-gradient(ellipse at center, transparent 45%, rgba(120, 0, 40, 0.18) 80%, rgba(60, 0, 20, 0.45) 100%),
+                            linear-gradient(180deg, rgba(180, 30, 60, 0.18) 0%, transparent 40%);
+}
+
+/* H1 血色金属感渐变 */
+body.hero-active[data-hero-theme="scarlet"] .md-typeset h1 {
+  background: linear-gradient(90deg, #ff4d6d 0%, #c9184a 60%, #800f2f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 24px rgba(255, 60, 100, 0.45);
+}
+
+/* 红枪：使用更细腻的多停渐变（覆盖默认线性） */
+body[data-hero-id="remilia"] .hero-spear {
+  background: linear-gradient(90deg,
+    rgba(255, 220, 230, 0) 0%,
+    rgba(255, 220, 230, 0.7) 8%,
+    rgba(255, 80, 110, 0.95) 25%,
+    #ff1744 55%,
+    #b3001b 90%,
+    rgba(120, 0, 20, 0) 100%);
+  box-shadow:
+    0 0 18px rgba(255, 50, 90, 0.85),
+    0 0 36px rgba(255, 30, 70, 0.6),
+    0 0 72px rgba(200, 0, 40, 0.45);
+}
+
+/* 花瓣：带粉色高光的红玫瑰花瓣 */
+body[data-hero-id="remilia"] .hero-petal {
+  background: radial-gradient(ellipse at 30% 30%, #ff8fa3 0%, #ff4d6d 45%, #800f2f 100%);
+}
